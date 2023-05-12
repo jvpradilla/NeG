@@ -1,0 +1,33 @@
+@PROTOCOL = HTTP
+@PROTOCOL_VERSION = 1.1
+@HOSTNAME = localhost
+@PORT = 5000
+@CONTENT_TYPE_JSON = application/json
+@CONTENT_TYPE_FORM = multipart/form-data
+@PATH = user
+
+###
+
+GET {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+
+###
+POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+Content-Type: {{CONTENT_TYPE_JSON}}
+
+{
+    "username": "juan_vicente_pradilla_1",
+    "password": "password123"
+}
+
+###
+
+POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}}/avatar {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+Content-Length: 250
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarygi5jlGAbJYdfYWNE
+
+------WebKitFormBoundarygi5jlGAbJYdfYWNE
+Content-Disposition: form-data; name="file"; filename="img.png"
+Content-Type: image/png
+
+< ./img.png
+------WebKitFormBoundarygi5jlGAbJYdfYWNE--

@@ -1,0 +1,7 @@
+model User {
+  username     String   @id
+  password     String
+  userPhotoURL String?
+  createdAt    DateTime @default(now()) @map(name: "created_at")
+  updatedAt    DateTime @updatedAt @map(name: "updated_at")
+}
