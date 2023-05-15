@@ -17,30 +17,10 @@ export default class UserRoutes {
 
   public registerRoutes(pPath: string, pRouter: Router): void {
 
-    pRouter.get(pPath, (pRequest: Request, pResponse: Response) => {
-      pResponse.send(
-        [{
-          name: "user1",
-          email: "user1@mail.com"
-        },
-        {
-          name: "user2",
-          email: "user2@mail.com"
-        },{
-          name: "user3",
-          email: "user3@mail.com"
-        },{
-          name: "user4",
-          email: "user4@mail.com"
-        }]
-      );
-    }); 
   
     pRouter.post(pPath, async (pRequest: Request, pResponse: Response) => {
       try {
-        const { username, password, avatar } = pRequest.body;
-        console.log("Desde userRoutes");
-  
+        const { username, password, avatar } = pRequest.body;  
         await this.controller.register( username, password, avatar);
         pResponse.status(200).send();
       } catch (err) { 
@@ -56,13 +36,28 @@ export default class UserRoutes {
       }    
   
       const file: UploadedFile = pRequest.files.file as UploadedFile;
-      const uploadPath = `public/uploads/${uuidv4()}`;
+      const uploadPath = `public/uploads/user/avatar/${uuidv4()}`;
       const uploadURL = `/${uploadPath}` ;
   
       file.mv(uploadPath, err => {
         if(err) {return pResponse.status(500).send({ message : err });}
         return pResponse.status(200).json({ url: uploadURL});
       });
+    });
+
+    pRouter.post(pPath+"/login", async (pRequest: Request, pResponse: Response) => {
+
+      try {
+        const { username, password } = pRequest.body;
+        const user = await this.controller.login(username, password);
+        if(user === undefined) {
+          return pResponse.status(400).json({ error: "Invalid credentials"});
+        }
+        pResponse.status(200).json({ user });
+      } catch (err) { 
+        const typedError = err as Error;
+        pResponse.status(400).json({ error: typedError.message });
+      }
     });
   }
 

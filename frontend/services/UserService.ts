@@ -21,9 +21,18 @@ const post = async (pURL: string, pUser: User) => {
   });
 };
 
-export const getAllUsers = async () => {
-  const response = await get("http://localhost:5000/user");
-  return (await response.json()) as User[];
+export const uploadAvatar = async (pFile: File) => {
+  const formData = new FormData();
+  formData.append("file", pFile);
+  const response = await fetch("http://localhost:5000/user/avatar", {
+    method: "POST",
+    body: formData
+  });
+  if( response.status !== 200 ) {
+    console.log(await response.json());
+  } else {
+    return (await response.json()).url as string;    
+  }
 };
 
 export const createUser = async (pUsername: string, pPassword: string, pAvatar?: string) => {
@@ -44,16 +53,21 @@ export const createUser = async (pUsername: string, pPassword: string, pAvatar?:
   }
 };
 
-export const uploadAvatar = async (pFile: File) => {
-  const formData = new FormData();
-  formData.append("file", pFile);
-  const response = await fetch("http://localhost:5000/user/avatar", {
-    method: "POST",
-    body: formData
-  });
+export const loginUser = async (pUsername: string, pPassword: string) => {
+  const user: User = {
+    username: pUsername,
+    password: Md5.hashAsciiStr(pPassword)
+  };
+
+  console.log("password: " + user.password);
+  
+  const response = await post("http://localhost:5000/user/login", user);
+  
   if( response.status !== 200 ) {
     console.log(await response.json());
   } else {
-    return (await response.json()).url as string;    
+    console.log("User logged in");
+    console.log(await response.json());
   }
-};
+}
+

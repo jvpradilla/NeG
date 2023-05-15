@@ -60,5 +60,5 @@ describe("User", () => {
 
     expect(user1.equals(user2)).toBe(true);
   });
-
+  
 });

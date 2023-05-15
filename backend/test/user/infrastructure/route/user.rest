@@ -11,15 +11,6 @@
 GET {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
 
 ###
-POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
-Content-Type: {{CONTENT_TYPE_JSON}}
-
-{
-    "username": "juan_vicente_pradilla_1",
-    "password": "password123"
-}
-
-###
 
 POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}}/avatar {{PROTOCOL}}/{{PROTOCOL_VERSION}}
 Content-Length: 250
@@ -31,3 +22,24 @@ Content-Type: image/png
 
 < ./img.png
 ------WebKitFormBoundarygi5jlGAbJYdfYWNE--
+
+### "P@sswor12345"
+POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+Content-Type: {{CONTENT_TYPE_JSON}}
+
+{
+    "username": "juan_vicente_pradilla_1",
+    "password": "42420aadbd62b2139fb611fd61113c88"
+    "avatar": "/public/uploads/user/avatar/55a21e74-69cc-4dab-bbd5-a79cdfd12b64"
+
+}
+
+### 
+
+POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}}/login {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+Content-Type: {{CONTENT_TYPE_JSON}}
+
+{
+    "username": "juan_vicente_pradilla_1",
+    "password": "42420aadbd62b2139fb611fd61113c88"
+}

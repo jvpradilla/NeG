@@ -10,22 +10,18 @@ export class PostgreSQLUserRepository implements UserRepository {
 
 
   public async findByUserName(pUserName: UserName): Promise<User | undefined> {
-    console.log("Desde PostgreSQLUserRepository findByUserName");
     const result = await this.prisma.user.findUnique({
       where: {
         username: pUserName.value
       }
     });
 
-    console.log("Desde PostgreSQLUserRepository findByUserName 2");
     if (result === null || result === undefined) {
       return undefined;
     }
-    console.log("Desde PostgreSQLUserRepository findByUserName 3");
     if (!result.userPhotoURL) {
       return new User(new UserName(result.username), new UserPassword(result.password));
     }
-    console.log("Desde PostgreSQLUserRepository findByUserName 4");
     return new User(new UserName(result.username), new UserPassword(result.password), result.userPhotoURL);  
   }
 
@@ -34,7 +30,8 @@ export class PostgreSQLUserRepository implements UserRepository {
     await this.prisma.user.create({
       data: {
         username: pUser.username.value,
-        password: pUser.password.value
+        password: pUser.password.value,
+        userPhotoURL: pUser.userPhotoURL
       },
     });
   }
