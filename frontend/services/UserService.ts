@@ -4,6 +4,7 @@ export type User = {
   username: string;
   password: string;
   avatar?: string;
+  passwordNew?: string;
 }
 
 const get = async (pURL: string) => {
@@ -16,6 +17,14 @@ const get = async (pURL: string) => {
 const post = async (pURL: string, pUser: User) => {
   return await fetch(pURL, {
     method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(pUser)
+  });
+};
+
+const put = async (pURL: string, pUser: User) => {
+  return await fetch(pURL, {
+    method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(pUser)
   });
@@ -36,8 +45,6 @@ export const uploadAvatar = async (pFile: File) => {
 };
 
 export const createUser = async (pUsername: string, pPassword: string, pAvatar?: string) => {
-  console.log("Password en claro: " + pPassword + "  - Password MD5: " + Md5.hashAsciiStr(pPassword));
-
   const user: User = {
     username: pUsername,
     password: Md5.hashAsciiStr(pPassword),
@@ -53,13 +60,34 @@ export const createUser = async (pUsername: string, pPassword: string, pAvatar?:
   }
 };
 
+export const updateUser = async (pUsername: string, pPassword: string, pPasswordNew: string, pAvatarNew?: string): Promise<boolean> => {
+
+  console.log("updateUser", pUsername, pPassword, pPasswordNew, pAvatarNew);
+
+  const user: User = {
+    username: pUsername,
+    password: Md5.hashAsciiStr(pPassword),
+    passwordNew: Md5.hashAsciiStr(pPasswordNew),
+    avatar: pAvatarNew
+  };
+  
+  const response = await put("http://localhost:5000/user", user);
+  
+  if( response.status !== 200 ) {
+    console.log(await response.json());
+    return false;
+  } else {
+    console.log("User updated");
+    localStorage.setItem("password", pPasswordNew);
+    return true;
+  }
+};
+
 export const loginUser = async (pUsername: string, pPassword: string) => {
   const user: User = {
     username: pUsername,
     password: Md5.hashAsciiStr(pPassword)
   };
-
-  console.log("password: " + user.password);
   
   const response = await post("http://localhost:5000/user/login", user);
   
@@ -67,7 +95,9 @@ export const loginUser = async (pUsername: string, pPassword: string) => {
     console.log(await response.json());
   } else {
     console.log("User logged in");
-    console.log(await response.json());
+    const userAuth = await response.json();  
+    localStorage.setItem("username", pUsername);
+    localStorage.setItem("password", pPassword);
   }
 }
 

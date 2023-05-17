@@ -5,16 +5,25 @@ self.__RSC_CSS_MANIFEST={
     ]
   },
   "cssModules": {
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page": [
-      "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css"
-    ],
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/info/page": [
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/login/page": [
       "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css"
     ],
     "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/page": [
       "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css"
     ],
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/login/page": [
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page": [
+      "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css"
+    ],
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/page": [
+      "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css"
+    ],
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/info/page": [
+      "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css"
+    ],
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/[userID]/page": [
+      "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css"
+    ],
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/[userID]/edit/page": [
       "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css"
     ]
   }

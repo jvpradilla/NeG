@@ -28,6 +28,17 @@ export default class UserRoutes {
         pResponse.status(400).json({ error: typedError.message });
       }
     }); 
+
+    pRouter.put(pPath, async (pRequest: Request, pResponse: Response) => {
+      try {
+        const { username, password, passwordNew, avatar } = pRequest.body;
+        await this.controller.update(username, password, passwordNew, avatar);
+        pResponse.status(200).send();
+      } catch (err) {
+        const typedError = err as Error;
+        pResponse.status(400).json({ error: typedError.message });
+      }
+    });
   
     pRouter.post(pPath+"/avatar", async (pRequest: Request, pResponse: Response) => {
 

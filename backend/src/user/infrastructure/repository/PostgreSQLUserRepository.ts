@@ -8,7 +8,6 @@ export class PostgreSQLUserRepository implements UserRepository {
   
   private prisma = new PrismaClient();
 
-
   public async findByUserName(pUserName: UserName): Promise<User | undefined> {
     const result = await this.prisma.user.findUnique({
       where: {
@@ -25,7 +24,6 @@ export class PostgreSQLUserRepository implements UserRepository {
     return new User(new UserName(result.username), new UserPassword(result.password), result.userPhotoURL);  
   }
 
-
   public async save(pUser: User): Promise<void> {
     await this.prisma.user.create({
       data: {
@@ -34,5 +32,17 @@ export class PostgreSQLUserRepository implements UserRepository {
         userPhotoURL: pUser.userPhotoURL
       },
     });
+  }
+
+  public async update(pUser: User): Promise<void> {
+    await this.prisma.user.update({
+      where: {
+        username: pUser.username.value
+      },
+      data: {
+        password: pUser.password.value,
+        userPhotoURL: pUser.userPhotoURL
+      }
+    });  
   }
 }

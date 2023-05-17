@@ -718,32 +718,6 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./app/user/create/page.tsx": {
-      "*": {
-        "id": "(sc_client)/./app/user/create/page.tsx",
-        "name": "*",
-        "chunks": [
-          "app/user/create/page:static/chunks/app/user/create/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/user/create/page.tsx",
-        "name": "",
-        "chunks": [
-          "app/user/create/page:static/chunks/app/user/create/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/user/create/page.tsx",
-        "name": "default",
-        "chunks": [
-          "app/user/create/page:static/chunks/app/user/create/page.js"
-        ],
-        "async": false
-      }
-    },
     "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
@@ -792,6 +766,58 @@ self.__RSC_MANIFEST={
         "name": "default",
         "chunks": [
           "app/user/login/page:static/chunks/app/user/login/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/user/create/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/user/create/page.tsx",
+        "name": "*",
+        "chunks": [
+          "app/user/create/page:static/chunks/app/user/create/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/user/create/page.tsx",
+        "name": "",
+        "chunks": [
+          "app/user/create/page:static/chunks/app/user/create/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/user/create/page.tsx",
+        "name": "default",
+        "chunks": [
+          "app/user/create/page:static/chunks/app/user/create/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/user/[userID]/edit/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/user/[userID]/edit/page.tsx",
+        "name": "*",
+        "chunks": [
+          "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/user/[userID]/edit/page.tsx",
+        "name": "",
+        "chunks": [
+          "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/user/[userID]/edit/page.tsx",
+        "name": "default",
+        "chunks": [
+          "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
         ],
         "async": false
       }
@@ -2452,30 +2478,6 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page.tsx": {
-      "id": "(app-client)/./app/user/create/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/user/create/page:static/chunks/app/user/create/page.js"
-      ],
-      "async": false
-    },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page.tsx#": {
-      "id": "(app-client)/./app/user/create/page.tsx",
-      "name": "",
-      "chunks": [
-        "app/user/create/page:static/chunks/app/user/create/page.js"
-      ],
-      "async": false
-    },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page.tsx#default": {
-      "id": "(app-client)/./app/user/create/page.tsx",
-      "name": "default",
-      "chunks": [
-        "app/user/create/page:static/chunks/app/user/create/page.js"
-      ],
-      "async": false
-    },
     "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css#": {
       "id": "null",
       "name": "default",
@@ -2552,6 +2554,54 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/user/login/page:static/chunks/app/user/login/page.js"
+      ],
+      "async": false
+    },
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page.tsx": {
+      "id": "(app-client)/./app/user/create/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/user/create/page:static/chunks/app/user/create/page.js"
+      ],
+      "async": false
+    },
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page.tsx#": {
+      "id": "(app-client)/./app/user/create/page.tsx",
+      "name": "",
+      "chunks": [
+        "app/user/create/page:static/chunks/app/user/create/page.js"
+      ],
+      "async": false
+    },
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page.tsx#default": {
+      "id": "(app-client)/./app/user/create/page.tsx",
+      "name": "default",
+      "chunks": [
+        "app/user/create/page:static/chunks/app/user/create/page.js"
+      ],
+      "async": false
+    },
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/[userID]/edit/page.tsx": {
+      "id": "(app-client)/./app/user/[userID]/edit/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
+      ],
+      "async": false
+    },
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/[userID]/edit/page.tsx#": {
+      "id": "(app-client)/./app/user/[userID]/edit/page.tsx",
+      "name": "",
+      "chunks": [
+        "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
+      ],
+      "async": false
+    },
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/[userID]/edit/page.tsx#default": {
+      "id": "(app-client)/./app/user/[userID]/edit/page.tsx",
+      "name": "default",
+      "chunks": [
+        "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
       ],
       "async": false
     }

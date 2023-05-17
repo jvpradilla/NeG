@@ -1,4 +1,4 @@
 {
   "/user/login/page": "app/user/login/page.js",
-  "/user/create/page": "app/user/create/page.js"
+  "/user/[userID]/edit/page": "app/user/[userID]/edit/page.js"
 }

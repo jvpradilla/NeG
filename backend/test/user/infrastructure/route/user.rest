@@ -43,3 +43,48 @@ Content-Type: {{CONTENT_TYPE_JSON}}
     "username": "juan_vicente_pradilla_1",
     "password": "42420aadbd62b2139fb611fd61113c88"
 }
+
+
+### Cambio de password y avatar
+PUT {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+Content-Type: {{CONTENT_TYPE_JSON}}
+
+{
+    "username": "juan_vicente_pradilla_1",
+    "password": "42420aadbd62b2139fb611fd61113c88",
+    "passwordNew": "42420aadbd62b2139fb611fd61113c89",
+    "avatar": "/public/uploads/user/avatar/99cafdcd-c897-4e0c-89e7-777b7f271f41"
+}
+
+
+### Reestablece de password y cambia el avatar
+PUT {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+Content-Type: {{CONTENT_TYPE_JSON}}
+
+{
+    "username": "juan_vicente_pradilla_1",
+    "password": "42420aadbd62b2139fb611fd61113c89",
+    "passwordNew": "42420aadbd62b2139fb611fd61113c88"
+}
+
+### Restablece el avatar
+PUT {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+Content-Type: {{CONTENT_TYPE_JSON}}
+
+{
+    "username": "juan_vicente_pradilla_1",
+    "password": "42420aadbd62b2139fb611fd61113c88",
+    "passwordNew": "42420aadbd62b2139fb611fd61113c88",
+    "avatar": "/public/uploads/user/avatar/99cafdcd-c897-4e0c-89e7-777b7f271f41"
+}
+
+### Error por password
+PUT {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+Content-Type: {{CONTENT_TYPE_JSON}}
+
+{
+    "username": "juan_vicente_pradilla_1",
+    "password": "42420aadbd62b2139fb611fd61113c81",
+    "passwordNew": "42420aadbd62b2139fb611fd61113c88",
+    "avatar": "/public/uploads/user/avatar/99cafdcd-c897-4e0c-89e7-777b7f271f41"
+}
