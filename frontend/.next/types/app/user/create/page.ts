@@ -1,5 +1,5 @@
 // File: /home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page.tsx
-import * as entry from '../../../../../app/(user)/create/page.jsx'
+import * as entry from '../../../../../app/(user)/signup/page.jsx'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
 type TEntry = typeof entry
