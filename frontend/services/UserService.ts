@@ -1,4 +1,5 @@
-import {Md5} from 'ts-md5';
+import { Md5 } from 'ts-md5';
+import { saveSession, Session } from './SessionService';
 
 export type User = {
   username: string;
@@ -43,8 +44,6 @@ export const createUser = async (pUsername: string, pPassword: string, pAvatar?:
 
 export const updateUser = async (pUsername: string, pPassword: string, pPasswordNew: string, pAvatarNew?: string): Promise<boolean> => {
 
-  console.log("updateUser", pUsername, pPassword, pPasswordNew, pAvatarNew);
-
   const user: User = {
     username: pUsername,
     password: Md5.hashAsciiStr(pPassword),
@@ -63,7 +62,12 @@ export const updateUser = async (pUsername: string, pPassword: string, pPassword
     return false;
   } else {
     console.log("User updated");
-    localStorage.setItem("password", pPasswordNew);
+
+    const session: Session = {
+      username: pUsername,
+      password: pPasswordNew
+    };
+    saveSession(session);
     return true;
   }
 };
@@ -85,9 +89,16 @@ export const loginUser = async (pUsername: string, pPassword: string) => {
     console.log(await response.json());
   } else {
     console.log("User logged in");
-    const userAuth = await response.json();  
-    localStorage.setItem("username", pUsername);
-    localStorage.setItem("password", pPassword);
+    const userAuth =  await response.json();  
+
+    console.log(userAuth);
+
+    const session: Session = {
+      username: pUsername,
+      password: pPassword
+    };
+
+    saveSession(session);
   }
 }
 

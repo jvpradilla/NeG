@@ -9,14 +9,6 @@ export default function UserLogin () {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  useEffect(() => {
-    const localUser = localStorage.getItem("user");
-    if (localUser !== null) {
-      setUsername(JSON.parse(localUser).username);
-      setPassword(JSON.parse(localUser).password);
-    }
-  }, []);
-
   const usernameHandler =  (e: React.ChangeEvent<HTMLInputElement>) => {
     setUsername(e.target.value);
   };

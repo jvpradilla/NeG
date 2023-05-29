@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation';
 import { updateUser } from "../../../../services/UserService";
+import { getSession, hasValidSession } from "../../../../services/SessionService";
 
 
 export default function UserEdit () {
@@ -16,14 +17,20 @@ export default function UserEdit () {
 
 
   useEffect(() => {
-    const localUserName = localStorage.getItem("username");
-    const localPassword = localStorage.getItem("password");
-    if (localUserName !== null && localPassword !== null && localUserName !== "" && localPassword !== "") {
-      setUsername(localUserName);
-      setPassword(localPassword);
-      setPasswordNew(localPassword);
-    } else {
+   
+    if (!hasValidSession()) {
       push('/user/login');
+    }
+
+    const session = getSession();
+    if (session !== null) {
+      const localUserName = session?.username;
+      const localPassword = session?.password;
+      if (localUserName !== null && localPassword !== null) {
+        setUsername(localUserName);
+        setPassword(localPassword);
+        setPasswordNew(localPassword);
+      }
     }
   }, []);
 
