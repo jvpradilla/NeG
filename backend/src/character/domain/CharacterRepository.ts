@@ -1,5 +1,7 @@
 import { Character } from "./Character";
+import { CharacterId } from "./CharacterId";
 
 export interface CharacterRepository {
-  save(character: Character): Promise<void>;
+  findByCharacterId(pCharacterId: CharacterId): Promise<Character | undefined>;
+  save(pCharacter: Character): Promise<void>;
 }

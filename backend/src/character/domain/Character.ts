@@ -1,5 +1,9 @@
-export interface Character {
-  readonly id: string;
-  readonly name: string;
+import { CharacterId } from "./CharacterId";
 
+export class Character {
+  public readonly id: CharacterId;
+
+  constructor(pId: CharacterId) {
+    this.id = pId;
+  } 
 }

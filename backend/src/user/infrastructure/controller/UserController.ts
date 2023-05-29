@@ -1,26 +1,26 @@
 import { EditUser } from "../../application/EditUser";
 import { LoginUser } from "../../application/LoginUser";
-import { RegisterUser } from "../../application/RegisterUser";
+import { CreateUser } from "../../application/CreateUser";
 import { User } from "../../domain/User";
 import { UserName } from "../../domain/UserName";
 import { UserPassword } from "../../domain/UserPassword";
 import { UserRepository } from "../../domain/UserRepository";
 
 export class UserController {
-  private registerUser: RegisterUser;
+  private createUser: CreateUser;
   private loginUser: LoginUser;
   private editUser: EditUser;
 
   constructor(pUserRepository : UserRepository) {
-    this.registerUser = new RegisterUser(pUserRepository);
+    this.createUser = new CreateUser(pUserRepository);
     this.loginUser = new LoginUser(pUserRepository);
     this.editUser = new EditUser(pUserRepository);
   }
 
-  public async register(pUserName: string, pPassword: string, pUserPhotoURL?: string): Promise<void> {
+  public async create(pUserName: string, pPassword: string, pUserPhotoURL?: string): Promise<void> {
     const userName = new UserName(pUserName);
     const password = new UserPassword(pPassword);
-    await this.registerUser.execute(userName, password, pUserPhotoURL);
+    await this.createUser.execute(userName, password, pUserPhotoURL);
   }
 
   public async login(pUserName: string, pPassword: string): Promise<User | undefined> {

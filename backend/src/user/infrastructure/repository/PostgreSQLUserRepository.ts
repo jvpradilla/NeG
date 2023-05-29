@@ -30,7 +30,7 @@ export class PostgreSQLUserRepository implements UserRepository {
         username: pUser.username.value,
         password: pUser.password.value,
         userPhotoURL: pUser.userPhotoURL
-      },
+      }
     });
   }
 

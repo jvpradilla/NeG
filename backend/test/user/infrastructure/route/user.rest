@@ -6,9 +6,6 @@
 @CONTENT_TYPE_FORM = multipart/form-data
 @PATH = user
 
-###
-
-GET {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
 
 ###
 
@@ -23,34 +20,34 @@ Content-Type: image/png
 < ./img.png
 ------WebKitFormBoundarygi5jlGAbJYdfYWNE--
 
-### "P@sswor12345"
+### Create whith password "P@sswor12345"
 POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
 Content-Type: {{CONTENT_TYPE_JSON}}
 
 {
-    "username": "juan_vicente_pradilla_1",
-    "password": "42420aadbd62b2139fb611fd61113c88"
+    "username": "juan_vicente_pradilla_2",
+    "password": "42420aadbd62b2139fb611fd61113c88",
     "avatar": "/public/uploads/user/avatar/55a21e74-69cc-4dab-bbd5-a79cdfd12b64"
 
 }
 
-### 
+### Sing In
 
-POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}}/login {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}}/signin {{PROTOCOL}}/{{PROTOCOL_VERSION}}
 Content-Type: {{CONTENT_TYPE_JSON}}
 
 {
-    "username": "juan_vicente_pradilla_1",
+    "username": "juan_vicente_pradilla_2",
     "password": "42420aadbd62b2139fb611fd61113c88"
 }
 
 
-### Cambio de password y avatar
+### Update password & avatar
 PUT {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
 Content-Type: {{CONTENT_TYPE_JSON}}
 
 {
-    "username": "juan_vicente_pradilla_1",
+    "username": "juan_vicente_pradilla_2",
     "password": "42420aadbd62b2139fb611fd61113c88",
     "passwordNew": "42420aadbd62b2139fb611fd61113c89",
     "avatar": "/public/uploads/user/avatar/99cafdcd-c897-4e0c-89e7-777b7f271f41"
@@ -62,7 +59,7 @@ PUT {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSIO
 Content-Type: {{CONTENT_TYPE_JSON}}
 
 {
-    "username": "juan_vicente_pradilla_1",
+    "username": "juan_vicente_pradilla_2",
     "password": "42420aadbd62b2139fb611fd61113c89",
     "passwordNew": "42420aadbd62b2139fb611fd61113c88"
 }
@@ -72,7 +69,7 @@ PUT {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSIO
 Content-Type: {{CONTENT_TYPE_JSON}}
 
 {
-    "username": "juan_vicente_pradilla_1",
+    "username": "juan_vicente_pradilla_2",
     "password": "42420aadbd62b2139fb611fd61113c88",
     "passwordNew": "42420aadbd62b2139fb611fd61113c88",
     "avatar": "/public/uploads/user/avatar/99cafdcd-c897-4e0c-89e7-777b7f271f41"
@@ -83,7 +80,7 @@ PUT {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSIO
 Content-Type: {{CONTENT_TYPE_JSON}}
 
 {
-    "username": "juan_vicente_pradilla_1",
+    "username": "juan_vicente_pradilla_2",
     "password": "42420aadbd62b2139fb611fd61113c81",
     "passwordNew": "42420aadbd62b2139fb611fd61113c88",
     "avatar": "/public/uploads/user/avatar/99cafdcd-c897-4e0c-89e7-777b7f271f41"

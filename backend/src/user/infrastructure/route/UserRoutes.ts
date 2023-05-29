@@ -21,7 +21,7 @@ export default class UserRoutes {
     pRouter.post(pPath, async (pRequest: Request, pResponse: Response) => {
       try {
         const { username, password, avatar } = pRequest.body;  
-        await this.controller.register( username, password, avatar);
+        await this.controller.create( username, password, avatar);
         pResponse.status(200).send();
       } catch (err) { 
         const typedError = err as Error;
@@ -56,7 +56,7 @@ export default class UserRoutes {
       });
     });
 
-    pRouter.post(pPath+"/login", async (pRequest: Request, pResponse: Response) => {
+    pRouter.post(pPath+"/signin", async (pRequest: Request, pResponse: Response) => {
 
       try {
         const { username, password } = pRequest.body;

@@ -1,0 +1,15 @@
+@PROTOCOL = HTTP
+@PROTOCOL_VERSION = 1.1
+@HOSTNAME = localhost
+@PORT = 5000
+@CONTENT_TYPE_JSON = application/json
+@CONTENT_TYPE_FORM = multipart/form-data
+@PATH = character
+
+###
+POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+Content-Type: {{CONTENT_TYPE_JSON}}
+
+{
+    "id": "42420aadbd62b2139fb611fd61113c88"
+}

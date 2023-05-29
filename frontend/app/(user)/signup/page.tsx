@@ -33,19 +33,21 @@ export default function UserCreate () {
     }    
   };
 
-  return (      
-    <form>
-      <h1>User - Create</h1>
-      <input id="avatar" type="file" onChange={avatarHandler}/>
-      <label>
-        <span>Nombre de usuario</span>
-      </label>
-      <input id="username" type="text" autoComplete="off" placeholder="Nombre de usuario" autoFocus onChange={usernameHandler}/>
-      <label>
-        <span>Contraseña</span>
-      </label>
-      <input id="password" type="password" autoComplete="off" onChange={passwordHandler}/>
-      <button type="button" onClick={handleSubmit}>Crear Perfil</button>
-    </form>
+  return ( 
+    <div>   
+      <form>
+        <h1>User - Create</h1>
+        <input id="avatar" type="file" onChange={avatarHandler}/>
+        <label>
+          <span>Nombre de usuario</span>
+        </label>
+        <input id="username" type="text" autoComplete="off" placeholder="Nombre de usuario" autoFocus onChange={usernameHandler}/>
+        <label>
+          <span>Contraseña</span>
+        </label>
+        <input id="password" type="password" autoComplete="off" onChange={passwordHandler}/>
+        <button type="button" onClick={handleSubmit}>Crear Perfil</button>
+      </form>
+    </div>  
   );
 }

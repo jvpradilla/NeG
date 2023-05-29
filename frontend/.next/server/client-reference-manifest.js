@@ -723,7 +723,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/user/login/page:static/chunks/app/user/login/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
@@ -731,7 +731,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/user/login/page:static/chunks/app/user/login/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
@@ -739,85 +739,59 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/user/login/page:static/chunks/app/user/login/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       }
     },
-    "(app-client)/./app/user/login/page.tsx": {
+    "(app-client)/./app/(user)/[userID]/edit/page.tsx": {
       "*": {
-        "id": "(sc_client)/./app/user/login/page.tsx",
+        "id": "(sc_client)/./app/(user)/[userID]/edit/page.tsx",
         "name": "*",
         "chunks": [
-          "app/user/login/page:static/chunks/app/user/login/page.js"
+          "app/(user)/[userID]/edit/page:static/chunks/app/(user)/[userID]/edit/page.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./app/user/login/page.tsx",
+        "id": "(sc_client)/./app/(user)/[userID]/edit/page.tsx",
         "name": "",
         "chunks": [
-          "app/user/login/page:static/chunks/app/user/login/page.js"
+          "app/(user)/[userID]/edit/page:static/chunks/app/(user)/[userID]/edit/page.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./app/user/login/page.tsx",
+        "id": "(sc_client)/./app/(user)/[userID]/edit/page.tsx",
         "name": "default",
         "chunks": [
-          "app/user/login/page:static/chunks/app/user/login/page.js"
+          "app/(user)/[userID]/edit/page:static/chunks/app/(user)/[userID]/edit/page.js"
         ],
         "async": false
       }
     },
-    "(app-client)/./app/user/create/page.tsx": {
+    "(app-client)/./app/(user)/[userID]/character/create/page.tsx": {
       "*": {
-        "id": "(sc_client)/./app/user/create/page.tsx",
+        "id": "(sc_client)/./app/(user)/[userID]/character/create/page.tsx",
         "name": "*",
         "chunks": [
-          "app/user/create/page:static/chunks/app/user/create/page.js"
+          "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./app/user/create/page.tsx",
+        "id": "(sc_client)/./app/(user)/[userID]/character/create/page.tsx",
         "name": "",
         "chunks": [
-          "app/user/create/page:static/chunks/app/user/create/page.js"
+          "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./app/user/create/page.tsx",
+        "id": "(sc_client)/./app/(user)/[userID]/character/create/page.tsx",
         "name": "default",
         "chunks": [
-          "app/user/create/page:static/chunks/app/user/create/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./app/user/[userID]/edit/page.tsx": {
-      "*": {
-        "id": "(sc_client)/./app/user/[userID]/edit/page.tsx",
-        "name": "*",
-        "chunks": [
-          "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/user/[userID]/edit/page.tsx",
-        "name": "",
-        "chunks": [
-          "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/user/[userID]/edit/page.tsx",
-        "name": "default",
-        "chunks": [
-          "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
+          "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
         ],
         "async": false
       }
@@ -2489,7 +2463,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/user/login/page:static/chunks/app/user/login/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -2497,7 +2471,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/user/login/page:static/chunks/app/user/login/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -2505,7 +2479,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/user/login/page:static/chunks/app/user/login/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -2513,7 +2487,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/user/login/page:static/chunks/app/user/login/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -2521,7 +2495,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/user/login/page:static/chunks/app/user/login/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -2529,79 +2503,55 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/user/login/page:static/chunks/app/user/login/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/login/page.tsx": {
-      "id": "(app-client)/./app/user/login/page.tsx",
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/[userID]/edit/page.tsx": {
+      "id": "(app-client)/./app/(user)/[userID]/edit/page.tsx",
       "name": "*",
       "chunks": [
-        "app/user/login/page:static/chunks/app/user/login/page.js"
+        "app/(user)/[userID]/edit/page:static/chunks/app/(user)/[userID]/edit/page.js"
       ],
       "async": false
     },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/login/page.tsx#": {
-      "id": "(app-client)/./app/user/login/page.tsx",
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/[userID]/edit/page.tsx#": {
+      "id": "(app-client)/./app/(user)/[userID]/edit/page.tsx",
       "name": "",
       "chunks": [
-        "app/user/login/page:static/chunks/app/user/login/page.js"
+        "app/(user)/[userID]/edit/page:static/chunks/app/(user)/[userID]/edit/page.js"
       ],
       "async": false
     },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/login/page.tsx#default": {
-      "id": "(app-client)/./app/user/login/page.tsx",
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/[userID]/edit/page.tsx#default": {
+      "id": "(app-client)/./app/(user)/[userID]/edit/page.tsx",
       "name": "default",
       "chunks": [
-        "app/user/login/page:static/chunks/app/user/login/page.js"
+        "app/(user)/[userID]/edit/page:static/chunks/app/(user)/[userID]/edit/page.js"
       ],
       "async": false
     },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page.tsx": {
-      "id": "(app-client)/./app/user/create/page.tsx",
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/[userID]/character/create/page.tsx": {
+      "id": "(app-client)/./app/(user)/[userID]/character/create/page.tsx",
       "name": "*",
       "chunks": [
-        "app/user/create/page:static/chunks/app/user/create/page.js"
+        "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
       ],
       "async": false
     },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page.tsx#": {
-      "id": "(app-client)/./app/user/create/page.tsx",
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/[userID]/character/create/page.tsx#": {
+      "id": "(app-client)/./app/(user)/[userID]/character/create/page.tsx",
       "name": "",
       "chunks": [
-        "app/user/create/page:static/chunks/app/user/create/page.js"
+        "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
       ],
       "async": false
     },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/create/page.tsx#default": {
-      "id": "(app-client)/./app/user/create/page.tsx",
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/[userID]/character/create/page.tsx#default": {
+      "id": "(app-client)/./app/(user)/[userID]/character/create/page.tsx",
       "name": "default",
       "chunks": [
-        "app/user/create/page:static/chunks/app/user/create/page.js"
-      ],
-      "async": false
-    },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/[userID]/edit/page.tsx": {
-      "id": "(app-client)/./app/user/[userID]/edit/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
-      ],
-      "async": false
-    },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/[userID]/edit/page.tsx#": {
-      "id": "(app-client)/./app/user/[userID]/edit/page.tsx",
-      "name": "",
-      "chunks": [
-        "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
-      ],
-      "async": false
-    },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/user/[userID]/edit/page.tsx#default": {
-      "id": "(app-client)/./app/user/[userID]/edit/page.tsx",
-      "name": "default",
-      "chunks": [
-        "app/user/[userID]/edit/page:static/chunks/app/user/[userID]/edit/page.js"
+        "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
       ],
       "async": false
     }

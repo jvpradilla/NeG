@@ -89,7 +89,7 @@ export const loginUser = async (pUsername: string, pPassword: string) => {
     password: Md5.hashAsciiStr(pPassword)
   };
   
-  const response = await post("http://localhost:5000/user/login", user);
+  const response = await post("http://localhost:5000/user/signin", user);
   
   if( response.status !== 200 ) {
     console.log(await response.json());
