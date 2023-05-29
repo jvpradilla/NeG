@@ -723,7 +723,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
         ],
         "async": false
       },
@@ -731,7 +731,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
         ],
         "async": false
       },
@@ -739,7 +739,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
         ],
         "async": false
       }
@@ -770,28 +770,54 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./app/(user)/[userID]/character/create/page.tsx": {
+    "(app-client)/./app/(user)/signup/page.tsx": {
       "*": {
-        "id": "(sc_client)/./app/(user)/[userID]/character/create/page.tsx",
+        "id": "(sc_client)/./app/(user)/signup/page.tsx",
         "name": "*",
         "chunks": [
-          "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
+          "app/(user)/signup/page:static/chunks/app/(user)/signup/page.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./app/(user)/[userID]/character/create/page.tsx",
+        "id": "(sc_client)/./app/(user)/signup/page.tsx",
         "name": "",
         "chunks": [
-          "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
+          "app/(user)/signup/page:static/chunks/app/(user)/signup/page.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./app/(user)/[userID]/character/create/page.tsx",
+        "id": "(sc_client)/./app/(user)/signup/page.tsx",
         "name": "default",
         "chunks": [
-          "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
+          "app/(user)/signup/page:static/chunks/app/(user)/signup/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(user)/signin/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(user)/signin/page.tsx",
+        "name": "*",
+        "chunks": [
+          "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/(user)/signin/page.tsx",
+        "name": "",
+        "chunks": [
+          "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/(user)/signin/page.tsx",
+        "name": "default",
+        "chunks": [
+          "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
         ],
         "async": false
       }
@@ -2463,7 +2489,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
       ],
       "async": false
     },
@@ -2471,7 +2497,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
       ],
       "async": false
     },
@@ -2479,7 +2505,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
       ],
       "async": false
     },
@@ -2487,7 +2513,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
       ],
       "async": false
     },
@@ -2495,7 +2521,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
       ],
       "async": false
     },
@@ -2503,7 +2529,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
       ],
       "async": false
     },
@@ -2531,27 +2557,51 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/[userID]/character/create/page.tsx": {
-      "id": "(app-client)/./app/(user)/[userID]/character/create/page.tsx",
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/signup/page.tsx": {
+      "id": "(app-client)/./app/(user)/signup/page.tsx",
       "name": "*",
       "chunks": [
-        "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
+        "app/(user)/signup/page:static/chunks/app/(user)/signup/page.js"
       ],
       "async": false
     },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/[userID]/character/create/page.tsx#": {
-      "id": "(app-client)/./app/(user)/[userID]/character/create/page.tsx",
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/signup/page.tsx#": {
+      "id": "(app-client)/./app/(user)/signup/page.tsx",
       "name": "",
       "chunks": [
-        "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
+        "app/(user)/signup/page:static/chunks/app/(user)/signup/page.js"
       ],
       "async": false
     },
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/[userID]/character/create/page.tsx#default": {
-      "id": "(app-client)/./app/(user)/[userID]/character/create/page.tsx",
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/signup/page.tsx#default": {
+      "id": "(app-client)/./app/(user)/signup/page.tsx",
       "name": "default",
       "chunks": [
-        "app/(user)/[userID]/character/create/page:static/chunks/app/(user)/[userID]/character/create/page.js"
+        "app/(user)/signup/page:static/chunks/app/(user)/signup/page.js"
+      ],
+      "async": false
+    },
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/signin/page.tsx": {
+      "id": "(app-client)/./app/(user)/signin/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
+      ],
+      "async": false
+    },
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/signin/page.tsx#": {
+      "id": "(app-client)/./app/(user)/signin/page.tsx",
+      "name": "",
+      "chunks": [
+        "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
+      ],
+      "async": false
+    },
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/signin/page.tsx#default": {
+      "id": "(app-client)/./app/(user)/signin/page.tsx",
+      "name": "default",
+      "chunks": [
+        "app/(user)/signin/page:static/chunks/app/(user)/signin/page.js"
       ],
       "async": false
     }

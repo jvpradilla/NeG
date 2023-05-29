@@ -7,29 +7,6 @@ export type User = {
   passwordNew?: string;
 }
 
-const get = async (pURL: string) => {
-  return await fetch(pURL, {
-    method: "GET",
-    headers: { "Content-Type": "application/json" }
-  });
-};
-
-const post = async (pURL: string, pUser: User) => {
-  return await fetch(pURL, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(pUser)
-  });
-};
-
-const put = async (pURL: string, pUser: User) => {
-  return await fetch(pURL, {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(pUser)
-  });
-};
-
 export const uploadAvatar = async (pFile: File) => {
   const formData = new FormData();
   formData.append("file", pFile);
@@ -51,7 +28,11 @@ export const createUser = async (pUsername: string, pPassword: string, pAvatar?:
     avatar: pAvatar
   };
   
-  const response = await post("http://localhost:5000/user", user);
+  const response = await fetch("http://localhost:5000/user", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(user)
+  });
   
   if( response.status !== 200 ) {
     console.log(await response.json());
@@ -71,7 +52,11 @@ export const updateUser = async (pUsername: string, pPassword: string, pPassword
     avatar: pAvatarNew
   };
   
-  const response = await put("http://localhost:5000/user", user);
+  const response = await fetch("http://localhost:5000/user", {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(user)
+  });
   
   if( response.status !== 200 ) {
     console.log(await response.json());
@@ -89,7 +74,12 @@ export const loginUser = async (pUsername: string, pPassword: string) => {
     password: Md5.hashAsciiStr(pPassword)
   };
   
-  const response = await post("http://localhost:5000/user/signin", user);
+  const response = await fetch("http://localhost:5000/user/signin", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(user)
+  });
+  
   
   if( response.status !== 200 ) {
     console.log(await response.json());
