@@ -1,5 +1,6 @@
 "use client"
 
+import AnswerRecorder from "../../../../../components/AnswerRecorder";
 import { createCharacter } from "../../../../../services/CharacterService";
 
 export default function CharacterCreate () {
@@ -13,6 +14,7 @@ export default function CharacterCreate () {
         <h1>Character - Create</h1>
         <button type="button" onClick={handleSubmit}>Crear Personaje</button>
       </form>
+      <AnswerRecorder />
     </div>
   );
 }

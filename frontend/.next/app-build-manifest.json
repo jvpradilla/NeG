@@ -1,40 +1,30 @@
 {
   "pages": {
-    "/(user)/[userID]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(user)/[userID]/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/info/page": [
+    "/(user)/[userID]/character/create/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/info/page.js"
+      "static/chunks/app/(user)/[userID]/character/create/page.js"
+    ],
+    "/(user)/[userID]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(user)/[userID]/page.js"
     ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/(user)/[userID]/edit/page": [
+    "/info/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(user)/[userID]/edit/page.js"
-    ],
-    "/(user)/signup/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(user)/signup/page.js"
-    ],
-    "/(user)/signin/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(user)/signin/page.js"
+      "static/chunks/app/info/page.js"
     ]
   }
 }
