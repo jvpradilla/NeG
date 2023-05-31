@@ -1,14 +1,25 @@
 import Link from "next/link";
 
 const links = [{
-  label: "Home",
-  route: "/"
-}, {
-  label: "User",
-  route: "/user"
-}, {
-  label: "Info",
-  route: "/info"
+    label: "Home",
+    icon: "",
+    route: "/"
+  }, {
+    label: "Find",
+    icon: "",
+    route: "/find"
+  }, {
+    label: "New",
+    icon: "",
+    route: "/new"
+  }, {
+    label: "Info",
+    icon: "",
+    route: "/info"
+  }, {
+    label: "User",
+    icon: "",
+    route: "/user"
 }];
 
 export default function NavigationBar () {

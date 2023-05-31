@@ -37,7 +37,7 @@ APP.post("/seed", express.raw({ limit: "10mb" }), (pRequest: Request, pResponse:
   /*const f: File = blobToFile(pRequest.body, "video.webm");
   console.log(f);*/
   const uploadPath = "public/uploads/user/avatar/video.webm";
-  const uploadURL = `/${uploadPath}` ;
+  //const uploadURL = `/${uploadPath}` ;
   fs.writeFile(uploadPath, Buffer.from(pRequest.body), (err) => {
     console.log(err);
   });
