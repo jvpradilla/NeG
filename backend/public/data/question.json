@@ -1,0 +1,485 @@
+{
+  "questions": [
+    {
+      "id" : "232478ff-269c-403b-b142-16d9a66ea938",
+      "content" : "¿Dónde y cuándo has nacido?",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "4f40c02c-42a8-45f1-b266-8bceb266de5e",
+      "content" : "¿Quiénes son o eran tus padres? (nombres, profesiones, personalidad...)",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "6764f223-e800-47c4-a40e-d091787db404",
+      "content" : "¿Dónde vive ahora y con quién? Describe el lugar y las personas que viven con él.",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "52416a6b-0bfe-48b1-ade3-7cd7f8792ec1",
+      "content" : "¿A qué te dedicas?",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "0999c3bd-2ec2-4619-97cc-7ceb2ffad179",
+      "content" : "¿Escribe una descripción completa sobre ti. Debes considerar altura, peso, raza, color de pelo, ojos y tatuajes, cicatrices o cualquier otra marca que te diferencie.",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "5f08cc2f-be90-42ca-a9e8-9376557fc374",
+      "content" : "¿A qué clase social perteneces?",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "cbc338b0-b679-4b05-80d6-15cd7869ba20",
+      "content" : "¿Tienes alergias, enfermedades u otras debilidades físicas?",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "0ae3c46a-3bca-492b-a488-bec0b3004b67",
+      "content" : "¿Eres diestro o zurdo?",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "7f532ffd-80a7-48c7-b77f-789ed43f0c77",
+      "content" : "¿Cómo suena tu voz?",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "6f871c64-34c4-4772-9b6c-6d23242cf5be",
+      "content" : "¿Qué frases o palabras usas con frecuencia?",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "e3d76223-e3f4-4110-826c-dac175ee7eba",
+      "content" : "¿Qué llevas en los bolsillos?",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "7f6ed050-9c89-4842-81be-64a1abc69497",
+      "content" : "¿Tienes tics, manías, hábitos extraños u otras características que te definan?",
+      "category": "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "84b6c871-47c5-4bbc-976d-dd34091bfdba",
+      "content" : "¿Cómo describirías tu infancia en general?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "4e040cd3-e0a7-493c-a263-4a597e2a6e3f",
+      "content" : "¿Cuál es tu recuerdo más temprano?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "cf3c15bb-58a8-4c90-83c3-9def88aca39a",
+      "content" : "¿Qué estudios tienes?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "7e2e299d-410d-44b9-84d2-614256c34e1b",
+      "content" : "¿Lo pasabas bien en la escuela?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "bb323d57-22d6-4682-b7f9-b425319cb667",
+      "content" : "¿Dónde has aprendido tus habilidades?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "31714dfa-c1e8-4be7-9207-0f61cddb5aa4",
+      "content" : "¿Has tenido modelos a los que seguir en tu infancia o adolescencia? Descríbelos.",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "d050aa11-a314-43e5-bb04-546a945cc8dd",
+      "content" : "Al crecer... ¿Qué tipo de relación mantenías con los miembros de tu familia?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "6bde19f5-0fa8-454f-a311-bd35fa7506e0",
+      "content" : "Cuando eras pequeño/a, ¿Qué querías ser de mayor?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "4f19e4b4-391a-4f2c-8e37-5fd34c33752d",
+      "content" : "¿Cuáles eran tus actividades favoritas de pequeño?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "32d75d0a-42db-45f3-8cdc-c0ec1c0d4aea",
+      "content" : "¿Qué rasgos de personalidad tenías cuando eras niño?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "8c0f45fb-fbae-4c37-ba87-70b72d88ad7b",
+      "content" : "¿Eras popular de niño? ¿Quiénes eran tus amigos y cómo eran?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "16213107-eb98-4f7d-8082-c815a4928f7f",
+      "content" : "¿Cuándo y cómo fue tu primer beso?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "01d52148-da8e-4050-969f-cecb68cfcde5",
+      "content" : "¿Eres virgen? Si no lo eres, ¿cuándo y con quién perdiste la virginidad?",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "05e200fa-237d-4c6d-859b-528be9d0bc74",
+      "content" : "Si eres un ser sobrenatural (por ej. mago, hombre lobo, vampiro), cuenta la historia de como te has convertido o has aprendido tus propias habilidades. Si eres un humano normal, describe cualquier influencia que te haya llevado a hacer lo que haces hoy.",
+      "category": "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "e3ba44bd-b385-4053-b965-3c17e86a0e00",
+      "content" : "¿Cuál ha sido el evento más importante de tu vida hasta ahora?",
+      "category": "d055a7b5-9fed-473d-af29-58367e5c76fc",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "2f10e421-313a-4724-b481-3a31e44bd703",
+      "content" : "¿Quién ha tenido la mayor influencia sobre ti?",
+      "category": "d055a7b5-9fed-473d-af29-58367e5c76fc",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "36662529-cdde-45d4-8e56-2415e369a7fc",
+      "content" : "¿Cuál consideras tu más grande logro?",
+      "category": "d055a7b5-9fed-473d-af29-58367e5c76fc",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "5252920d-a467-4e76-90cb-c1b923feed86",
+      "content" : "¿Cuál es tu mayor arrepentimiento?",
+      "category": "d055a7b5-9fed-473d-af29-58367e5c76fc",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "53f39af3-49b9-4ada-be89-a48a51c5bb78",
+      "content" : "¿Qué es lo peor que has hecho?",
+      "category": "d055a7b5-9fed-473d-af29-58367e5c76fc",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "73303f42-5d89-485a-a25f-0fcd22f33c14",
+      "content" : "¿Tienes algún antecedente criminal?",
+      "category": "d055a7b5-9fed-473d-af29-58367e5c76fc",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "1f32b85b-7dcd-41c5-8b9d-bc7e3d904f79",
+      "content" : "¿Cuál fue el momento en que más te asustaste o pasaste miedo?",
+      "category": "d055a7b5-9fed-473d-af29-58367e5c76fc",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "26670ef4-cf65-4f06-96ed-70aeb6c6b092",
+      "content" : "¿Cuál es la cosa más embarazosa que has hecho?",
+      "category": "d055a7b5-9fed-473d-af29-58367e5c76fc",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "c9c6ab46-6167-4de9-8b03-7bbb88c97c1a",
+      "content" : "¿Cuál es tu mejor recuerdo?",
+      "category": "d055a7b5-9fed-473d-af29-58367e5c76fc",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "a3018cc9-790c-4f51-9e23-3ee186a44102",
+      "content" : "¿Cuál es tu peor recuerdo?",
+      "category": "d055a7b5-9fed-473d-af29-58367e5c76fc",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "a5737452-49f0-4b39-8e52-85cdff43ef25",
+      "content" : "¿Eres optimista o pesimista?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "ce3b8149-0d04-4ef5-a89c-5e58f1524829",
+      "content" : "¿Cuál es tu mayor temor?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "6744eb45-0b6e-4ba9-b7b3-3c13da5e99cc",
+      "content" : "¿Cuáles son tus puntos de vista sobre la religión?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "e5de7a83-d671-4338-b762-09b08017de38",
+      "content" : "¿Cuáles son tus puntos de vista sobre la política?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "f0ee5119-8af9-4c89-b7b2-1985aa1ba382",
+      "content" : "¿Cuáles son tus puntos de vista sobre el sexo?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "4b025991-2de6-4f54-88ae-46081be27471",
+      "content" : "¿Podrías matar? ¿Bajo qué circunstancias encontrarías el matar algo aceptable o inaceptable?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "279e2807-0a04-42e7-bbc1-c834b284327f",
+      "content" : "En tu opinión, ¿qué es lo peor que alguien puede hacer?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "117ddde7-78e3-4c9e-a51a-08625e8adff0",
+      "content" : "¿Crees en la existencia de las 'almas gemelas' o el amor verdadero?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "0ff286f3-310f-45fa-b5c8-540840e9c3b9",
+      "content" : "¿Qué crees que hace a una vida exitosa?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "ac7665ef-5556-457f-be94-310c8dd592ff",
+      "content" : "¿Eres honesto/a a tus sentimientos y pensamientos(por ej. ¿Escondes tu verdadera forma de ser de los otros? ¿De qué forma?)?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "113132ae-7344-48f4-af0a-58d8a0993c03",
+      "content" : "¿Discriminas o tienes prejuicios?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "c4957090-0a8f-45bb-bd7d-ccad1cd41bc4",
+      "content" : "¿Hay algo que te niegas a hacer bajo cualquier circunstancia? ¿Por qué?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "70674418-8904-4c37-909a-a6580588f5b9",
+      "content" : "¿Por qué o quién, si es que hay, morirías (o harías otras cosas extremas)?",
+      "category": "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "6563e2a0-f38d-4544-a96a-e10e5a6de320",
+      "content" : "En general, ¿Cómo tratas a los otros (Atentamente, de forma ruda, manteniéndolos a distancia, etc.)?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "4e855f25-6ee0-44e5-a81d-4526db9619a3",
+      "content" : "¿Quién es la persona más importante en tu vida y por qué?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "300e2b2b-b011-4e1e-b97d-bf749c3254a8",
+      "content" : "¿A quién respetas más y por qué?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "eac9041c-6835-4d28-93de-a13c92830051",
+      "content" : "¿Quiénes son tus amigos/as? tienes un/a mejor amigo/a? Describe a esa gente.",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "a97ae26e-ec09-4642-91f7-f914c1dfd724",
+      "content" : "¿Tienes pareja o persona de afecto? Si es así, describe a esa persona.",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "7d643786-a576-44e0-bc87-c9e7156cfaac",
+      "content" : "¿Te has enamorado alguna vez? Si es así, describe lo sucedido.",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "78eff899-0501-4ea6-8436-652a0b6f2d86",
+      "content" : "¿Qué buscas en un/a potencial amante?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "116c021b-7ef3-4cbe-87bb-d5080e5bf40f",
+      "content" : "¿Eres cercano/a a tu familia tu familia?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "b117c4e2-bf70-499b-b87c-5ca65b445da9",
+      "content" : "¿Has iniciado tu propia familia? Descríbela, si no tienes, ¿te gustaría? ¿Por qué, o por qué no?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "e799c077-847f-4b05-b2f9-bff6728e3457",
+      "content" : "¿Cómo reaccionarias si estuvieras desesperad/a por ayuda?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "15795123-971b-4024-9d1b-a61fd5f43221",
+      "content" : "¿Confías en alguien para protegerte? ¿Quién, por qué?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "475b8023-e0a5-49a9-bea7-f119676a6911",
+      "content" : "Si murieras o te extraviaras, ¿quién te extrañaría?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "92395a7e-e573-439c-b59a-383f478b8757",
+      "content" : "¿Quién es la persona a la que más desprecias y por qué?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "12b63c54-c7fc-42da-a7b2-1b0d6bf77990",
+      "content" : "¿Tiendes a discutir con las personas, o a evitar conflictos?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "83318c6c-e98f-4736-bdfb-d7a3a7ca5427",
+      "content" : "¿Tiendes a tomar el rol de liderazgo en situaciones sociales?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "a0ab3d7f-7a9e-4eb9-99e3-d4ba15a98735",
+      "content" : "¿Te gusta interactuar con grandes grupos de gente? por qué o por qué no?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "63174221-8d18-49af-8acf-6f1757ac7fb7",
+      "content" : "¿Te importa lo que los demás piensen de ti?",
+      "category": "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {
+      "id" : "06a9f9bb-a134-4e21-b5f8-738eecca390e",
+      "content" : "¿Cuál es o son tu/s hobbie/s o pasatiempo/s favorito/s?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {   
+      "id" : "6e20ed5a-869a-4d28-a67a-2f37b7fbc0f7",
+      "content" : "¿Cuál es tu posesión más valiosa?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "badf9ac4-2ab2-4a77-b3ac-13424a902aae",
+      "content" : "¿Cuál es tu color favorito?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "21b9dca2-2d4f-4c4f-95a7-0ed6cb39ad2d",
+      "content" : "¿Cuál es tu comida favorita?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "b2488f33-026c-4f19-a242-64388c3f6838",
+      "content" : "Si lees, ¿Qué te gusta leer?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "9276a5c4-ce52-4bf9-8792-4e4df9a06082",
+      "content" : "¿Cuál es tu idea de buen entretenimiento?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "37ba54b8-9b98-4e17-9a75-2d3c5b79eebb",
+      "content" : "¿Fumas, bebes, o usas drogas? Si es así, ¿Por qué? ¿Quieres dejarlo/s?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "d84efa97-7d8e-46ba-bd91-73f32ab9b54c",
+      "content" : "¿Qué haces en tu típica noche del sábado?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "32af6f33-64c4-40df-be6a-38aea3bf04d2",
+      "content" : "¿Qué te hace reír?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "2b9d25a4-6bab-462c-ac0a-5718eeead9ff",
+      "content" : "¿Qué te impacta u ofende?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "240592be-7571-4ed7-944a-b60c6da12227",
+      "content" : "¿Qué harías si tuvieras insomnio y debieras encontrar algo para relajarte?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "a843b332-a93e-4437-8d37-7c60d17365e1",
+      "content" : "¿Te estresas con gacilidad?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "dc7e2912-50e2-4c06-b2ba-d331c2cfae67",
+      "content" : "¿Eres espontáneo/a, o siempre necesitas planear?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "8812c80b-dc76-4039-bebc-4197fac2303e",
+      "content" : "¿Qué te hace enfadar?",
+      "category": "d935bcfb-0516-491b-922d-1087cfaad701",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "96466a2b-cf49-448e-b1a6-932736d84dc4",
+      "content" : "Describe la rutina de un día normal para ti. ¿Cómo te sientes cuando esa rutina se ve interrumpida?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, {  
+      "id" : "09e3df19-a436-45a5-b909-c64c54cbcc1b",
+      "content" : "¿Cuál es tu más grande fortaleza como persona?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "086fd3a6-c6f3-458e-9d24-aa632b0af551",
+      "content" : "¿Cuál es tu mayor debilidad?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "96bff680-6719-4a15-8939-1acd045f0f39",
+      "content" : "Si pudieras cambiar algo de ti mismo/a, ¿qué sería?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "fc44ac79-a982-46fe-b4ba-8cb188bb3f26",
+      "content" : "Generalmente, ¿Eres introvertido/a o extrovertido/a?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "cafb7865-f127-4830-a157-7126f30146d0",
+      "content" : "Generalmente, ¿Eres ordenado/a o desordenado/a?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "6b5f4f67-ff38-4cb3-b054-f705e62e2295",
+      "content" : "Nombra tres cosas en las que te consideres muy bueno/a, y tres en las que te consideres muy malo/a.",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "01fc80dd-5436-4b28-bb30-2f7954cbc1a2",
+      "content" : "¿Te gusta como eres?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "3f0ce0ef-1383-4cf2-a0ec-51a2a47403c6",
+      "content" : "¿Cuáles son tus razones para ser un/a aventurero/a? Las razones reales por las que lo haces, ¿difieren de las que dices en publico? (Si es así, detalla ambos grupos de razones)",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "444c0162-3312-4e6c-8370-2d7782ed12e6",
+      "content" : "¿Cuál es la meta que más deseas cumplir en tu vida?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "e5f36b29-9643-48d2-bb8d-8f00656707bc",
+      "content" : "¿Dónde te ves dentro de 5 años?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "211d6157-37eb-46a2-bb05-97fb96c087a0",
+      "content" : "Si pudieras elegirlo, ¿Cómo te gustaría morir?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "7702d868-79ad-4f8d-97b4-7cc9ae1b0362",
+      "content" : "Sabes que vas a morir en 24 horas, nombra tres cosas que harías antes de que se te acabe el tiempo.",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "a416262c-58e9-4603-97dd-e478fce48f9b",
+      "content" : "¿Qué te gustaría que recordasen después de tu muerte?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "8499c1bd-3fbb-44fe-a751-ea651aa1cd04",
+      "content" : "¿Qué tres palabras describen mejor tu personalidad?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }, { 
+      "id" : "ecad4735-18d4-4c29-9cbc-b7d0e6a1785e",
+      "content" : "¿Qué tres palabras usarían los otros para describirte?",
+      "category": "9241eaf4-a82b-4879-b401-819027f8cc40",
+      "questionnaire": "7265957a-d8d6-4105-9f56-7ff6c371634e"
+    }
+  ]
+}

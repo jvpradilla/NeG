@@ -4,6 +4,7 @@ import { UserRepository } from "../../domain/UserRepository";
 
 export class MockUserRepository implements UserRepository {
   
+  
   private users: User[] = [];
 
   public async findByUserName(pUserName: UserName): Promise<User | undefined> {
@@ -12,5 +13,10 @@ export class MockUserRepository implements UserRepository {
 
   public async save(user: User): Promise<void> {
     this.users.push(user);
+  }
+
+  public async update(pUser: User): Promise<void> {
+    pUser;
+    throw new Error("Method not implemented.");
   }
 }

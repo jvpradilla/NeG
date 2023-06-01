@@ -1,0 +1,26 @@
+{
+  "categories": [
+    {
+      "id" : "7c9c37ec-e5e2-40eb-8672-f281af52b5b7",
+      "name" : "Basico"
+    }, {
+      "id" : "3a882c75-d8e5-42eb-a01e-773558322a94",
+      "name" : "Crecimiento"
+    }, {
+      "id" : "d055a7b5-9fed-473d-af29-58367e5c76fc",
+      "name" : "Influencias pasadas"
+    }, {
+      "id" : "a0b2e232-29af-48ad-8d2e-12920b458434",
+      "name" : "Creencias y opiniones"
+    }, {
+      "id" : "43aa0d8d-33ee-456f-9ada-707b92dd8f77",
+      "name" : "Relaciones"
+     }, {
+      "id" : "d935bcfb-0516-491b-922d-1087cfaad701",
+      "name" : "Gustos y desagrados"
+     }, {
+        "id" : "9241eaf4-a82b-4879-b401-819027f8cc40",
+        "name" : "Imagen personal y otros"
+     }
+  ]
+}

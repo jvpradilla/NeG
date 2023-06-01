@@ -7,6 +7,14 @@ import { PostgreSQLUserRepository } from "./user/infrastructure/repository/Postg
 import CharacterRoutes from "./character/infrastructure/route/CharacterRoutes";
 import { PostgreSQLCharacterRepository } from "./character/infrastructure/repository/PostgreSQLCharacterRepository";
 
+import { loadQuestionnaire, loadCategories, loadQuestion } from "./util/LoadJSONData";
+import { MockQuestionnaireRepository } from "./questionnaire/infrastructure/repository/MockQuestionnaireRepository";
+import { QuestionnaireController } from "./questionnaire/infrastructure/controller/QuestionnaireController";
+import { CategoryController } from "./category/infrastructure/controller/CategoryController";
+import { MockCategoryRepository } from "./category/infrastructure/repository/MockCategoryRepository";
+import { MockQuestionRepository } from "./question/infrastructure/repository/MockQuestionRepository";
+import { QuestionController } from "./question/infrastructure/controller/QuestionController";
+
 import { Router, Request, Response } from "express";
 import fs from "fs";
 
@@ -18,6 +26,15 @@ APP.use(express.json());
 APP.use(fileUpload());
 
 APP.use("/public", express.static(`${__dirname}/public`));
+
+const questionnaireController = new QuestionnaireController(new MockQuestionnaireRepository());
+loadQuestionnaire(questionnaireController);
+
+const categoriesController = new CategoryController(new MockCategoryRepository());
+loadCategories(categoriesController);
+
+const questionController = new QuestionController(new MockQuestionRepository());
+loadQuestion(questionnaireController, categoriesController, questionController);
 
 new UserRoutes(new PostgreSQLUserRepository()).registerRoutes("/user", APP);
 new CharacterRoutes(new PostgreSQLCharacterRepository()).registerRoutes("/character", APP);
