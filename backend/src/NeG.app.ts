@@ -7,13 +7,15 @@ import { PostgreSQLUserRepository } from "./user/infrastructure/repository/Postg
 import CharacterRoutes from "./character/infrastructure/route/CharacterRoutes";
 import { PostgreSQLCharacterRepository } from "./character/infrastructure/repository/PostgreSQLCharacterRepository";
 
-import { loadQuestionnaire, loadCategories, loadQuestion } from "./util/LoadJSONData";
 import { JSONQuestionnaireRepository } from "./questionnaire/infrastructure/repository/JSONQuestionnaireRepository";
 import { QuestionnaireController } from "./questionnaire/infrastructure/controller/QuestionnaireController";
-import { CategoryController } from "./category/infrastructure/controller/CategoryController";
 import { JSONCategoryRepository } from "./category/infrastructure/repository/JSONCategoryRepository";
+import { CategoryController } from "./category/infrastructure/controller/CategoryController";
 import { JSONQuestionRepository } from "./question/infrastructure/repository/JSONQuestionRepository";
 import { QuestionController } from "./question/infrastructure/controller/QuestionController";
+import QuestionnaireRoutes from "./questionnaire/infrastructure/route/QuestionnaireRoutes";
+import loadJSONData from "./util/LoadJSONData";
+
 
 import { Router, Request, Response } from "express";
 import fs from "fs";
@@ -27,17 +29,15 @@ APP.use(fileUpload());
 
 APP.use("/public", express.static(`${__dirname}/public`));
 
-const questionnaireController = new QuestionnaireController(new JSONQuestionnaireRepository());
-loadQuestionnaire(questionnaireController);
-
+const questionnairesRepository = new JSONQuestionnaireRepository();
+const questionnaireController = new QuestionnaireController(questionnairesRepository);
 const categoriesController = new CategoryController(new JSONCategoryRepository());
-loadCategories(categoriesController);
-
 const questionController = new QuestionController(new JSONQuestionRepository());
-loadQuestion(questionnaireController, categoriesController, questionController);
+loadJSONData(questionnaireController, categoriesController, questionController);
 
 new UserRoutes(new PostgreSQLUserRepository()).registerRoutes("/user", APP);
 new CharacterRoutes(new PostgreSQLCharacterRepository()).registerRoutes("/character", APP);
+new QuestionnaireRoutes(questionnairesRepository).registerRoutes("/questionnaire", APP);
 
 /*const blobToFile = (theBlob: Blob, fileName:string): File => {       
   return new File(

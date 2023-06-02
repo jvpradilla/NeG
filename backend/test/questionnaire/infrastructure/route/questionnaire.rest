@@ -1,0 +1,10 @@
+@PROTOCOL = HTTP
+@PROTOCOL_VERSION = 1.1
+@HOSTNAME = localhost
+@PORT = 5000
+@CONTENT_TYPE_JSON = application/json
+@CONTENT_TYPE_FORM = multipart/form-data
+@PATH = questionnaire
+
+### Get all questionnaires
+GET {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}}?quantity=35 {{PROTOCOL}}/{{PROTOCOL_VERSION}}

@@ -3,33 +3,33 @@ import { QuestionnaireController } from "../questionnaire/infrastructure/control
 import { CategoryController } from "../category/infrastructure/controller/CategoryController";
 import { QuestionController } from "../question/infrastructure/controller/QuestionController";
 
-export const loadQuestionnaire = (pQuestionnaireController: QuestionnaireController): void => {
+const loadQuestionnaire = (pQuestionnaireController: QuestionnaireController): void => {
   fs.readFile(process.cwd() + "/public/data/questionnaire.json", (err, data) => {
     if (err) {
       throw new Error("Error reading questionnaire.json");
     }
     const questionnairesData = JSON.parse(data.toString());
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    questionnairesData.questionnaires.forEach((questionnaire: any) => {
-      pQuestionnaireController.create(questionnaire.id, questionnaire.name);
+    questionnairesData.questionnaires.forEach(async (questionnaire: any) => {
+      await pQuestionnaireController.create(questionnaire.id, questionnaire.name);
     });
   });
 };
 
-export const loadCategories = (pCategoryController: CategoryController): void => {
+const loadCategories = (pCategoryController: CategoryController): void => {
   fs.readFile(process.cwd() + "/public/data/category.json", (err, data) => {
     if (err) {
       throw new Error("Error reading category.json");
     }
     const categoriesData = JSON.parse(data.toString());
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    categoriesData.categories.forEach((category: any) => {
-      pCategoryController.create(category.id, category.name);
+    categoriesData.categories.forEach(async (category: any) => {
+      await pCategoryController.create(category.id, category.name);
     });
   });
 };
 
-export const loadQuestion = (pQuestionnaireController: QuestionnaireController, pCategoryController: CategoryController, pQuestionController: QuestionController): void => {
+const loadQuestion = (pQuestionnaireController: QuestionnaireController, pCategoryController: CategoryController, pQuestionController: QuestionController): void => {
   fs.readFile(process.cwd() + "/public/data/question.json", (err, data) => {
     if (err) {
       throw new Error("Error reading category.json");
@@ -42,7 +42,15 @@ export const loadQuestion = (pQuestionnaireController: QuestionnaireController, 
       if(!category || !questionnaire) {
         throw new Error("Error reading category.json");
       }
-      pQuestionController.create(question.id, question.content, category, questionnaire);
+      await pQuestionController.create(question.id, question.content, category, questionnaire);
     });    
   });
 };
+
+export const loadJSONData =  async (pQuestionnaireController: QuestionnaireController, pCategoryController: CategoryController, pQuestionController: QuestionController): Promise<void> => {
+  await loadQuestionnaire(pQuestionnaireController);
+  await loadCategories(pCategoryController);
+  await loadQuestion(pQuestionnaireController, pCategoryController, pQuestionController);
+};
+
+export default loadJSONData;
