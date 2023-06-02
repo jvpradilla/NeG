@@ -2,15 +2,16 @@
 
 import CharacterType from "@/components/CharacterType";
 import AnswerRecorder from "../../../../../components/AnswerRecorder";
-import { createCharacter } from "../../../../../services/CharacterService";
+import { createCharacter, readQuestions } from "../../../../../services/CharacterService";
 import { useState } from "react";
 
 export default function CharacterCreate () {
 
   const [characterType, setCharacterType] = useState(0);
+  const [questions, setQuestions] = useState([]);
 
   const handleSubmit = async () => {
-    await createCharacter();
+    await createCharacter();    
   };
 
   const handleVideoSave = async (pBlob: Blob) => {
@@ -30,9 +31,9 @@ export default function CharacterCreate () {
     }
   };
 
-  const handleCharacterTypeChange = (pCharacterType: number) => {
-    console.log(pCharacterType);
+  const handleCharacterTypeChange = async (pCharacterType: number) => {
     setCharacterType(pCharacterType);
+    setQuestions(await readQuestions(pCharacterType));
   };
 
   return (

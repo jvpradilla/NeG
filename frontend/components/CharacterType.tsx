@@ -8,9 +8,9 @@ export default function CharacterType(props: { onCharacterTypeChange: (pCharacte
  
   return (
     <div>
-     <button value={1} onClick={handleChange}>Sencillo</button>
-     <button value={2} onClick={handleChange}>Natural</button>
-     <button value={3} onClick={handleChange}>Complejo</button>
+     <button value={35} onClick={handleChange}>Sencillo</button>
+     <button value={70} onClick={handleChange}>Natural</button>
+     <button value={98} onClick={handleChange}>Complejo</button>
     </div>
   );
 }

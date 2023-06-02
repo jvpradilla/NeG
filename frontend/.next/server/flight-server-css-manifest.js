@@ -8,10 +8,10 @@ self.__RSC_CSS_MANIFEST={
     "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/[userID]/character/create/page": [
       "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css"
     ],
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/info/page": [
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/page": [
       "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css"
     ],
-    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/page": [
+    "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/info/page": [
       "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/globals.css"
     ],
     "/home/juan_vicente/Downloads/NeG/Implementacion/UAO/NeG/frontend/app/(user)/[userID]/page": [

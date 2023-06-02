@@ -1,5 +1,5 @@
 import Webcam from "react-webcam";
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useRef, useState, useEffect } from "react";
 import { on } from "events";
 import AnswerRecorderBar from "./AnswerRecorderBar";
 
@@ -20,43 +20,13 @@ export default function RecordVideo(props: { onVideoSave: (pBlob: Blob) => void}
   };
 
   const handleDataAvailable = useCallback(( data: any ) => {
-      console.log(data.data);
       if (data.data.size > 0) {
         setRecordedChunks((prev) => prev.concat(data.data));
       }
   }, [setRecordedChunks]);
 
-  const handleDownload = useCallback(() => {
-    if (recordedChunks.length) {
-
-      const blob = new Blob(recordedChunks, {
-        type: "video/webm;codecs=vp9,opus",
-      });
-
-      props.onVideoSave(blob);
-
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      document.body.appendChild(a);
-      a.href = url;
-      a.download = "react-webcam-stream-capture.webm";
-      a.click();
-      window.URL.revokeObjectURL(url);
-      setRecordedChunks([]);
-    }
-  }, [recordedChunks]);
-
   const handleRecordStartAnswer = () => {
-    const video = webCamRef.current as Webcam;
-    const stream = video.stream as MediaStream;
-    mediaRecorderRef.current = new MediaRecorder(stream, {
-      mimeType: "video/webm;codecs=vp9,opus"
-    });
-    mediaRecorderRef.current.addEventListener(
-      "dataavailable",
-      handleDataAvailable
-    );
-    mediaRecorderRef.current.start();
+    mediaRecorderRef?.current?.start();
     console.log("grabando");
   };
 
@@ -87,17 +57,28 @@ export default function RecordVideo(props: { onVideoSave: (pBlob: Blob) => void}
       });
 
       props.onVideoSave(blob);
-
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      document.body.appendChild(a);
-      a.href = url;
-      a.download = "react-webcam-stream-capture.webm";
-      a.click();
-      window.URL.revokeObjectURL(url);
-      setRecordedChunks([]);
     }
   };
+
+  let index = 0;
+  const init = async () => {
+    index = index + 1;
+    console.log("init", index);
+    const video = webCamRef.current as Webcam;    
+    const stream = video?.stream as MediaStream;
+    console.log(video);
+      console.log(stream);
+    if (stream) {
+     
+      mediaRecorderRef.current = new MediaRecorder(stream, {mimeType: "video/webm;codecs=vp9,opus"});
+      mediaRecorderRef.current.addEventListener("dataavailable", handleDataAvailable);
+    }
+  };
+
+  /*useEffect(() => {    
+    init();
+  });*/
+  init();
 
   return (
     <div>
