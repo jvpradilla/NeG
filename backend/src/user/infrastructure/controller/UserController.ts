@@ -1,4 +1,4 @@
-import { EditUser } from "../../application/EditUser";
+import { UpdateUser } from "../../application/UpdateUser";
 import { LoginUser } from "../../application/LoginUser";
 import { CreateUser } from "../../application/CreateUser";
 import { User } from "../../domain/User";
@@ -9,12 +9,12 @@ import { UserRepository } from "../../domain/UserRepository";
 export class UserController {
   private createUser: CreateUser;
   private loginUser: LoginUser;
-  private editUser: EditUser;
+  private updateUser: UpdateUser;
 
   constructor(pUserRepository : UserRepository) {
     this.createUser = new CreateUser(pUserRepository);
     this.loginUser = new LoginUser(pUserRepository);
-    this.editUser = new EditUser(pUserRepository);
+    this.updateUser = new UpdateUser(pUserRepository);
   }
 
   public async create(pUserName: string, pPassword: string, pUserPhotoURL?: string): Promise<void> {
@@ -33,6 +33,6 @@ export class UserController {
     const userName = new UserName(pUserName);
     const password = new UserPassword(pPassword);
     const passwordNew = new UserPassword(pPasswordNew);
-    await this.editUser.execute(userName, password, passwordNew, pUserPhotoURLNew);
+    await this.updateUser.execute(userName, password, passwordNew, pUserPhotoURLNew);
   }
 }

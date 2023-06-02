@@ -4,7 +4,7 @@ import { UserPassword } from "../domain/UserPassword";
 import { UserRepository } from "../domain/UserRepository";
 
 
-export class EditUser {
+export class UpdateUser {
   constructor(private readonly userRepository: UserRepository) {}
 
   public async execute(pUserName: UserName, pPassword: UserPassword, pPasswordNew: UserPassword, pUserPhotoURLNew?: string): Promise<void> {

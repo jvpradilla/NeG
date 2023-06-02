@@ -2,7 +2,7 @@ import { Category } from "../../domain/Category";
 import { CategoryId } from "../../domain/CategoryId";
 import { CategoryRepository } from "../../domain/CategoryRepository";
 
-export class MockCategoryRepository implements CategoryRepository{
+export class JSONCategoryRepository implements CategoryRepository{
 
   private categories: Category[] = [];
 

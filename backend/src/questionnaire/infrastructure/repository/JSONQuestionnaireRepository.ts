@@ -2,7 +2,7 @@ import { Questionnaire } from "../../domain/Questionnaire";
 import { QuestionnaireId } from "../../domain/QuestionnaireId";
 import { QuestionnaireRepository } from "../../domain/QuestionnaireRepository";
 
-export class MockQuestionnaireRepository implements QuestionnaireRepository{
+export class JSONQuestionnaireRepository implements QuestionnaireRepository{
 
   private questionnaires: Questionnaire[] = [];
 
