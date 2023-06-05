@@ -1,15 +1,20 @@
 {
   "pages": {
+    "/(user)/[userID]/character/create/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(user)/[userID]/character/create/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(user)/[userID]/character/create/page": [
+    "/(user)/[userID]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(user)/[userID]/character/create/page.js"
+      "static/chunks/app/(user)/[userID]/page.js"
     ],
     "/page": [
       "static/chunks/webpack.js",
@@ -20,11 +25,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/info/page.js"
-    ],
-    "/(user)/[userID]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(user)/[userID]/page.js"
     ]
   }
 }

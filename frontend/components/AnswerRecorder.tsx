@@ -19,21 +19,28 @@ export default function RecordVideo(props: { onVideoSave: (pBlob: Blob) => void}
     facingMode:  "user"
   };
 
-  const handleDataAvailable = useCallback(( data: any ) => {
-      if (data.data.size > 0) {
-        setRecordedChunks((prev) => prev.concat(data.data));
-      }
-  }, [setRecordedChunks]);
-
   const handleRecordStartAnswer = () => {
-    mediaRecorderRef?.current?.start();
-    console.log("grabando");
+    if(mediaRecorderRef.current === undefined) {        
+      const video = webCamRef.current as Webcam
+      const stream = video?.stream as MediaStream;
+      mediaRecorderRef.current = new MediaRecorder(stream, {mimeType: "video/webm;codecs=vp9,opus"});
+      mediaRecorderRef.current.ondataavailable = (event) => {
+        props.onVideoSave(event.data);
+        setRecordedChunks([]);
+        mediaRecorderRef.current = undefined;
+      };
+      mediaRecorderRef.current.start();
+      console.log("start");
+    } else {
+      mediaRecorderRef.current.resume();
+      console.log("resume");
+    }  
   };
 
   const handleRecordStopAnswer = () => {
     if (mediaRecorderRef.current) {
-      mediaRecorderRef.current.stop();
-      console.log("parando");
+      mediaRecorderRef.current.pause();
+      console.log("pause");
     }
   };
 
@@ -47,38 +54,15 @@ export default function RecordVideo(props: { onVideoSave: (pBlob: Blob) => void}
 
   const handleDeleteAnswer = () => {
     setRecordedChunks([]);
+    mediaRecorderRef.current = undefined;
   };
 
   const handleUploadAnswer = () => {
-    if (recordedChunks.length) {
-
-      const blob = new Blob(recordedChunks, {
-        type: "video/webm;codecs=vp9,opus",
-      });
-
-      props.onVideoSave(blob);
+    if (mediaRecorderRef.current) {
+      mediaRecorderRef.current.stop();
+      console.log("stop");
     }
   };
-
-  let index = 0;
-  const init = async () => {
-    index = index + 1;
-    console.log("init", index);
-    const video = webCamRef.current as Webcam;    
-    const stream = video?.stream as MediaStream;
-    console.log(video);
-      console.log(stream);
-    if (stream) {
-     
-      mediaRecorderRef.current = new MediaRecorder(stream, {mimeType: "video/webm;codecs=vp9,opus"});
-      mediaRecorderRef.current.addEventListener("dataavailable", handleDataAvailable);
-    }
-  };
-
-  /*useEffect(() => {    
-    init();
-  });*/
-  init();
 
   return (
     <div>
