@@ -7,8 +7,15 @@ export class PostgreSQLCharacterRepository implements CharacterRepository {
   private prisma = new PrismaClient();
 
   public async findByCharacterId(pCharacterId: CharacterId): Promise<Character | undefined> {
-    pCharacterId;
-    return undefined;
+    const result = await this.prisma.character.findUnique({
+      where: {
+        id: pCharacterId.value
+      }
+    });
+    if (result === null || result === undefined) {
+      return undefined;
+    }
+    return new Character(new CharacterId(result.id));
   }
 
   public async save(pCharacter: Character): Promise<void> {

@@ -15,19 +15,19 @@ import { JSONQuestionRepository } from "./question/infrastructure/repository/JSO
 import { QuestionController } from "./question/infrastructure/controller/QuestionController";
 import QuestionnaireRoutes from "./questionnaire/infrastructure/route/QuestionnaireRoutes";
 import loadJSONData from "./util/LoadJSONData";
-
-
-import { Router, Request, Response } from "express";
-import fs from "fs";
+import AnswerRoutes from "./answer/infrastructure/route/AnswerRoutes";
+import { PostgreSQLAnswerRepository } from "./answer/infrastructure/repository/PostgreSQLAnswerRepository";
 
 const PORT = process.env.PORT || 5001;
 
 const APP = express();
+
 APP.use(cors());
 APP.use(express.json());
 APP.use(fileUpload());
+APP.use(express.raw({ limit: "10mb" }));
 
-APP.use("/public", express.static(`${__dirname}/public`));
+APP.use("/public", express.static(`${__dirname}/../public/`));
 
 const questionnairesRepository = new JSONQuestionnaireRepository();
 const questionnaireController = new QuestionnaireController(questionnairesRepository);
@@ -37,30 +37,7 @@ loadJSONData(questionnaireController, categoriesController, questionController);
 
 new UserRoutes(new PostgreSQLUserRepository()).registerRoutes("/user", APP);
 new CharacterRoutes(new PostgreSQLCharacterRepository()).registerRoutes("/character", APP);
+new AnswerRoutes(new PostgreSQLAnswerRepository()).registerRoutes("/answer", APP);
 new QuestionnaireRoutes(questionnairesRepository).registerRoutes("/questionnaire", APP);
 
-/*const blobToFile = (theBlob: Blob, fileName:string): File => {       
-  return new File(
-    [theBlob as any], // cast as any
-    fileName, 
-    {
-      lastModified: new Date().getTime(),
-      type: theBlob.type 
-    }
-  );
-};*/
-
-APP.post("/seed", express.raw({ limit: "10mb" }), (pRequest: Request, pResponse: Response) => {
-  /*const f: File = blobToFile(pRequest.body, "video.webm");
-  console.log(f);*/
-  const uploadPath = "public/uploads/user/avatar/video.webm";
-  //const uploadURL = `/${uploadPath}` ;
-  fs.writeFile(uploadPath, Buffer.from(pRequest.body), (err) => {
-    console.log(err);
-  });
- 
-});
-
-
 APP.listen(PORT, () => console.log(`Server ready on port: ${PORT}`));
-

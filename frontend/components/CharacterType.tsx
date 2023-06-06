@@ -1,10 +1,8 @@
 export default function CharacterType(props: { onCharacterTypeChange: (pCharacterType: number) => void }) {
 
-
   const handleChange = (e: React.MouseEvent<HTMLButtonElement>) => {
     props.onCharacterTypeChange(e.currentTarget.value as unknown as number);
   };
-
  
   return (
     <div>

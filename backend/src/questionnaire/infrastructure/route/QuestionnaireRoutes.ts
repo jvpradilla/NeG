@@ -15,8 +15,7 @@ export default class QuestionnaireRoutes {
   public registerRoutes(pPath: string, pRouter: Router): void {
     pRouter.get(pPath, async (pRequest: Request, pResponse: Response) => {
       try {
-        const quantity = pRequest.query.quantity as unknown as number;
-       
+        const quantity = pRequest.query.quantity as unknown as number;       
         const questionsData = await this.controller.readQuestionsByQuantity(quantity);
         
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -29,7 +28,7 @@ export default class QuestionnaireRoutes {
             category: question.category.name.value
           });
         });
-
+        
         pResponse.status(200).json({questions});
       } catch (err) {
         const typedError = err as Error;

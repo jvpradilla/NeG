@@ -2,7 +2,7 @@
 
 import CharacterType from "@/components/CharacterType";
 import AnswerRecorder from "../../../../../components/AnswerRecorder";
-import { createCharacter, readQuestions } from "../../../../../services/CharacterService";
+import { createAnswer, createCharacter, readQuestions } from "../../../../../services/CharacterService";
 import { useState } from "react";
 
 export default function CharacterCreate () {
@@ -14,26 +14,15 @@ export default function CharacterCreate () {
     await createCharacter();    
   };
 
-  const handleVideoSave = async (pBlob: Blob) => {
-    console.log(pBlob);
-    console.log("handleVideoSave");
-    const response = await fetch("http://localhost:5000/seed", {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/octet-stream',
-      },
-      body: pBlob
-    });
-    if( response.status !== 200 ) {
-      console.log(await response.json());
-    } else {
-      return (await response.json()).url as string;    
-    }
+  const handleVideoSave = async (pQuestionId: string, pBlob: Blob) => {
+    createAnswer(pQuestionId, pBlob);
   };
 
   const handleCharacterTypeChange = async (pCharacterType: number) => {
     setCharacterType(pCharacterType);
-    setQuestions(await readQuestions(pCharacterType));
+    const questionsData = await readQuestions(pCharacterType);
+    //console.log("Data: ", questionsData.questions);
+    setQuestions(questionsData.questions);
   };
 
   return (
@@ -43,7 +32,7 @@ export default function CharacterCreate () {
       { characterType === 0 ? (
         <CharacterType onCharacterTypeChange={handleCharacterTypeChange}/>
       ) : (
-        <AnswerRecorder onVideoSave={handleVideoSave} />
+        <AnswerRecorder onVideoSave={handleVideoSave} questions={questions}/>
       )}
     </div>
   );

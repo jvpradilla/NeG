@@ -39,7 +39,7 @@ export default class UserRoutes {
       }
     });
   
-    pRouter.post(pPath+"/avatar", async (pRequest: Request, pResponse: Response) => {
+    pRouter.post(pPath + "/avatar", async (pRequest: Request, pResponse: Response) => {
       if (!pRequest.files || Object.keys(pRequest.files).length === 0 || !pRequest.files?.file) {
         return pResponse.status(400).json({ error: "No files were uploaded"});
       }    

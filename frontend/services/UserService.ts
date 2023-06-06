@@ -57,7 +57,7 @@ export const updateUser = async (pUsername: string, pPassword: string, pPassword
     body: JSON.stringify(user)
   });
   
-  if( response.status !== 200 ) {
+  if (response.status !== 200) {
     console.log(await response.json());
     return false;
   } else {
@@ -83,7 +83,6 @@ export const loginUser = async (pUsername: string, pPassword: string) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
   });
-  
   
   if( response.status !== 200 ) {
     console.log(await response.json());
