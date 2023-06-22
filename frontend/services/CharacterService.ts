@@ -25,7 +25,7 @@ export const createAnswer = async (pQuestionId: string, pAnswer: Blob) => {
       },
       body: pAnswer
     });
-    if( response.status !== 200 ) {
+    if (response.status !== 200) {
       console.log(await response.json());
     } else {
       const answerVideoURLData = (await response.json()).url as string;  
@@ -35,16 +35,15 @@ export const createAnswer = async (pQuestionId: string, pAnswer: Blob) => {
         questionId: pQuestionId,
         answerVideoURL: answerVideoURLData
       };
-
       const responseAnswer = await fetch("http://localhost:5000/answer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(answer)
-      });
-  
+      });  
       if( responseAnswer.status !== 200 ) {
         console.log(await responseAnswer.json());
       } else {
+        console.log(answerId);
         console.log("Answer created");
       }
     }

@@ -21,20 +21,28 @@ export default function UserLogin () {
     await loginUser(username, password);
   };
 
+  const handleSeePassword = async () => {
+    const type =  document.getElementById("password")?.getAttribute("type") === "password" ? "text" : "password";
+    document.getElementById("password")?.setAttribute("type", type);
+  };
+
   return (
     <div>
-    <form>
       <h1>User - Login</h1>
-      <label>
-        <span>Nombre de usuario</span>
-      </label>
-      <input id="username" type="text" autoComplete="off" placeholder="Nombre de usuario" autoFocus onChange={usernameHandler}/>
-      <label>
-        <span>Contraseña</span>
-      </label>
-      <input id="password" type="password" autoComplete="off" onChange={passwordHandler}/>
+      <p>
+        <label>
+          <span>Nombre de usuario</span>
+        </label>
+        <input id="username" type="text" autoComplete="off" placeholder="Nombre de usuario" autoFocus onChange={usernameHandler}/>
+      </p>
+      <p>
+        <label>
+          <span>Contraseña</span>
+        </label>
+        <input id="password" type="password" autoComplete="off" onChange={passwordHandler}/>
+        <i id="togglePassword" onClick={handleSeePassword}>Ojo</i>
+      </p>
       <button type="button" onClick={handleSubmit}>Iniciar Sesión</button>
-    </form>
     <Link href="/user/create">Crear Perfil</Link>
     </div>
   );
