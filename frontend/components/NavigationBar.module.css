@@ -1,24 +1,23 @@
 .container {
-  background-color: blue;
   position: absolute;
   width: 100%;
-  height: 60px;
+  height: 64px;
   bottom: 0;
   left: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .navigation {
-  background-color: aqua;
+  background-color:  #6b9996;
   position: absolute;
+  border-radius: 0px 0px 32px 32px;
+  padding: 0px 24px;
 }
 
 .navigation_item {
-  background-color: red;
   display: inline-block;
-  text-align: center;
-  padding: 14px;
   text-decoration: none;
+  vertical-align: middle;
+  padding: 8px 24px;
 }

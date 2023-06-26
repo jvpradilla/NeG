@@ -8,9 +8,15 @@
 body {
   display: flex;
   height: 100vh;
-  align-items: center;
   justify-content: center;
-  background-color: #fdfcf5;
+  background-color: #6b9996;
   color: #1b1c18;  
   font-size: 16px;
+}
+
+main {
+  position: absolute;
+  bottom: 64px;
+  background-color: #FEFCF6;
+  border-radius: 0px 0px 32px 32px;
 }

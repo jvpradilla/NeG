@@ -773,12 +773,12 @@ self.__RSC_MANIFEST={
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
-    "/home/juanvx/Downloads/NeG/frontend/app/layout": [
+    "/Users/juanvx/Downloads/NeG/frontend/app/layout": [
       "static/css/app/layout.css"
     ]
   },
   "clientModules": {
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "*",
       "chunks": [
@@ -786,7 +786,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "*",
       "chunks": [
@@ -794,7 +794,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "",
       "chunks": [
@@ -802,7 +802,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "",
       "chunks": [
@@ -810,15 +810,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#CacheStates": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
-      "name": "CacheStates",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#CacheStates": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#CacheStates": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "CacheStates",
       "chunks": [
@@ -826,7 +818,15 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#AppRouterContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#CacheStates": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
+      "name": "CacheStates",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#AppRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "AppRouterContext",
       "chunks": [
@@ -834,7 +834,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#AppRouterContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#AppRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "AppRouterContext",
       "chunks": [
@@ -842,7 +842,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#LayoutRouterContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#LayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "LayoutRouterContext",
       "chunks": [
@@ -850,7 +850,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#LayoutRouterContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#LayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "LayoutRouterContext",
       "chunks": [
@@ -858,7 +858,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "GlobalLayoutRouterContext",
       "chunks": [
@@ -866,7 +866,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#GlobalLayoutRouterContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "GlobalLayoutRouterContext",
       "chunks": [
@@ -874,7 +874,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#TemplateContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/app-router-context.js#TemplateContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "TemplateContext",
       "chunks": [
@@ -882,7 +882,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#TemplateContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/app-router-context.js#TemplateContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/app-router-context.js",
       "name": "TemplateContext",
       "chunks": [
@@ -890,7 +890,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/hooks-client-context.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/hooks-client-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "*",
       "chunks": [
@@ -898,7 +898,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/hooks-client-context.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/hooks-client-context.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "*",
       "chunks": [
@@ -906,7 +906,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/hooks-client-context.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/hooks-client-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "",
       "chunks": [
@@ -914,7 +914,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "",
       "chunks": [
@@ -922,15 +922,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/hooks-client-context.js#SearchParamsContext": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
-      "name": "SearchParamsContext",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#SearchParamsContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/hooks-client-context.js#SearchParamsContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "SearchParamsContext",
       "chunks": [
@@ -938,7 +930,15 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/hooks-client-context.js#PathnameContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#SearchParamsContext": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
+      "name": "SearchParamsContext",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/hooks-client-context.js#PathnameContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "PathnameContext",
       "chunks": [
@@ -946,7 +946,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#PathnameContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/hooks-client-context.js#PathnameContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/hooks-client-context.js",
       "name": "PathnameContext",
       "chunks": [
@@ -954,7 +954,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/server-inserted-html.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/server-inserted-html.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "*",
       "chunks": [
@@ -962,7 +962,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/server-inserted-html.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/server-inserted-html.js": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "*",
       "chunks": [
@@ -970,7 +970,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/server-inserted-html.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/server-inserted-html.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "",
       "chunks": [
@@ -978,7 +978,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "",
       "chunks": [
@@ -986,15 +986,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
-      "name": "ServerInsertedHTMLContext",
-      "chunks": [
-        "webpack:static/chunks/webpack.js"
-      ],
-      "async": false
-    },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "ServerInsertedHTMLContext",
       "chunks": [
@@ -1002,7 +994,15 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#ServerInsertedHTMLContext": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
+      "name": "ServerInsertedHTMLContext",
+      "chunks": [
+        "webpack:static/chunks/webpack.js"
+      ],
+      "async": false
+    },
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "useServerInsertedHTML",
       "chunks": [
@@ -1010,7 +1010,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/shared/lib/server-inserted-html.js#useServerInsertedHTML": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/server-inserted-html.js",
       "name": "useServerInsertedHTML",
       "chunks": [
@@ -1018,7 +1018,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "*",
       "chunks": [
@@ -1026,7 +1026,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "*",
       "chunks": [
@@ -1034,7 +1034,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
       "chunks": [
@@ -1042,7 +1042,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
       "chunks": [
@@ -1050,7 +1050,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "default",
       "chunks": [
@@ -1058,7 +1058,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "default",
       "chunks": [
@@ -1066,7 +1066,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "urlToUrlWithoutFlightMarker",
       "chunks": [
@@ -1074,7 +1074,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#urlToUrlWithoutFlightMarker": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "urlToUrlWithoutFlightMarker",
       "chunks": [
@@ -1082,7 +1082,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#TODO-APP": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#TODO-APP": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "TODO-APP",
       "chunks": [
@@ -1090,7 +1090,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#TODO-APP": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#TODO-APP": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "TODO-APP",
       "chunks": [
@@ -1098,7 +1098,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#__NA": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#__NA": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "__NA",
       "chunks": [
@@ -1106,7 +1106,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#__NA": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#__NA": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "__NA",
       "chunks": [
@@ -1114,7 +1114,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#location": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#location": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "location",
       "chunks": [
@@ -1122,7 +1122,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#location": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#location": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "location",
       "chunks": [
@@ -1130,7 +1130,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#\"http": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#\"http": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "\"http",
       "chunks": [
@@ -1138,7 +1138,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#\"http": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#\"http": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "\"http",
       "chunks": [
@@ -1146,7 +1146,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#searchParams": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#searchParams": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "searchParams",
       "chunks": [
@@ -1154,7 +1154,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#searchParams": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#searchParams": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "searchParams",
       "chunks": [
@@ -1162,7 +1162,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#pathname": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#pathname": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pathname",
       "chunks": [
@@ -1170,7 +1170,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#pathname": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#pathname": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pathname",
       "chunks": [
@@ -1178,7 +1178,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#type": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#type": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "type",
       "chunks": [
@@ -1186,7 +1186,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#type": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#type": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "type",
       "chunks": [
@@ -1194,7 +1194,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#cache": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#cache": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "cache",
       "chunks": [
@@ -1202,7 +1202,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#cache": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#cache": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "cache",
       "chunks": [
@@ -1210,7 +1210,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#status": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#status": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "status",
       "chunks": [
@@ -1218,7 +1218,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#status": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#status": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "status",
       "chunks": [
@@ -1226,7 +1226,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#data": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#data": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "data",
       "chunks": [
@@ -1234,7 +1234,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#data": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#data": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "data",
       "chunks": [
@@ -1242,7 +1242,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#subTreeData": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#subTreeData": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "subTreeData",
       "chunks": [
@@ -1250,7 +1250,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#subTreeData": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#subTreeData": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "subTreeData",
       "chunks": [
@@ -1258,7 +1258,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#parallelRoutes": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#parallelRoutes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "parallelRoutes",
       "chunks": [
@@ -1266,7 +1266,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#parallelRoutes": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#parallelRoutes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "parallelRoutes",
       "chunks": [
@@ -1274,7 +1274,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#mutable": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#mutable": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "mutable",
       "chunks": [
@@ -1282,7 +1282,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#mutable": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#mutable": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "mutable",
       "chunks": [
@@ -1290,7 +1290,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#isExternalUrl": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#isExternalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "isExternalUrl",
       "chunks": [
@@ -1298,7 +1298,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#isExternalUrl": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#isExternalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "isExternalUrl",
       "chunks": [
@@ -1306,7 +1306,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#locationSearch": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#locationSearch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "locationSearch",
       "chunks": [
@@ -1314,7 +1314,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#locationSearch": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#locationSearch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "locationSearch",
       "chunks": [
@@ -1322,7 +1322,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#back": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#back": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "back",
       "chunks": [
@@ -1330,7 +1330,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#back": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#back": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "back",
       "chunks": [
@@ -1338,7 +1338,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#forward": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#forward": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "forward",
       "chunks": [
@@ -1346,7 +1346,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#forward": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#forward": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "forward",
       "chunks": [
@@ -1354,7 +1354,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#prefetch": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#prefetch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "prefetch",
       "chunks": [
@@ -1362,7 +1362,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#prefetch": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#prefetch": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "prefetch",
       "chunks": [
@@ -1370,7 +1370,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#kind": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#kind": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "kind",
       "chunks": [
@@ -1378,7 +1378,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#kind": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#kind": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "kind",
       "chunks": [
@@ -1386,7 +1386,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#replace": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#replace": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "replace",
       "chunks": [
@@ -1394,7 +1394,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#replace": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#replace": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "replace",
       "chunks": [
@@ -1402,7 +1402,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#push": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#push": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "push",
       "chunks": [
@@ -1410,7 +1410,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#push": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#push": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "push",
       "chunks": [
@@ -1418,7 +1418,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#refresh": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#refresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "refresh",
       "chunks": [
@@ -1426,7 +1426,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#refresh": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#refresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "refresh",
       "chunks": [
@@ -1434,7 +1434,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#origin": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#origin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "origin",
       "chunks": [
@@ -1442,7 +1442,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#origin": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#origin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "origin",
       "chunks": [
@@ -1450,7 +1450,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#fastRefresh": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#fastRefresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "fastRefresh",
       "chunks": [
@@ -1458,7 +1458,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#fastRefresh": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#fastRefresh": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "fastRefresh",
       "chunks": [
@@ -1466,7 +1466,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#router": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "router",
       "chunks": [
@@ -1474,7 +1474,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#router": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "router",
       "chunks": [
@@ -1482,7 +1482,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#url": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#url": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "url",
       "chunks": [
@@ -1490,7 +1490,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#url": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#url": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "url",
       "chunks": [
@@ -1498,7 +1498,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#tree": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#tree": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "tree",
       "chunks": [
@@ -1506,7 +1506,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#tree": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#tree": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "tree",
       "chunks": [
@@ -1514,7 +1514,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#notFound": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#notFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFound",
       "chunks": [
@@ -1522,7 +1522,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#notFound": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#notFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFound",
       "chunks": [
@@ -1530,7 +1530,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#notFoundStyles": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#notFoundStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFoundStyles",
       "chunks": [
@@ -1538,7 +1538,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#notFoundStyles": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#notFoundStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "notFoundStyles",
       "chunks": [
@@ -1546,7 +1546,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#asNotFound": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#asNotFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "asNotFound",
       "chunks": [
@@ -1554,7 +1554,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#asNotFound": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#asNotFound": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "asNotFound",
       "chunks": [
@@ -1562,7 +1562,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#pushRef": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#pushRef": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pushRef",
       "chunks": [
@@ -1570,7 +1570,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#pushRef": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#pushRef": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "pushRef",
       "chunks": [
@@ -1578,7 +1578,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#canonicalUrl": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#canonicalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "canonicalUrl",
       "chunks": [
@@ -1586,7 +1586,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#canonicalUrl": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#canonicalUrl": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "canonicalUrl",
       "chunks": [
@@ -1594,7 +1594,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#sync": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#sync": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "sync",
       "chunks": [
@@ -1602,7 +1602,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#sync": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#sync": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "sync",
       "chunks": [
@@ -1610,7 +1610,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#value": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "value",
       "chunks": [
@@ -1618,7 +1618,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#value": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "value",
       "chunks": [
@@ -1626,7 +1626,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#childNodes": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#childNodes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "childNodes",
       "chunks": [
@@ -1634,7 +1634,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#childNodes": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#childNodes": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "childNodes",
       "chunks": [
@@ -1642,7 +1642,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#assetPrefix": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#assetPrefix": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "assetPrefix",
       "chunks": [
@@ -1650,7 +1650,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#assetPrefix": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#assetPrefix": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "assetPrefix",
       "chunks": [
@@ -1658,7 +1658,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#errorComponent": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/app-router.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "errorComponent",
       "chunks": [
@@ -1666,7 +1666,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#errorComponent": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/app-router.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "errorComponent",
       "chunks": [
@@ -1674,7 +1674,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "*",
       "chunks": [
@@ -1682,7 +1682,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "*",
       "chunks": [
@@ -1690,7 +1690,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
       "chunks": [
@@ -1698,7 +1698,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
       "chunks": [
@@ -1706,7 +1706,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "default",
       "chunks": [
@@ -1714,7 +1714,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "default",
       "chunks": [
@@ -1722,7 +1722,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundaryHandler": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundaryHandler": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundaryHandler",
       "chunks": [
@@ -1730,7 +1730,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundaryHandler": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundaryHandler": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundaryHandler",
       "chunks": [
@@ -1738,7 +1738,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundary": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#ErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundary",
       "chunks": [
@@ -1746,7 +1746,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundary": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#ErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "ErrorBoundary",
       "chunks": [
@@ -1754,7 +1754,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#error": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#error": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "error",
       "chunks": [
@@ -1762,7 +1762,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#error": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#error": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "error",
       "chunks": [
@@ -1770,7 +1770,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#https": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#https": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "https",
       "chunks": [
@@ -1778,7 +1778,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#https": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#https": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "https",
       "chunks": [
@@ -1786,7 +1786,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#fontFamily": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#fontFamily": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontFamily",
       "chunks": [
@@ -1794,7 +1794,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#fontFamily": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#fontFamily": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontFamily",
       "chunks": [
@@ -1802,7 +1802,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#height": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#height": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "height",
       "chunks": [
@@ -1810,7 +1810,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#height": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#height": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "height",
       "chunks": [
@@ -1818,7 +1818,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#textAlign": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#textAlign": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "textAlign",
       "chunks": [
@@ -1826,7 +1826,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#textAlign": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#textAlign": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "textAlign",
       "chunks": [
@@ -1834,7 +1834,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#display": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#display": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "display",
       "chunks": [
@@ -1842,7 +1842,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#display": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#display": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "display",
       "chunks": [
@@ -1850,7 +1850,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#flexDirection": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#flexDirection": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "flexDirection",
       "chunks": [
@@ -1858,7 +1858,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#flexDirection": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#flexDirection": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "flexDirection",
       "chunks": [
@@ -1866,7 +1866,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#alignItems": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#alignItems": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "alignItems",
       "chunks": [
@@ -1874,7 +1874,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#alignItems": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#alignItems": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "alignItems",
       "chunks": [
@@ -1882,7 +1882,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#justifyContent": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#justifyContent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "justifyContent",
       "chunks": [
@@ -1890,7 +1890,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#justifyContent": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#justifyContent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "justifyContent",
       "chunks": [
@@ -1898,7 +1898,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#desc": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#desc": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "desc",
       "chunks": [
@@ -1906,7 +1906,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#desc": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#desc": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "desc",
       "chunks": [
@@ -1914,7 +1914,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#text": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#text": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "text",
       "chunks": [
@@ -1922,7 +1922,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#text": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#text": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "text",
       "chunks": [
@@ -1930,7 +1930,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#fontSize": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#fontSize": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontSize",
       "chunks": [
@@ -1938,7 +1938,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#fontSize": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#fontSize": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontSize",
       "chunks": [
@@ -1946,7 +1946,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#fontWeight": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#fontWeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontWeight",
       "chunks": [
@@ -1954,7 +1954,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#fontWeight": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#fontWeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "fontWeight",
       "chunks": [
@@ -1962,7 +1962,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#lineHeight": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#lineHeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "lineHeight",
       "chunks": [
@@ -1970,7 +1970,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#lineHeight": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#lineHeight": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "lineHeight",
       "chunks": [
@@ -1978,7 +1978,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#margin": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#margin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "margin",
       "chunks": [
@@ -1986,7 +1986,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#margin": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#margin": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "margin",
       "chunks": [
@@ -1994,7 +1994,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#reset": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "reset",
       "chunks": [
@@ -2002,7 +2002,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#reset": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "reset",
       "chunks": [
@@ -2010,7 +2010,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#style": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#style": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "style",
       "chunks": [
@@ -2018,7 +2018,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#style": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#style": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "style",
       "chunks": [
@@ -2026,7 +2026,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#\"Digest": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#\"Digest": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "\"Digest",
       "chunks": [
@@ -2034,7 +2034,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#\"Digest": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#\"Digest": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "\"Digest",
       "chunks": [
@@ -2042,7 +2042,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#errorComponent": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorComponent",
       "chunks": [
@@ -2050,7 +2050,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#errorComponent": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#errorComponent": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorComponent",
       "chunks": [
@@ -2058,7 +2058,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#errorStyles": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#errorStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorStyles",
       "chunks": [
@@ -2066,7 +2066,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#errorStyles": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#errorStyles": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "errorStyles",
       "chunks": [
@@ -2074,7 +2074,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#value": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/error-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "value",
       "chunks": [
@@ -2082,7 +2082,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#value": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/error-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "value",
       "chunks": [
@@ -2090,7 +2090,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/layout-router.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/layout-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "*",
       "chunks": [
@@ -2098,7 +2098,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/layout-router.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/layout-router.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "*",
       "chunks": [
@@ -2106,7 +2106,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/layout-router.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/layout-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
       "chunks": [
@@ -2114,7 +2114,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/layout-router.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/layout-router.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
       "chunks": [
@@ -2122,7 +2122,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/layout-router.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/layout-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "default",
       "chunks": [
@@ -2130,7 +2130,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/layout-router.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/layout-router.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "default",
       "chunks": [
@@ -2138,7 +2138,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "*",
       "chunks": [
@@ -2146,7 +2146,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "*",
       "chunks": [
@@ -2154,7 +2154,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "",
       "chunks": [
@@ -2162,7 +2162,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "",
       "chunks": [
@@ -2170,7 +2170,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "default",
       "chunks": [
@@ -2178,7 +2178,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "default",
       "chunks": [
@@ -2186,7 +2186,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#RedirectErrorBoundary": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#RedirectErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectErrorBoundary",
       "chunks": [
@@ -2194,7 +2194,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectErrorBoundary": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectErrorBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectErrorBoundary",
       "chunks": [
@@ -2202,7 +2202,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#RedirectBoundary": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#RedirectBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectBoundary",
       "chunks": [
@@ -2210,7 +2210,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectBoundary": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#RedirectBoundary": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "RedirectBoundary",
       "chunks": [
@@ -2218,7 +2218,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#redirect": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#redirect": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "redirect",
       "chunks": [
@@ -2226,7 +2226,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#redirect": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#redirect": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "redirect",
       "chunks": [
@@ -2234,7 +2234,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#reset": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "reset",
       "chunks": [
@@ -2242,7 +2242,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#reset": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#reset": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "reset",
       "chunks": [
@@ -2250,7 +2250,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#router": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "router",
       "chunks": [
@@ -2258,7 +2258,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#router": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#router": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "router",
       "chunks": [
@@ -2266,7 +2266,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#value": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/redirect-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "value",
       "chunks": [
@@ -2274,7 +2274,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#value": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/redirect-boundary.js#value": {
       "id": "(app-client)/./node_modules/next/dist/client/components/redirect-boundary.js",
       "name": "value",
       "chunks": [
@@ -2282,7 +2282,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/render-from-template-context.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/render-from-template-context.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "*",
       "chunks": [
@@ -2290,7 +2290,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "*",
       "chunks": [
@@ -2298,7 +2298,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/render-from-template-context.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/render-from-template-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
       "chunks": [
@@ -2306,7 +2306,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/render-from-template-context.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/render-from-template-context.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
       "chunks": [
@@ -2314,7 +2314,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/render-from-template-context.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/render-from-template-context.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "default",
       "chunks": [
@@ -2322,7 +2322,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/render-from-template-context.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/render-from-template-context.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "default",
       "chunks": [
@@ -2330,7 +2330,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "*",
       "chunks": [
@@ -2338,7 +2338,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "*",
       "chunks": [
@@ -2346,7 +2346,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "",
       "chunks": [
@@ -2354,7 +2354,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "",
       "chunks": [
@@ -2362,7 +2362,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/router-reducer/fetch-server-response.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "default",
       "chunks": [
@@ -2370,7 +2370,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/router-reducer/fetch-server-response.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/router-reducer/fetch-server-response.js",
       "name": "default",
       "chunks": [
@@ -2378,7 +2378,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "*",
       "chunks": [
@@ -2386,7 +2386,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "*",
       "chunks": [
@@ -2394,7 +2394,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "",
       "chunks": [
@@ -2402,7 +2402,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "",
       "chunks": [
@@ -2410,7 +2410,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "default",
       "chunks": [
@@ -2418,7 +2418,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/components/static-generation-searchparams-bailout-provider.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/components/static-generation-searchparams-bailout-provider.js",
       "name": "default",
       "chunks": [
@@ -2426,21 +2426,21 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/app/globals.css#": {
+    "/Users/juanvx/Downloads/NeG/frontend/app/globals.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/layout.css"
       ]
     },
-    "/home/juanvx/Downloads/NeG/frontend/components/NavigationBar.module.css#": {
+    "/Users/juanvx/Downloads/NeG/frontend/components/NavigationBar.module.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/layout.css"
       ]
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/link.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
@@ -2448,7 +2448,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/link.js": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
@@ -2456,7 +2456,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/link.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/link.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
@@ -2464,7 +2464,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/link.js#": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/link.js#": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
@@ -2472,7 +2472,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/link.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/client/link.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
@@ -2480,7 +2480,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/link.js#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/node_modules/next/dist/esm/client/link.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
@@ -2488,7 +2488,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/app/(user)/signin/page.tsx": {
+    "/Users/juanvx/Downloads/NeG/frontend/app/(user)/signin/page.tsx": {
       "id": "(app-client)/./app/(user)/signin/page.tsx",
       "name": "*",
       "chunks": [
@@ -2496,7 +2496,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/app/(user)/signin/page.tsx#": {
+    "/Users/juanvx/Downloads/NeG/frontend/app/(user)/signin/page.tsx#": {
       "id": "(app-client)/./app/(user)/signin/page.tsx",
       "name": "",
       "chunks": [
@@ -2504,7 +2504,7 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/juanvx/Downloads/NeG/frontend/app/(user)/signin/page.tsx#default": {
+    "/Users/juanvx/Downloads/NeG/frontend/app/(user)/signin/page.tsx#default": {
       "id": "(app-client)/./app/(user)/signin/page.tsx",
       "name": "default",
       "chunks": [
