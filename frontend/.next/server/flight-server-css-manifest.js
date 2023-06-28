@@ -6,7 +6,7 @@ self.__RSC_CSS_MANIFEST={
     ]
   },
   "cssModules": {
-    "/Users/juanvx/Downloads/NeG/frontend/app/page": [
+    "/Users/juanvx/Downloads/NeG/frontend/app/(user)/[userID]/page": [
       "/Users/juanvx/Downloads/NeG/frontend/app/globals.css",
       "/Users/juanvx/Downloads/NeG/frontend/components/NavigationBar.module.css"
     ],
@@ -14,11 +14,15 @@ self.__RSC_CSS_MANIFEST={
       "/Users/juanvx/Downloads/NeG/frontend/app/globals.css",
       "/Users/juanvx/Downloads/NeG/frontend/components/NavigationBar.module.css"
     ],
-    "/Users/juanvx/Downloads/NeG/frontend/app/(user)/[userID]/page": [
+    "/Users/juanvx/Downloads/NeG/frontend/app/(user)/[userID]/edit/page": [
       "/Users/juanvx/Downloads/NeG/frontend/app/globals.css",
       "/Users/juanvx/Downloads/NeG/frontend/components/NavigationBar.module.css"
     ],
-    "/Users/juanvx/Downloads/NeG/frontend/app/info/page": [
+    "/Users/juanvx/Downloads/NeG/frontend/app/page": [
+      "/Users/juanvx/Downloads/NeG/frontend/app/globals.css",
+      "/Users/juanvx/Downloads/NeG/frontend/components/NavigationBar.module.css"
+    ],
+    "/Users/juanvx/Downloads/NeG/frontend/app/(user)/signup/page": [
       "/Users/juanvx/Downloads/NeG/frontend/app/globals.css",
       "/Users/juanvx/Downloads/NeG/frontend/components/NavigationBar.module.css"
     ]

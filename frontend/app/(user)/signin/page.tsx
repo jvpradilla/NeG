@@ -22,28 +22,31 @@ export default function UserLogin () {
   };
 
   const handleSeePassword = async () => {
-    const type =  document.getElementById("password")?.getAttribute("type") === "password" ? "text" : "password";
-    document.getElementById("password")?.setAttribute("type", type);
+    const togglePassword =  document.getElementById("togglePassword");
+    const passwordInput =  document.getElementById("password");
+    const type =  passwordInput?.getAttribute("type") === "password" ? "text" : "password";
+    passwordInput?.setAttribute("type", type);
+    togglePassword?.classList.toggle("bi-eye");
   };
 
   return (
-    <div>
-      <h1>User - Login</h1>
-      <p>
-        <label>
-          <span>Nombre de usuario</span>
-        </label>
-        <input id="username" type="text" autoComplete="off" placeholder="Nombre de usuario" autoFocus onChange={usernameHandler}/>
+    <div className="formContainer">
+      <label htmlFor="username" className="inputTextLabel">
+        <span>Nombre de usuario</span>
+      </label>
+      <input id="username" type="text" autoComplete="off" placeholder="Nombre de usuario" className="inputText" autoFocus onChange={usernameHandler}/>
+      
+      <label htmlFor="password" className="inputTextLabel">
+        <span>Contraseña</span>
+      </label>
+      <input id="password" type="password" autoComplete="off" placeholder="Contraseña" className="inputText" onChange={passwordHandler}/>
+      <i id="togglePassword" className="bi bi-eye-slash" onClick={handleSeePassword}></i>
+      
+      <button type="button" className="button" onClick={handleSubmit}>Iniciar Sesión</button>
+      <p id="signinCreateProfile">
+        <span>¿Aún no tienes perfil? </span>
+        <Link href="/signup" className="link">Crear Perfil</Link>
       </p>
-      <p>
-        <label>
-          <span>Contraseña</span>
-        </label>
-        <input id="password" type="password" autoComplete="off" onChange={passwordHandler}/>
-        <i id="togglePassword" onClick={handleSeePassword}>Ojo</i>
-      </p>
-      <button type="button" onClick={handleSubmit}>Iniciar Sesión</button>
-    <Link href="/user/create">Crear Perfil</Link>
     </div>
   );
 }

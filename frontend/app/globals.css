@@ -1,22 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Google Sans Text", sans-serif;
+  font-family: 'Open Sans', serif;
 }
 
 body {
   display: flex;
   height: 100vh;
   justify-content: center;
-  background-color: #6b9996;
-  color: #1b1c18;  
+  background-color: #f5f7f7;
+  color: black;  
   font-size: 16px;
+  font-weight: 300;
 }
 
 main {
-  position: absolute;
-  bottom: 64px;
-  background-color: #FEFCF6;
-  border-radius: 0px 0px 32px 32px;
+  width: 100vw;
+  max-width: 768px;
+  height: calc(100% - 64px);
+  padding: 10px;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 5px;
+}
+
+.inputText {
+  height: 38px;
+  padding: 12px;
+  line-height: 1;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #91918b;
+  color: #91918b;
+  background-color: white;
+  font-size: 16px;
+}
+
+.inputText::placeholder {
+  color: #91918b;
+}
+  
+.inputTextLabel {
+  color: #506c6e;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.button {
+  height: 38px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #466444;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.link {
+  color: #466444;
+  font-weight: 600;
+}
+
+#signinCreateProfile {
+  margin-top: 32px;
+  text-align: center;
+}
+
+#togglePassword {
+  color: #466444;
+  width: 20px;
+  text-align: center;
+  margin-top: -35px;
+  margin-left: calc(100% - 40px);
 }
