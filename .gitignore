@@ -1,7 +1,5 @@
 0. Docs
 backend/node_modules
-backend/.env
 frontend/node_modules
-frontend/.env
 frontend/.next
 ```
