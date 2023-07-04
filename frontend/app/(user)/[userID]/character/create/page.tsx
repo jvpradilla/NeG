@@ -25,10 +25,11 @@ export default function CharacterCreate () {
     setQuestions(questionsData.questions);
   };
 
+  //<h1>Character - Create</h1>
+  //<button type="button" onClick={handleSubmit}>Crear Personaje</button>
+
   return (
     <div>
-      <h1>Character - Create</h1>
-      <button type="button" onClick={handleSubmit}>Crear Personaje</button>
       { characterType === 0 ? (
         <CharacterType onCharacterTypeChange={handleCharacterTypeChange}/>
       ) : (

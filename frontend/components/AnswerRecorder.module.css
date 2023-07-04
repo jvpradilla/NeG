@@ -1,0 +1,37 @@
+.container {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.question {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: calc(100vh * 0.5625); 
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: left;
+  background: linear-gradient(to top, transparent 0%, #000000 100%);
+  padding: 25px 10px;
+  z-index: 1;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.webcamcontainer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.webcam {
+  height: 100vh;
+  max-width: 768px;  
+}
+

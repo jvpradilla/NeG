@@ -2,13 +2,26 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useRouter } from 'next/navigation';
 import { loginUser } from "../../../services/UserService";
+import { getSession, hasValidSession } from "../../../services/SessionService";
 
 export default function UserLogin () {
+
+  const { push } = useRouter();
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const regex = /^[a-z0-9_]+$/;
+
+  useEffect(() => {
+    if (hasValidSession()) {
+      const session = getSession();
+      const localUserName = session?.username;
+      const urlRedirect = "/" + localUserName;
+      handleRedirect(urlRedirect);
+    }
+  }, []);
 
   const usernameHandler =  (e: React.ChangeEvent<HTMLInputElement>) => {
     if (regex.test(e.target.value) || "" === e.target.value) {
@@ -27,12 +40,14 @@ export default function UserLogin () {
   const handleSubmit = async () => {
     const loginResult = await loginUser(username, password);
     if (loginResult) {
+      const urlRedirect = "/" + username;
       const usernameElement = document.getElementById("username") as HTMLInputElement;
       usernameElement.value = "";
       const passwordElement = document.getElementById("password") as HTMLInputElement;
       passwordElement.value = "";
       setUsername("");
       setPassword("");
+      handleRedirect(urlRedirect);
     } else {
       const snackbarMessage = document.getElementsByClassName("snackbar");
       snackbarMessage[0]?.classList.add("show");
@@ -46,6 +61,16 @@ export default function UserLogin () {
     const passwordInputType =  passwordInput?.getAttribute("type") === "password" ? "text" : "password";
     passwordInput?.setAttribute("type", passwordInputType);
     togglePassword?.classList.toggle("bi-eye");
+  };
+
+  const handleRedirect = (pURLRedirect: string) => {
+    const nextURL = localStorage.getItem("nextURL");
+    if (nextURL !== null && nextURL !== undefined && nextURL !== "") {
+      localStorage.removeItem("nextURL");
+      push(nextURL);
+    } else {
+      push(pURLRedirect);
+    }
   };
 
   return (

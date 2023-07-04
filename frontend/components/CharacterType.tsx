@@ -5,10 +5,27 @@ export default function CharacterType(props: { onCharacterTypeChange: (pCharacte
   };
  
   return (
-    <div>
-     <button value={35} onClick={handleChange}>Sencillo</button>
-     <button value={70} onClick={handleChange}>Natural</button>
-     <button value={98} onClick={handleChange}>Complejo</button>
+    <div className="formContainer">
+      <h1>Crea un nuevo personaje</h1>
+      <h3>Escoge el tipo de personaje que quieres crear</h3>
+      <div className="characterTypeContent">
+        <button value={35} className="characterTypeButton" onClick={handleChange}>
+          <i className="bi bi-person-down"/><br/>
+          Sencillo
+        </button>
+      </div>
+      <div className="characterTypeContent">
+        <button value={70} className="characterTypeButton" onClick={handleChange}>
+          <i className="bi bi-person-down"/><br/>
+          Natural
+        </button>
+      </div>
+      <div className="characterTypeContent">
+        <button value={98} className="characterTypeButton" onClick={handleChange}>
+          <i className="bi bi-person-down"/><br/>
+          Complejo
+        </button>
+      </div>
     </div>
   );
 }

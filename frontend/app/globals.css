@@ -175,6 +175,27 @@ a:link, a:visited, a:active {
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
+.characterTypeContent {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.characterTypeButton {
+  height: 92px;
+  width: 100vw;
+  background-color:  #466444;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 14px;  
+}
+
+.characterTypeButton > i {
+  font-size: 28px;
+}
+
 @-webkit-keyframes fadein {
   from {opacity: 0;}
   to {opacity: 1;}

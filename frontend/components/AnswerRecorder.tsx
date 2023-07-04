@@ -2,6 +2,8 @@ import Webcam from "react-webcam";
 import React, { useRef, useState, useEffect } from "react";
 import AnswerRecorderBar from "./AnswerRecorderBar";
 
+import styles from "./AnswerRecorder.module.css";
+
 export default function RecordVideo(props: { onVideoSave: (pQuestionId: string, pBlob: Blob) => void, questions: any[]}) {
 
   const webCamRef = useRef<Webcam>(null);
@@ -10,9 +12,9 @@ export default function RecordVideo(props: { onVideoSave: (pQuestionId: string, 
   const [actualQuestion, setActualQuestion]  = useState<string>(props.questions[questionIndex]?.text);
 
   const constraints = {
-    //width:  { min: 640, ideal: 1920, max: 1920 },
+    //width:  { min: 320, ideal: 1920, max: 1920 },
     //height: { min: 400, ideal: 1080 },
-    //aspectRatio: 1.777777778,
+    aspectRatio: 0.5625,
     frameRate: { max: 30 },
     facingMode:  "user"
   };
@@ -69,9 +71,11 @@ export default function RecordVideo(props: { onVideoSave: (pQuestionId: string, 
   };
 
   return (
-    <div>
-      <div>{actualQuestion}</div>
-      <Webcam ref={webCamRef} audio={true} muted={true} mirrored={true} videoConstraints={constraints}/>
+    <div className={styles.container}>
+      <div className={styles.question} >{actualQuestion}</div>
+      <div className={styles.webcamcontainer}>
+        <Webcam className={styles.webcam} ref={webCamRef} audio={true} muted={true} mirrored={true} videoConstraints={constraints}/>
+      </div>
       <AnswerRecorderBar 
         onRecordStartAnswer={handleRecordStartAnswer}
         onRecordStopAnswer={handleRecordStopAnswer}

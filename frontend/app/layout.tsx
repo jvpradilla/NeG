@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function RootLayout({children,}: {children: React.ReactNode}) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <meta charSet="utf-8" />
         <title>{metadata.title}</title>

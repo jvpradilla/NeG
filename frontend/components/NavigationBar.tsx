@@ -49,17 +49,17 @@ const links = [{
             <circle cx="16" cy="7.4999576" r="6.2499576" />
             <path d="m -2.2498913,-30.75 a 13.750109,12.496143 0 0 1 -6.8750543,10.821978 13.750109,12.496143 0 0 1 -13.7501084,0 A 13.750109,12.496143 0 0 1 -29.750109,-30.75 H -16 Z" transform="scale(-1)" />
           </svg>`,
-    route: "/user",
+    route: "/signin",
     pattern: ["/signin", "/signup"]
 }];
 
 //width:"24px", height:"24px",
 export default function NavigationBar () {
   const pathname = usePathname();
-
+//
   return (
-    <div className={styles.container}>
-      <span>{pathname}</span>
+    <div className={styles.container} style={{display:pathname.endsWith("create") && pathname.includes("/character/")?"none":"flex"}}>
+      <span>pathname</span>
       <nav className={styles.navigation}>
         <ul>
           {links.map(({label, route, icon, pattern}) => (
