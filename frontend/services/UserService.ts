@@ -22,7 +22,7 @@ export const uploadAvatar = async (pFile: File) => {
   }
 };
 
-export const createUser = async (pUsername: string, pPassword: string, pAvatar?: string) => {
+export const createUser = async (pUsername: string, pPassword: string, pAvatar?: string): Promise<boolean> => {
   const user: User = {
     username: pUsername,
     password: Md5.hashAsciiStr(pPassword),
@@ -36,10 +36,18 @@ export const createUser = async (pUsername: string, pPassword: string, pAvatar?:
   });
   
   if( response.status !== 200 ) {
-    console.log(await response.json());
-  } else {
-    console.log("User created");
+    //console.log(await response.json());
+    return false;
   }
+  //console.log("User created");
+  const session: Session = {
+    username: pUsername,
+    password: pPassword
+  };
+
+  saveSession(session);
+  
+  return true;
 };
 
 export const updateUser = async (pUsername: string, pPassword: string, pPasswordNew: string, pAvatarNew?: string): Promise<boolean> => {
@@ -72,7 +80,7 @@ export const updateUser = async (pUsername: string, pPassword: string, pPassword
   }
 };
 
-export const loginUser = async (pUsername: string, pPassword: string) => {
+export const loginUser = async (pUsername: string, pPassword: string): Promise<boolean> => {
   const user: User = {
     username: pUsername,
     password: Md5.hashAsciiStr(pPassword)
@@ -85,19 +93,23 @@ export const loginUser = async (pUsername: string, pPassword: string) => {
   });
   
   if( response.status !== 200 ) {
-    console.log(await response.json());
-  } else {
-    console.log("User logged in");
-    const userAuth =  await response.json();  
+    //console.log(await response.json());
+    return false;
+  } 
+  
+  //console.log("User logged in");
+  const userAuth =  await response.json();  
 
-    console.log(userAuth);
+  //console.log(userAuth);
 
-    const session: Session = {
-      username: pUsername,
-      password: pPassword
-    };
+  const session: Session = {
+    username: pUsername,
+    password: pPassword
+  };
 
-    saveSession(session);
-  }
+  saveSession(session);
+
+  return true;
 }
+
 
