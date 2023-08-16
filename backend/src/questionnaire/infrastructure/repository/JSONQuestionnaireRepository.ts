@@ -17,11 +17,12 @@ export class JSONQuestionnaireRepository implements QuestionnaireRepository{
 
   public async readQuestions(pQuantity: number): Promise<Question[]> {
     const questionsResponse: Question[] = [];
-    
+
     this.questionnaires.forEach((questionnaire) => {
       const questionsByCateory = pQuantity / questionnaire.categories.size;
+
       questionnaire.categories.forEach((category) => {
-        if(pQuantity === 98) {
+        if(pQuantity == 98) {
           questionsResponse.push(...category);
         } else {
           const randomLimit = Math.floor(Math.random() * (category.length - questionsByCateory + 1) + questionsByCateory );

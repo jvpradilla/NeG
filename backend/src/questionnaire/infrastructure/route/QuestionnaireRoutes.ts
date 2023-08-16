@@ -17,7 +17,7 @@ export default class QuestionnaireRoutes {
       try {
         const quantity = pRequest.query.quantity as unknown as number;       
         const questionsData = await this.controller.readQuestionsByQuantity(quantity);
-        
+                
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const questions: any [] = [];
         

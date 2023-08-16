@@ -9,7 +9,7 @@ export default function CharacterType(props: { onCharacterTypeChange: (pCharacte
       <h1>Crea un nuevo personaje</h1>
       <h3>Escoge el tipo de personaje que quieres crear</h3>
       <div className="characterTypeContent">
-        <button value={35} className="characterTypeButton" onClick={handleChange}>
+        <button value={7} className="characterTypeButton" onClick={handleChange}>
           <i className="bi bi-person-down"/><br/>
           Sencillo
         </button>

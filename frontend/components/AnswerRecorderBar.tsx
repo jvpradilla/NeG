@@ -37,7 +37,7 @@ export default function AnswerRecorderBar(props: {onRecordStartAnswer: () => voi
     <div className={styles.container}>
       <div className={styles.navigation}>
         <button className={styles.navigation_item} hidden={recording} onClick={handlePreviewQuestion}>Prev</button>
-        <button className={styles.navigation_item}hidden={!recording} onClick={handleDeleteAnswer}>Delete</button>
+        <button className={styles.navigation_item} hidden={!recording} onClick={handleDeleteAnswer}>Delete</button>
         <button className={styles.navigation_item} onMouseDown={handleStartRecordAnswer} onMouseUp={handleStopRecordAnswer}>Rec</button>
         <button className={styles.navigation_item} hidden={!recording} onClick={handleUploadAnswer}>Upload</button>
         <button className={styles.navigation_item} hidden={recording} onClick={handleNextQuestion}>Next</button>

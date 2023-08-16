@@ -21,7 +21,7 @@ export default function CharacterCreate () {
   const handleCharacterTypeChange = async (pCharacterType: number) => {
     setCharacterType(pCharacterType);
     const questionsData = await readQuestions(pCharacterType);
-    //console.log("Data: ", questionsData.questions);
+    console.log(questionsData);
     setQuestions(questionsData.questions);
   };
 

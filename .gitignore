@@ -1,5 +1,7 @@
 0. Docs
 backend/node_modules
+backend/public/uploads/character
+backend/public/uploads/user
 frontend/node_modules
 frontend/.next
 ```
