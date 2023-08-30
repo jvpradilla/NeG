@@ -2,6 +2,7 @@ import { v4 } from "uuid";
 
 export type Answer = {
   id: string;
+  characterId: string;
   questionId: string;
   answerVideoURL: string;
 }
@@ -16,8 +17,7 @@ export const readQuestions = async (pQuantity: number): Promise<any> => {
   }
 };
 
-export const createAnswer = async (pQuestionId: string, pAnswer: Blob) => {
-  console.log("pQuestionId: ", pQuestionId);
+export const createAnswer = async (pCharacterId: string, pQuestionId: string, pAnswer: Blob) => {
   const response = await fetch("http://localhost:5000/answer/video/", {
       method: "POST",
       headers: {
@@ -32,6 +32,7 @@ export const createAnswer = async (pQuestionId: string, pAnswer: Blob) => {
       const answerId = v4();
       const answer: Answer = {
         id: answerId,
+        characterId: pCharacterId,
         questionId: pQuestionId,
         answerVideoURL: answerVideoURLData
       };
@@ -43,19 +44,20 @@ export const createAnswer = async (pQuestionId: string, pAnswer: Blob) => {
       if( responseAnswer.status !== 200 ) {
         console.log(await responseAnswer.json());
       } else {
-        console.log(answerId);
         console.log("Answer created");
       }
     }
 };
 
-export const createCharacter = async () => {
+export const createCharacter = async (pName: string, pUserName: string): Promise<string> => {
   const characterId = v4();
 
   const character = {
-    "id" : characterId
+    "id" : characterId,
+    "name" : pName,
+    "username" : pUserName
   };
-
+  
   const response = await fetch("http://localhost:5000/character", {
     method: "POST",
     headers: {
@@ -66,7 +68,8 @@ export const createCharacter = async () => {
   
   if( response.status !== 200 ) {
     console.log(await response.json());
+    return "";
   } else {
-    console.log("Character created");
+    return characterId;
   }
 };

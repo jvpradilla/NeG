@@ -1,5 +1,6 @@
 model Answer {
   id             String @id
+  characterId    String
   questionId     String
   answerVideoURL String
 }

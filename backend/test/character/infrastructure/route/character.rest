@@ -13,3 +13,6 @@ Content-Type: {{CONTENT_TYPE_JSON}}
 {
     "id": "42420aadbd62b2139fb611fd61113c88"
 }
+
+###
+PUT {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}}/47098264-4c4e-412b-a24e-7d86b5fdeb16 {{PROTOCOL}}/{{PROTOCOL_VERSION}}

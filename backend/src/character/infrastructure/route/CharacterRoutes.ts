@@ -15,8 +15,8 @@ export default class CharacterRoutes {
   public registerRoutes(pPath: string, pRouter: Router): void {
     pRouter.post(pPath, async (pRequest: Request, pResponse: Response) => {
       try {
-        const { id } = pRequest.body;
-        await this.controller.create(id);
+        const { id, name, username } = pRequest.body;
+        await this.controller.create(id, name, username);
         pResponse.status(200).send();
       } catch (err) {
         const typedError = err as Error;
@@ -24,5 +24,15 @@ export default class CharacterRoutes {
       }
     });
 
+    pRouter.put(pPath + "/:characterId/", async (pRequest: Request, pResponse: Response) => {
+      try {
+        const characterId = pRequest.params.characterId as string;
+        await this.controller.publish(characterId);
+        pResponse.status(200).send();
+      } catch (err) {
+        const typedError = err as Error;
+        pResponse.status(400).json({ error: typedError.message });
+      }
+    });
   }
 }

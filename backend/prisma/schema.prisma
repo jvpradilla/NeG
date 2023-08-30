@@ -8,11 +8,15 @@ datasource db {
 }
 model Answer {
   id             String @id
+  characterId    String
   questionId     String
   answerVideoURL String
 }
 model Character {
-  id String @id
+  id        String  @id
+  name      String
+  username  String
+  published Boolean @default(false)
 }
 model User {
   username     String   @id

@@ -1,17 +1,29 @@
+import { UserName } from "../../../user/domain/UserName";
 import { CreateCharacter } from "../../application/CreateCharacter";
+import { PublishCharacter } from "../../application/PublishCharacter";
 import { CharacterId } from "../../domain/CharacterId";
+import { CharacterName } from "../../domain/CharacterName";
 import { CharacterRepository } from "../../domain/CharacterRepository";
 
 export class CharacterController {
   private createCharacter: CreateCharacter;
+  private publishCharacter: PublishCharacter;
 
   constructor(pCharacterRepository: CharacterRepository) {
     this.createCharacter = new CreateCharacter(pCharacterRepository);
+    this.publishCharacter = new PublishCharacter(pCharacterRepository);
   }
 
-  public async create(pCharacterId: string): Promise<void> {  
+  public async create(pCharacterId: string, pCharacterName: string, pUserName: string): Promise<void> {  
     const characterId = new CharacterId(pCharacterId);
-    await this.createCharacter.execute(characterId);
+    const characterName = new CharacterName(pCharacterName);
+    const userName = new UserName(pUserName);
+    await this.createCharacter.execute(characterId, characterName, userName);
   }
-  
+
+  public async publish(pCharacterId: string): Promise<void> {
+    const characterId = new CharacterId(pCharacterId);
+    await this.publishCharacter.execute(characterId);
+  }
+    
 }

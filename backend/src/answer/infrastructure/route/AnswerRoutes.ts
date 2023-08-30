@@ -29,8 +29,8 @@ export default class AnswerRoutes {
 
     pRouter.post(pPath, async (pRequest: Request, pResponse: Response) => {
       try {
-        const { id, questionId, answerVideoURL } = pRequest.body;
-        await this.controller.create(id, questionId, answerVideoURL);
+        const { id, characterId, questionId, answerVideoURL } = pRequest.body;
+        await this.controller.create(id, characterId, questionId, answerVideoURL);
         pResponse.status(200).send();
       } catch (err) {
         const typedError = err as Error;

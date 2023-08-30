@@ -9,6 +9,7 @@ export default function RecordVideo(props: { onVideoSave: (pQuestionId: string, 
   const webCamRef = useRef<Webcam>(null);
   const mediaRecorderRef = useRef<MediaRecorder>();
   const [questionIndex, setQuestionIndex] = useState<number>(0);
+  const [answersSize, setAnswersSize] = useState<number>(0);
   const [actualQuestion, setActualQuestion]  = useState<string>(props.questions[questionIndex]?.text);
 
   const constraints = {
@@ -31,32 +32,34 @@ export default function RecordVideo(props: { onVideoSave: (pQuestionId: string, 
       mediaRecorderRef.current.ondataavailable = (event) => {
         props.onVideoSave(props.questions[questionIndex]?.id, event.data);
         mediaRecorderRef.current = undefined;
+        //const videoObj = document.getElementById("videoPlay") as HTMLVideoElement;
+        //videoObj.src = URL.createObjectURL(event.data);
       };
       mediaRecorderRef.current.start();
-      console.log("start");
+      //console.log("start");
     } else {
       mediaRecorderRef.current.resume();
-      console.log("resume");
+      //console.log("resume");
     }  
   };
 
   const handleRecordStopAnswer = () => {
     if (mediaRecorderRef.current) {
       mediaRecorderRef.current.pause();
-      console.log("pause");
+      //console.log("pause");
     }
   };
 
   const handlePreviewQuestion = () => {
     if (questionIndex === 0) return; 
     setQuestionIndex(questionIndex - 1);
-    console.log("handlePreviewQuestion");
+    //console.log("handlePreviewQuestion");
   };
 
   const handleNextQuestion = () => {
     if (questionIndex === props.questions.length - 1) return;
     setQuestionIndex(questionIndex + 1);
-    console.log("handleNextQuestion");
+    //console.log("handleNextQuestion");
   };
 
   const handleDeleteAnswer = () => {
@@ -66,16 +69,22 @@ export default function RecordVideo(props: { onVideoSave: (pQuestionId: string, 
   const handleUploadAnswer = () => {
     if (mediaRecorderRef.current) {
       mediaRecorderRef.current.stop();
-      console.log("stop");
+      setAnswersSize(answersSize + 1);
+      if (answersSize === props.questions.length - 1) {
+        console.log("finished");
+      }
+      //console.log("stop");
     }
   };
+
+  //<video id="videoPlay" className={styles.webcam} autoPlay controls></video>
 
   return (
     <div className={styles.container}>
       <div className={styles.question} >{actualQuestion}</div>
       <div className={styles.webcamcontainer}>
         <Webcam className={styles.webcam} ref={webCamRef} audio={true} muted={true} mirrored={true} videoConstraints={constraints}/>
-      </div>
+      </div>    
       <AnswerRecorderBar 
         onRecordStartAnswer={handleRecordStartAnswer}
         onRecordStopAnswer={handleRecordStopAnswer}
