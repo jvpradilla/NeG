@@ -1,13 +1,15 @@
 "use client"
 
 import AnswerRecorder from "../../../../../../components/AnswerRecorder";
-import { createAnswer, createCharacter, readQuestions } from "../../../../../../services/CharacterService";
+import { createAnswer, createCharacter, readQuestions, publishCharacter, deleteCharacter } from "../../../../../../services/CharacterService";
 import { useEffect, useState } from "react";
 import { useSearchParams } from 'next/navigation'
 
 export default function CharacterCreate ({ params } : { params: {characterID: string }}) {
   const {characterID} = params;
   const type = useSearchParams().get("type") as unknown as number;
+
+  const [showMe, setShowMe] = useState(true);
 
   const [questions, setQuestions] = useState([]);
 
@@ -25,22 +27,24 @@ export default function CharacterCreate ({ params } : { params: {characterID: st
   };
 
   const handlePublish = async () => {
-    
+    publishCharacter(characterID);
   };
 
   const handleDelete = async () => {
-    
+    deleteCharacter(characterID);
   };
 
-
-  //<AnswerRecorder onVideoSave={handleAnswerSave} questions={questions}/>
+  const handleCharacterSave = async () => {
+    console.log("handleCharacterSave");
+    setShowMe(!showMe);
+  };
   
   return (
     <div>
-      <div>
-        
+      <div style={{display: showMe?"block":"none"}}>
+        <AnswerRecorder onCharacterSave={handleCharacterSave} onVideoSave={handleAnswerSave} questions={questions}/>
       </div>
-      <div className="formContainer">
+      <div className="formContainer" style={{display: showMe?"none":"grid"}}>
         <h3>Ingresa las etiquetas de tu personaje</h3>
         
         <label htmlFor="tags" className="inputTextLabel">

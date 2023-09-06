@@ -34,5 +34,16 @@ export default class CharacterRoutes {
         pResponse.status(400).json({ error: typedError.message });
       }
     });
+
+    pRouter.delete(pPath + "/:characterId/", async (pRequest: Request, pResponse: Response) => {
+      try {
+        const characterId = pRequest.params.characterId as string;
+        await this.controller.delete(characterId);
+        pResponse.status(200).send();
+      } catch (err) {
+        const typedError = err as Error;
+        pResponse.status(400).json({ error: typedError.message });
+      }
+    });
   }
 }

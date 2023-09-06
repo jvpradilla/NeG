@@ -73,3 +73,25 @@ export const createCharacter = async (pName: string, pUserName: string): Promise
     return characterId;
   }
 };
+
+export const deleteCharacter = async (pId: string) => {
+  const response = await fetch(`http://localhost:5000/character/${pId}`, {
+    method: "DELETE"
+  });
+  if (response.status !== 200) {
+    console.log(await response.json());
+  } else {
+    console.log("Character deleted");
+  }
+};
+
+export const publishCharacter = async (pId: string) => {
+  const response = await fetch(`http://localhost:5000/character/${pId}`, {
+    method: "PUT"
+  });
+  if (response.status !== 200) {
+    console.log(await response.json());
+  } else {
+    console.log("Character published");
+  }
+};

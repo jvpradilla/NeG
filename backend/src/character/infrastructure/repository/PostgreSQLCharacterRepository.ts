@@ -6,6 +6,7 @@ import { CharacterName } from "../../domain/CharacterName";
 import { UserName } from "../../../user/domain/UserName";
 
 export class PostgreSQLCharacterRepository implements CharacterRepository {
+ 
   private prisma = new PrismaClient();
 
   public async findByCharacterId(pCharacterId: CharacterId): Promise<Character | undefined> {
@@ -41,5 +42,19 @@ export class PostgreSQLCharacterRepository implements CharacterRepository {
         published: pCharacter.published
       }
     });
+  }
+
+  public async delete(pCharacterId: CharacterId): Promise<void> {
+    await this.prisma.answer.deleteMany({
+      where: {
+        characterId: pCharacterId.value
+      }
+    });
+
+    await this.prisma.character.delete({
+      where: {
+        id: pCharacterId.value
+      }
+    }); 
   }
 }

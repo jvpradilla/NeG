@@ -4,7 +4,7 @@ import AnswerRecorderBar from "./AnswerRecorderBar";
 
 import styles from "./AnswerRecorder.module.css";
 
-export default function RecordVideo(props: { onVideoSave: (pQuestionId: string, pBlob: Blob) => void, questions: any[]}) {
+export default function RecordVideo(props: { onCharacterSave: () =>void, onVideoSave: (pQuestionId: string, pBlob: Blob) => void, questions: any[]}) {
 
   const webCamRef = useRef<Webcam>(null);
   const mediaRecorderRef = useRef<MediaRecorder>();
@@ -72,6 +72,7 @@ export default function RecordVideo(props: { onVideoSave: (pQuestionId: string, 
       setAnswersSize(answersSize + 1);
       if (answersSize === props.questions.length - 1) {
         console.log("finished");
+        props.onCharacterSave();
       }
       //console.log("stop");
     }
