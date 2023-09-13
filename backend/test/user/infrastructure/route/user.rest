@@ -6,6 +6,9 @@
 @CONTENT_TYPE_FORM = multipart/form-data
 @PATH = user
 
+###
+
+GET {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}}/juan_vicente_pradilla_1 {{PROTOCOL}}/{{PROTOCOL_VERSION}}
 
 ###
 

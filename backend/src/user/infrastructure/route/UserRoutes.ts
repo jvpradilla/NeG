@@ -16,6 +16,24 @@ export default class UserRoutes {
 
   public registerRoutes(pPath: string, pRouter: Router): void {
 
+    pRouter.get(pPath + "/:userID", async (pRequest: Request, pResponse: Response) => {
+      try {
+        const { userID } = pRequest.params;
+        const user = await this.controller.read(userID as string);
+        if(user === undefined) {
+          return pResponse.status(400).send();
+        }
+        const userJSON = { 
+          username: user.username.value,
+          avatar: user.userPhotoURL
+        };
+        pResponse.status(200).json(userJSON);
+      } catch (err) { 
+        const typedError = err as Error;
+        pResponse.status(400).json({ error: typedError.message });
+      }
+    });
+
   
     pRouter.post(pPath, async (pRequest: Request, pResponse: Response) => {
       try {

@@ -3,31 +3,39 @@
 import AnswerRecorder from "../../../../../../components/AnswerRecorder";
 import { createAnswer, createCharacter, readQuestions, publishCharacter, deleteCharacter } from "../../../../../../services/CharacterService";
 import { useEffect, useState } from "react";
-import { useSearchParams } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 
-export default function CharacterCreate ({ params } : { params: {characterID: string }}) {
-  const {characterID} = params;
+export default function CharacterCreate ({ params } : { params: {userID: string, characterID: string }}) {
+
+  const { push } = useRouter();
+
+  const { userID, characterID } = params;
   const type = useSearchParams().get("type") as unknown as number;
 
   const [showMe, setShowMe] = useState(true);
-
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
     loadQuestions(type);
   }, []);
 
+  
+
   const loadQuestions = async (pType: number) => {
     const questionsData = await readQuestions(pType);
     setQuestions(questionsData.questions);
   };
 
-  const handleAnswerSave = async (pQuestionId: string, pBlob: Blob) => {
-    createAnswer(characterID, pQuestionId, pBlob);
+  const handleAnswerSave = async (pQuestionId: string, pQuestionContent: string, pBlob: Blob) => {
+    createAnswer(characterID, pQuestionId, pQuestionContent, pBlob);
   };
 
   const handlePublish = async () => {
-    publishCharacter(characterID);
+    const isPublish = await publishCharacter(characterID);
+    if (isPublish) {
+      const urlRedirect = "/" + userID;
+      handleRedirect(urlRedirect);
+    }    
   };
 
   const handleDelete = async () => {
@@ -35,8 +43,17 @@ export default function CharacterCreate ({ params } : { params: {characterID: st
   };
 
   const handleCharacterSave = async () => {
-    console.log("handleCharacterSave");
     setShowMe(!showMe);
+  };
+
+  const handleRedirect = (pURLRedirect: string) => {
+    const nextURL = localStorage.getItem("nextURL");
+    if (nextURL !== null && nextURL !== undefined && nextURL !== "") {
+      localStorage.removeItem("nextURL");
+      push(nextURL);
+    } else {
+      push(pURLRedirect);
+    }
   };
   
   return (
@@ -46,11 +63,6 @@ export default function CharacterCreate ({ params } : { params: {characterID: st
       </div>
       <div className="formContainer" style={{display: showMe?"none":"grid"}}>
         <h3>Ingresa las etiquetas de tu personaje</h3>
-        
-        <label htmlFor="tags" className="inputTextLabel">
-          <span>Etiquetas</span>
-        </label>
-        <input id="tags" type="text" autoComplete="off" placeholder="#Tag" className="inputText" autoFocus/>
         <button type="button" className="button" onClick={handlePublish}>Publicar</button>
         <button type="button" className="button" onClick={handleDelete}>Descartar</button>
       </div>

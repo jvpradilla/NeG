@@ -19,15 +19,22 @@ export default function CharacterCreate () {
     }
   }, []);
 
-  let type = 0;
+  //let type = 14;
   const [name, setName] = useState("");
+  const [type, setType] = useState(14);
 
   const nameHandler =  (e: React.ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
   };
 
   const typeHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
-    type = e.currentTarget.value as unknown as number;
+    setType(e.currentTarget.value as unknown as number);
+    const toggles = document.querySelectorAll(".characterTypeToggleSelected");
+    toggles.forEach(toggle => {
+      toggle.classList.remove("characterTypeToggleSelected");
+    });
+
+    e.currentTarget.classList.add("characterTypeToggleSelected");
   };
 
   const handleSubmit = async () => {
@@ -44,23 +51,19 @@ export default function CharacterCreate () {
         <span>¿Cuál es el nombre del personaje?</span>
       </label>
       <input id="name" type="text" autoComplete="off" placeholder="Nombre del personaje" className="inputText" minLength={6} autoFocus required onChange={nameHandler}/>
-      <h3>Escoge el tipo de personaje que quieres crear</h3>
+      <label className="inputTextLabel">Escoge el tipo de personaje que quieres crear</label>
       <div className="characterTypeContent">
-        <button value={7} className="characterTypeButton" onClick={typeHandler}>
-          <i className="bi bi-person-down"/><br/>
-          Sencillo
+        <button value={7} className="characterTypeToggle" onClick={typeHandler}>
+          <i className="characterIcon bi bi-person-down"/><br/>
+          Sencillo (7 preguntas)
         </button>
-      </div>
-      <div className="characterTypeContent">
-        <button value={70} className="characterTypeButton" onClick={typeHandler}>
-          <i className="bi bi-person-down"/><br/>
-          Natural
+        <button value={14} className="characterTypeToggle characterTypeToggleSelected" onClick={typeHandler}>
+          <i className="characterIcon bi bi-person-down"/><br/>
+          Intermedio (14 preguntas)
         </button>
-      </div>
-      <div className="characterTypeContent">
-        <button value={98} className="characterTypeButton" onClick={typeHandler}>
-          <i className="bi bi-person-down"/><br/>
-          Complejo
+        <button value={21} className="characterTypeToggle" onClick={typeHandler}>
+          <i className="characterIcon bi bi-person-down"/><br/>
+          Complejo (21 preguntas)
         </button>
       </div>
       <button type="button" className="button" onClick={handleSubmit}>Crear Personaje</button>

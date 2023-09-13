@@ -16,6 +16,26 @@ export default class AnswerRoutes {
 
   public registerRoutes(pPath: string, pRouter: Router): void {
 
+    pRouter.get(pPath + "/:characterid", async (pRequest: Request, pResponse: Response) => {
+      try {
+        const characterid = pRequest.params.characterid as string;  
+        const result = await this.controller.findByCharacterId(characterid);
+        const resultJSON = result.map((answer) => {   
+          return {
+            id: answer.id.value,
+            characterId: answer.characterId.value,
+            questionId: answer.questionId.value,   
+            questionContent: answer.questionContent.value,         
+            answerVideoURL: answer.answerVideoURL
+          };
+        });
+        pResponse.status(200).json(resultJSON);
+      } catch (err) {
+        const typedError = err as Error;
+        pResponse.status(400).json({ error: typedError.message });
+      }
+    });
+
     pRouter.post(pPath + "/video", async (pRequest: Request, pResponse: Response) => {
       const uploadPath = `public/uploads/character/${uuidv4()}.webm`;
       const uploadURL = `/${uploadPath}` ;
@@ -29,8 +49,8 @@ export default class AnswerRoutes {
 
     pRouter.post(pPath, async (pRequest: Request, pResponse: Response) => {
       try {
-        const { id, characterId, questionId, answerVideoURL } = pRequest.body;
-        await this.controller.create(id, characterId, questionId, answerVideoURL);
+        const { id, characterId, questionId, questionContent, answerVideoURL } = pRequest.body;
+        await this.controller.create(id, characterId, questionId, questionContent, answerVideoURL);
         pResponse.status(200).send();
       } catch (err) {
         const typedError = err as Error;

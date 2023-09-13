@@ -4,7 +4,7 @@ import AnswerRecorderBar from "./AnswerRecorderBar";
 
 import styles from "./AnswerRecorder.module.css";
 
-export default function RecordVideo(props: { onCharacterSave: () =>void, onVideoSave: (pQuestionId: string, pBlob: Blob) => void, questions: any[]}) {
+export default function RecordVideo(props: { onCharacterSave: () =>void, onVideoSave: (pQuestionId: string, pQuestionContent: string, pBlob: Blob) => void, questions: any[]}) {
 
   const webCamRef = useRef<Webcam>(null);
   const mediaRecorderRef = useRef<MediaRecorder>();
@@ -30,7 +30,7 @@ export default function RecordVideo(props: { onCharacterSave: () =>void, onVideo
       const stream = video?.stream as MediaStream;
       mediaRecorderRef.current = new MediaRecorder(stream, {mimeType: "video/webm;codecs=vp9,opus"});
       mediaRecorderRef.current.ondataavailable = (event) => {
-        props.onVideoSave(props.questions[questionIndex]?.id, event.data);
+        props.onVideoSave(props.questions[questionIndex]?.id, props.questions[questionIndex]?.text, event.data);
         mediaRecorderRef.current = undefined;
         //const videoObj = document.getElementById("videoPlay") as HTMLVideoElement;
         //videoObj.src = URL.createObjectURL(event.data);
@@ -82,7 +82,7 @@ export default function RecordVideo(props: { onCharacterSave: () =>void, onVideo
 
   return (
     <div className={styles.container}>
-      <div className={styles.question} >{actualQuestion}</div>
+      <div className={styles.question}>{actualQuestion}</div>
       <div className={styles.webcamcontainer}>
         <Webcam className={styles.webcam} ref={webCamRef} audio={true} muted={true} mirrored={true} videoConstraints={constraints}/>
       </div>    

@@ -7,6 +7,12 @@
 @PATH = character
 
 ###
+GET {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+
+###
+GET {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}}/juan_vicente_pradilla_1 {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+
+###
 POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
 Content-Type: {{CONTENT_TYPE_JSON}}
 

@@ -13,6 +13,44 @@ export default class CharacterRoutes {
   }
 
   public registerRoutes(pPath: string, pRouter: Router): void {
+
+    pRouter.get(pPath, async (pRequest: Request, pResponse: Response) => {
+      try {
+        const result = await this.controller.findAll();
+        const resultJSON = result.map((character) => {
+          return {
+            id: character.id.value,
+            name: character.name.value,
+            username: character.userName.value,
+            published: character.published
+          };
+        });
+        pResponse.status(200).json(resultJSON);
+      } catch (err) {
+        const typedError = err as Error;
+        pResponse.status(400).json({ error: typedError.message });
+      }
+    });
+
+    pRouter.get(pPath + "/:username/", async (pRequest: Request, pResponse: Response) => {
+      try {
+        const username = pRequest.params.username as string;        
+        const result = await this.controller.findByUserID(username);
+        const resultJSON = result.map((character) => {
+          return {
+            id: character.id.value,
+            name: character.name.value,
+            username: character.userName.value,
+            published: character.published
+          };
+        }); 
+        pResponse.status(200).json(resultJSON);
+      } catch (err) {
+        const typedError = err as Error;
+        pResponse.status(400).json({ error: typedError.message });
+      }
+    });
+
     pRouter.post(pPath, async (pRequest: Request, pResponse: Response) => {
       try {
         const { id, name, username } = pRequest.body;

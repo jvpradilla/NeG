@@ -22,6 +22,16 @@ export const uploadAvatar = async (pFile: File) => {
   }
 };
 
+export const getUser = async (pUsername: string): Promise<User> => {
+  const response = await fetch(`http://localhost:5000/user/${pUsername}`);
+  if( response.status !== 200 ) {
+    console.log("Error ", await response.json());
+    return {} as User;
+  } 
+  const userJSON = await response.json();
+  return userJSON as User;  
+}
+
 export const createUser = async (pUsername: string, pPassword: string, pAvatar?: string): Promise<boolean> => {
   const user: User = {
     username: pUsername,

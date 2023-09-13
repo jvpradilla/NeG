@@ -6,6 +6,10 @@
 @CONTENT_TYPE_FORM = multipart/form-data
 @PATH = answer
 
+###
+GET {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}}/f9f2ae4e-86c2-44bf-982a-de9c9a43731d {{PROTOCOL}}/{{PROTOCOL_VERSION}}
+
+###
 POST {{PROTOCOL}}://{{HOSTNAME}}:{{PORT}}/{{PATH}} {{PROTOCOL}}/{{PROTOCOL_VERSION}}
 Content-Type: {{CONTENT_TYPE_JSON}}
 

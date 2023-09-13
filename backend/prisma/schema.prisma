@@ -7,10 +7,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 model Answer {
-  id             String @id
-  characterId    String
-  questionId     String
-  answerVideoURL String
+  id              String @id
+  characterId     String
+  questionId      String
+  questionContent String
+  answerVideoURL  String
 }
 model Character {
   id        String  @id

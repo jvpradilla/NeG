@@ -1,0 +1,75 @@
+.container {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.question {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: calc(100vh * 0.5625); 
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: left;
+  background: linear-gradient(to top, transparent 0%, #000000 100%);
+  padding: 35px 10px;
+  z-index: 10;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.videocontainer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.video {
+  max-width: 768px;  
+  height: 100vh;
+}
+
+.previousControl {
+  color: #00000066;
+  font-size: 42px;
+  width: 52px;
+  height: 52px;
+  padding-left: 5px;
+  position: absolute;
+  z-index: 20;
+  top: calc(50% - 21px);
+  left: 5px;  
+}
+
+.previousControl > i > span {
+  position: absolute;
+  color: white;
+  left: 5px;
+}
+
+.nextControl {
+  color: #00000066;
+  font-size: 42px;
+  width: 52px;
+  padding-right: 5px;
+  position: absolute;
+  z-index: 20;
+  top: calc(50% - 21px);
+  right: 0px;
+}
+
+.nextControl > i > span {
+  position: absolute;
+  color: white;
+  right: 10px;
+}
+
+
+

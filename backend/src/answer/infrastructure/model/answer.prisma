@@ -1,6 +1,7 @@
 model Answer {
-  id             String @id
-  characterId    String
-  questionId     String
-  answerVideoURL String
+  id              String @id
+  characterId     String
+  questionId      String
+  questionContent String
+  answerVideoURL  String
 }

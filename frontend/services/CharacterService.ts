@@ -4,6 +4,7 @@ export type Answer = {
   id: string;
   characterId: string;
   questionId: string;
+  questionContent: string,
   answerVideoURL: string;
 }
 
@@ -17,7 +18,7 @@ export const readQuestions = async (pQuantity: number): Promise<any> => {
   }
 };
 
-export const createAnswer = async (pCharacterId: string, pQuestionId: string, pAnswer: Blob) => {
+export const createAnswer = async (pCharacterId: string, pQuestionId: string, pQuestionContent: string, pAnswer: Blob) => {
   const response = await fetch("http://localhost:5000/answer/video/", {
       method: "POST",
       headers: {
@@ -34,6 +35,7 @@ export const createAnswer = async (pCharacterId: string, pQuestionId: string, pA
         id: answerId,
         characterId: pCharacterId,
         questionId: pQuestionId,
+        questionContent: pQuestionContent,
         answerVideoURL: answerVideoURLData
       };
       const responseAnswer = await fetch("http://localhost:5000/answer", {
@@ -74,6 +76,28 @@ export const createCharacter = async (pName: string, pUserName: string): Promise
   }
 };
 
+export const readAllCharacters = async (): Promise<any> => {
+  const response = await fetch(`http://localhost:5000/character`);
+  if (response.status !== 200) {
+    console.log(await response.json());
+  } else {
+    const characters = await response.json();
+    console.log(characters);
+    return characters;
+  }
+};
+
+export const readCharactersByUserName = async (pUserName: string): Promise<any> => {
+  const response = await fetch(`http://localhost:5000/character/${pUserName}`);
+  if (response.status !== 200) {
+    console.log(await response.json());
+  } else {
+    const characters = await response.json();
+    console.log(characters);
+    return characters;
+  }
+};
+
 export const deleteCharacter = async (pId: string) => {
   const response = await fetch(`http://localhost:5000/character/${pId}`, {
     method: "DELETE"
@@ -85,13 +109,15 @@ export const deleteCharacter = async (pId: string) => {
   }
 };
 
-export const publishCharacter = async (pId: string) => {
+export const publishCharacter = async (pId: string) : Promise<boolean> => {
   const response = await fetch(`http://localhost:5000/character/${pId}`, {
     method: "PUT"
   });
   if (response.status !== 200) {
     console.log(await response.json());
+    return false;
   } else {
     console.log("Character published");
+    return true;
   }
 };

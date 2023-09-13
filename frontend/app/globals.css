@@ -176,23 +176,26 @@ a:link, a:visited, a:active {
 }
 
 .characterTypeContent {
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);  
 }
 
-.characterTypeButton {
+.characterTypeToggle {
   height: 92px;
-  width: 100vw;
-  background-color:  #466444;
+  background-color:  #91918b;
   cursor: pointer;
   color: white;
   border: none;
   border-radius: 16px;
   padding: 14px;  
+  margin: 5px;
 }
 
-.characterTypeButton > i {
+.characterTypeToggleSelected {
+  background-color:  #466444;
+}
+
+.characterIcon {
   font-size: 28px;
 }
 

@@ -5,8 +5,7 @@ import { CharacterId } from "../../domain/CharacterId";
 import { CharacterName } from "../../domain/CharacterName";
 import { UserName } from "../../../user/domain/UserName";
 
-export class PostgreSQLCharacterRepository implements CharacterRepository {
- 
+export class PostgreSQLCharacterRepository implements CharacterRepository { 
   private prisma = new PrismaClient();
 
   public async findByCharacterId(pCharacterId: CharacterId): Promise<Character | undefined> {
@@ -56,5 +55,28 @@ export class PostgreSQLCharacterRepository implements CharacterRepository {
         id: pCharacterId.value
       }
     }); 
+  }
+
+  public async findByUserId(pUserId: UserName): Promise<Character[]> {
+    const characters = await this.prisma.character.findMany({
+      where: {
+        username: pUserId.value,
+        published: true
+      }
+    });
+    return characters.map((character) => {
+      return new Character(new CharacterId(character.id), new CharacterName(character.name), new UserName(character.username), character.published);
+    });
+  }
+
+  public async findAll(): Promise<Character[]> {
+    const characters = await this.prisma.character.findMany({
+      where: {
+        published: true
+      }
+    });
+    return characters.map((character) => {
+      return new Character(new CharacterId(character.id), new CharacterName(character.name), new UserName(character.username), character.published);
+    });
   }
 }
