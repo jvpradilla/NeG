@@ -3,6 +3,7 @@
 
 import AnswerViewer from "../../../../../components/AnswerViewer";
 import { readAnswerdByCharacterId } from "../../../../../services/AnswerService";
+import { saveLocation } from "../../../../../services/LocationService";
 import { useEffect, useState } from "react";
 
 export default function CharacterReadId ({params}: {params: {characterID: string };}) {
@@ -10,6 +11,7 @@ export default function CharacterReadId ({params}: {params: {characterID: string
   const [answers, setAnswers] = useState([]);
 
   useEffect(() => {
+    saveLocation("/user");
     loadAnswers();
   }, []);
 
@@ -18,9 +20,13 @@ export default function CharacterReadId ({params}: {params: {characterID: string
     setAnswers(answersData);
   };
 
+  const handleNext = async () => {
+    console.log("handleNext");
+  };
+
   return (
     <div>
-      <AnswerViewer answers={answers} />
+      <AnswerViewer answers={answers} onEnded={handleNext}/>
     </div>
   );
 }

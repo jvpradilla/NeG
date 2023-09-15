@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation';
 import { loginUser } from "../../../services/UserService";
 import { getSession, hasValidSession } from "../../../services/SessionService";
+import { saveLocation } from "../../../services/LocationService";
 
 export default function UserLogin () {
 
@@ -15,6 +16,7 @@ export default function UserLogin () {
   const regex = /^[a-z0-9_]+$/;
 
   useEffect(() => {
+    saveLocation("/signin");
     if (hasValidSession()) {
       const session = getSession();
       const localUserName = session?.username;

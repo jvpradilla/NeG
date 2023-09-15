@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation';
 import { createUser, uploadAvatar } from "../../../services/UserService";
 import { getSession, hasValidSession } from "../../../services/SessionService";
+import { saveLocation } from "../../../services/LocationService";
 
 
 
@@ -17,6 +18,7 @@ export default function UserCreate () {
   const regex = /^[a-z0-9_]+$/;
 
   useEffect(() => {
+    saveLocation("/signup");
     if (hasValidSession()) {
       const session = getSession();
       const localUserName = session?.username;

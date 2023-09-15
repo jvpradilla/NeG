@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { createAnswer, createCharacter, readQuestions } from "../../../../../services/CharacterService";
 import { getSession, hasValidSession } from "../../../../../services/SessionService";
+import { saveLocation } from "../../../../../services/LocationService";
 
 import { useEffect, useState } from "react";
 
@@ -12,6 +13,7 @@ export default function CharacterCreate () {
   const [username, setUsername] = useState("");
 
   useEffect(() => {
+    saveLocation("/new");
     if (hasValidSession()) {
       const session = getSession();
       const localUserName = session?.username;

@@ -2,6 +2,7 @@
 
 import AnswerRecorder from "../../../../../../components/AnswerRecorder";
 import { createAnswer, createCharacter, readQuestions, publishCharacter, deleteCharacter } from "../../../../../../services/CharacterService";
+import { saveLocation } from "../../../../../../services/LocationService";
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from 'next/navigation'
 
@@ -16,6 +17,7 @@ export default function CharacterCreate ({ params } : { params: {userID: string,
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
+    saveLocation("/new");
     loadQuestions(type);
   }, []);
 

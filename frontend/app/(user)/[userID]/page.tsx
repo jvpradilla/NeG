@@ -3,12 +3,14 @@
 import { useEffect } from "react";
 import { getUser } from "../../../services/UserService";
 import { readCharactersByUserName } from "../../../services/CharacterService";
+import { saveLocation } from "@/services/LocationService";
 
 
 export default function UserReadId ({ params}: {params: { userID: string };}) {
   const {userID} = params;
 
   useEffect(() => {
+    saveLocation("/user");
     getUser(userID);
     readCharactersByUserName(userID);
   }, []);

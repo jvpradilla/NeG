@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation';
 import { updateUser } from "../../../../services/UserService";
 import { getSession, hasValidSession } from "../../../../services/SessionService";
+import { saveLocation } from "../../../../services/LocationService";
 
 
 export default function UserEdit () {
@@ -17,6 +18,8 @@ export default function UserEdit () {
 
 
   useEffect(() => {
+
+    saveLocation("/user");
    
     if (!hasValidSession()) {
       push('/user/login');
