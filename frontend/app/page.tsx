@@ -15,13 +15,24 @@ export default function HomePage () {
 
   const loadCharacters = async () => {
     const charactersData = await readAllCharacters();
-    setCharacters(charactersData);
+    const charactersShuffled = charactersData.sort(() => 0.5 - Math.random());
+    setCharacters(charactersShuffled);
   }
-//<CharacterCarousel characters={characters}/>
+
+  const handleEnd = async () => {
+    console.log("end");
+    loadCharacters();
+  };
+
+  if (characters.length == 0) {
+    return (
+      <div className="loaderPage">
+        <span className="loader"></span>
+      </div>
+    );
+  }
+  
   return (
-    <div>
-      <h1>Home page</h1>
-      
-    </div>
-  );
+    <CharacterCarousel characters={characters} onEnded={handleEnd}/>
+  );  
 }

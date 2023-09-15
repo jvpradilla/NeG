@@ -82,7 +82,6 @@ export const readAllCharacters = async (): Promise<any> => {
     console.log(await response.json());
   } else {
     const characters = await response.json();
-    console.log(characters);
     return characters;
   }
 };

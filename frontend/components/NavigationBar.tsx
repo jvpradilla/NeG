@@ -55,7 +55,7 @@ const links = [{
 }];
 
 export default function NavigationBar () {
-  const pathname = getLocation()!;
+  const pathname = getLocation();
 
   /*
 <div dangerouslySetInnerHTML={{ __html: icon }} style={{stroke:pattern.includes(pathname)?"#496727":"white"}}/>

@@ -19,6 +19,7 @@ export default function AnswerViewer(props: { answers: any[], onEnded: () => voi
       setAnswerIndex(answerIndex + 1);
     } else {
       props.onEnded();
+      setAnswerIndex(0);
     }
   };
 
@@ -36,13 +37,16 @@ export default function AnswerViewer(props: { answers: any[], onEnded: () => voi
     setXCoord(0);
   };
 
+  /*
+<div className={styles.previousControl} onClick={handlePrevious} hidden={answerIndex == 0}><i className="bi bi-circle-fill"><span className="bi bi-arrow-left-short"></span></i></div>
+        <div className={styles.nextControl} onClick={handleNext} hidden={answerIndex == props.answers.length - 1}><i className="bi bi-circle-fill"><span className="bi bi-arrow-right-short"></span></i></div>
+  */
+
   return (
     <div className={styles.container} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
       <div className={styles.question}>{props.answers[answerIndex]?.questionContent}</div>
       <Stepper steps={props.answers.length} activeStep={answerIndex}/>
-      <div className={styles.videocontainer}>
-        <div className={styles.previousControl} onClick={handlePrevious} hidden={answerIndex == 0}><i className="bi bi-circle-fill"><span className="bi bi-arrow-left-short"></span></i></div>
-        <div className={styles.nextControl} onClick={handleNext} hidden={answerIndex == props.answers.length - 1}><i className="bi bi-circle-fill"><span className="bi bi-arrow-right-short"></span></i></div>
+      <div className={styles.videocontainer}>        
         <video className={styles.video} id="videoPlay" src={"http://localhost:5000" + props.answers[answerIndex]?.answerVideoURL} autoPlay onEnded={handleNext}></video>
       </div>  
     </div>

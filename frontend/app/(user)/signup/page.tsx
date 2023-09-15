@@ -6,8 +6,6 @@ import { createUser, uploadAvatar } from "../../../services/UserService";
 import { getSession, hasValidSession } from "../../../services/SessionService";
 import { saveLocation } from "../../../services/LocationService";
 
-
-
 export default function UserCreate () {
 
   const { push } = useRouter();

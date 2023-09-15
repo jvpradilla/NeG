@@ -7,7 +7,5 @@ export const getLocation = () => {
   if (location) {
     return location;
   }
-  return null;
+  return "";
 }
-
-//{username: "juan_vicente_pradilla_3", password: "P@ssword123456"}

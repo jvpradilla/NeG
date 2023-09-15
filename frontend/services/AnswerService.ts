@@ -4,7 +4,7 @@ export const readAnswerdByCharacterId = async (pCharacterId: string): Promise<an
     console.log(await response.json());
   } else {
     const answers = await response.json();
-    console.log(answers);
+    //console.log(answers);
     return answers;
   }
 };
