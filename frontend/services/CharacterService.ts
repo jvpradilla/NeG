@@ -19,7 +19,7 @@ export const readQuestions = async (pQuantity: number): Promise<any> => {
 };
 
 export const createAnswer = async (pCharacterId: string, pQuestionId: string, pQuestionContent: string, pAnswer: Blob) => {
-  const response = await fetch("http://localhost:5000/answer/video/", {
+  const response = await fetch(`http://localhost:5000/answer/${pCharacterId}/video/`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/octet-stream',

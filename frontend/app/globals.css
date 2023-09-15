@@ -21,6 +21,7 @@ body {
 main {
   background-color: #f5f7f7;
   max-width: 768px;
+  width: 100%;
   height: calc(100vh - 69px);
   padding: 10px;
 }

@@ -36,10 +36,17 @@ export default class AnswerRoutes {
       }
     });
 
-    pRouter.post(pPath + "/video", async (pRequest: Request, pResponse: Response) => {
-      const uploadPath = `public/uploads/character/${uuidv4()}.webm`;
+    pRouter.post(pPath + "/:characterid/video", async (pRequest: Request, pResponse: Response) => {
+      const characterid = pRequest.params.characterid as string;  
+      const uploadDir = `public/uploads/character/${characterid}`;
+      const uploadPath = `${uploadDir}/${uuidv4()}.webm`;
       const uploadURL = `/${uploadPath}` ;
-      fs.writeFile(uploadPath, Buffer.from(pRequest.body),err => {
+      
+      if (!fs.existsSync(uploadDir)) {
+        fs.mkdirSync(uploadDir, { recursive: true });
+      }
+
+      fs.writeFile(uploadPath, Buffer.from(pRequest.body), err => {
         if (null !== err) {
           return pResponse.status(500).send({ message : err });
         }

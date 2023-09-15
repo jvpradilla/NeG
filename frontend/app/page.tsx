@@ -20,7 +20,6 @@ export default function HomePage () {
   }
 
   const handleEnd = async () => {
-    console.log("end");
     loadCharacters();
   };
 
