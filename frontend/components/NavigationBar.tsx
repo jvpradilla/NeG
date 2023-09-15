@@ -63,7 +63,7 @@ export default function NavigationBar () {
   */
 
   return (
-    <div className={styles.container} style={{display:pathname.endsWith("create") && pathname.includes("/character/")?"none":"flex"}}>
+    <div className={styles.container} style={{display:usePathname().endsWith("create") && usePathname().includes("/character/")?"none":"flex"}}>
       <nav className={styles.navigation}>
         <ul>
           {links.map(({label, route, icon, pattern}) => (

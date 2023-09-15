@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import AnswerRecorderBar from "./AnswerRecorderBar";
 
 import styles from "./AnswerRecorder.module.css";
+import Stepper from "./Stepper";
 
 export default function RecordVideo(props: { onCharacterSave: () =>void, onVideoSave: (pQuestionId: string, pQuestionContent: string, pBlob: Blob) => void, questions: any[]}) {
 
@@ -83,6 +84,7 @@ export default function RecordVideo(props: { onCharacterSave: () =>void, onVideo
   return (
     <div className={styles.container}>
       <div className={styles.question}>{actualQuestion}</div>
+      <Stepper steps={props.questions.length} activeStep={questionIndex}/>
       <div className={styles.webcamcontainer}>
         <Webcam className={styles.webcam} ref={webCamRef} audio={true} muted={true} mirrored={true} videoConstraints={constraints}/>
       </div>    
