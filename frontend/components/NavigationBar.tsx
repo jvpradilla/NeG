@@ -1,11 +1,12 @@
 'use client'
 
 import styles from "./NavigationBar.module.css";
-
  
 import { usePathname } from 'next/navigation'
 import Link from "next/link";
-import { getLocation } from "@/services/LocationService";
+import { useEffect, useState } from "react";
+import { getLocation } from "../services/LocationService";
+import { get } from "http";
 
 const links = [{
     label: "Inicio",
@@ -55,22 +56,24 @@ const links = [{
 }];
 
 export default function NavigationBar () {
-  const pathname = getLocation();
 
-  /*
-<div dangerouslySetInnerHTML={{ __html: icon }} style={{stroke:pattern.includes(pathname)?"#496727":"white"}}/>
-                <span style={{color:pattern.includes(pathname)?"#496727":"white"}}>{label}</span>
-  */
+  const [location, setLocation] = useState("");
+
+  useEffect(() => {
+    setLocation(getLocation());
+  }, [usePathname()]);
+
+  //style={{display:usePathname().endsWith("create") && usePathname().includes("/character/")?"none":"flex"}}
 
   return (
-    <div className={styles.container} style={{display:usePathname().endsWith("create") && usePathname().includes("/character/")?"none":"flex"}}>
+    <div className={styles.container} style={{display:location==="/new"?"none":"flex"}}>
       <nav className={styles.navigation}>
         <ul>
           {links.map(({label, route, icon, pattern}) => (
             <li key={route} className={styles.navigation_item}>
               <Link href={route}>
-                <div dangerouslySetInnerHTML={{ __html: icon }} style={{stroke:"white"}}/>
-                <span style={{color:"white"}}>{label}</span>
+                <div dangerouslySetInnerHTML={{ __html: icon }} style={{stroke:pattern.includes(location)?"#496727":"white"}}/>
+                <span style={{color:pattern.includes(location)?"#496727":"white"}}>{label}</span>
               </Link>
             </li>
           ))}

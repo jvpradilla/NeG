@@ -3,12 +3,14 @@
 import AnswerRecorder from "../../../../../../components/AnswerRecorder";
 import { createAnswer, createCharacter, readQuestions, publishCharacter, deleteCharacter } from "../../../../../../services/CharacterService";
 import { saveLocation } from "../../../../../../services/LocationService";
-import { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRef, useEffect, useState } from "react";
+import { useRouter, useSearchParams } from 'next/navigation';
+import Webcam from "react-webcam";
 
 export default function CharacterCreate ({ params } : { params: {userID: string, characterID: string }}) {
 
   const { push } = useRouter();
+  const webCamRef = useRef<Webcam>(null);
 
   const { userID, characterID } = params;
   const type = useSearchParams().get("type") as unknown as number;
@@ -21,7 +23,13 @@ export default function CharacterCreate ({ params } : { params: {userID: string,
     loadQuestions(type);
   }, []);
 
-  
+  const constraints = {
+    width:  { min: 200, ideal: 200, max: 200 },
+    height: { min: 200, ideal: 200, max: 200 },
+    aspectRatio: 0.5625,
+    frameRate: { max: 30 },
+    facingMode:  "user"
+  };
 
   const loadQuestions = async (pType: number) => {
     const questionsData = await readQuestions(pType);
@@ -57,17 +65,37 @@ export default function CharacterCreate ({ params } : { params: {userID: string,
       push(pURLRedirect);
     }
   };
-  
-  return (
-    <div>
-      <div style={{display: showMe?"block":"none"}}>
+
+  /*
+<div style={{display: showMe?"block":"none"}}>
         <AnswerRecorder onCharacterSave={handleCharacterSave} onVideoSave={handleAnswerSave} questions={questions}/>
       </div>
+  */
+
+      /*
+      <div>
       <div className="formContainer" style={{display: showMe?"none":"grid"}}>
-        <h3>Ingresa las etiquetas de tu personaje</h3>
-        <button type="button" className="button" onClick={handlePublish}>Publicar</button>
-        <button type="button" className="button" onClick={handleDelete}>Descartar</button>
+        <h1>Crea un nuevo personaje</h1>
+        <div>
+          <Webcam ref={webCamRef} audio={true} muted={true} mirrored={true} videoConstraints={constraints}/>
+        </div>
+        <div className="twoColumns">
+          <button type="button" className="button" onClick={handlePublish}>Publicar</button>
+          <button type="button" className="negativeButton" onClick={handleDelete}><i className="bi bi-trash3"></i></button>
+        </div>
       </div>
+    </div>
+      
+      */
+  
+  return (
+    <div className="formContainer">
+      <h1>Crea un nuevo personaje</h1>
+      <Webcam ref={webCamRef} audio={true} muted={true} mirrored={true} videoConstraints={constraints} className="video-circle"/> 
+      <div className="twoColumns">
+          <button type="button" className="button" onClick={handlePublish}>Publicar</button>
+          <button type="button" className="negativeButton" onClick={handleDelete}><i className="bi bi-trash3"></i></button>
+        </div>
     </div>
   );
 }

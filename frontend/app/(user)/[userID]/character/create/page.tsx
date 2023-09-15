@@ -13,7 +13,7 @@ export default function CharacterCreate () {
   const [username, setUsername] = useState("");
 
   useEffect(() => {
-    saveLocation("/new");
+    saveLocation("/character");
     if (hasValidSession()) {
       const session = getSession();
       const localUserName = session?.username;

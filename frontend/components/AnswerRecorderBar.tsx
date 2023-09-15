@@ -7,7 +7,7 @@ export default function AnswerRecorderBar(props: {onRecordStartAnswer: () => voi
   const [recording, setRecording] = useState(false);
   const [processing, setProcessing] = useState(false);
 
-  const handleStartRecordAnswer = () => {
+  const handleStartRecordAnswer = (event:any) => {
     setRecording(true);
     setProcessing(true);
     props.onRecordStartAnswer();
@@ -42,7 +42,7 @@ export default function AnswerRecorderBar(props: {onRecordStartAnswer: () => voi
       <div className={styles.navigation}>
         <div className={styles.navigation_item} hidden={recording || processing} onClick={handlePreviewQuestion}><i className="bi bi-skip-start-fill"></i></div>
         <div className={styles.navigation_item} hidden={recording || !processing} onClick={handleDeleteAnswer}><i className="bi bi-trash3"></i></div>
-        <div className={styles.record_item} onMouseDown={handleStartRecordAnswer} onMouseUp={handleStopRecordAnswer}><i className="bi bi-record-circle"></i></div>
+        <div className={styles.record_item} onMouseDown={handleStartRecordAnswer} onMouseUp={handleStopRecordAnswer} onTouchStart={handleStartRecordAnswer} onTouchEnd={handleStopRecordAnswer}><i className="bi bi-record-circle"></i></div>
         <div className={styles.navigation_item} hidden={recording || !processing} onClick={handleUploadAnswer}><i className="bi bi-cloud-upload"></i></div>
         <div className={styles.navigation_item} hidden={recording || processing} onClick={handleNextQuestion}><i className="bi bi-skip-end-fill"></i></div>
       </div>
