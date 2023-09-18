@@ -1,5 +1,7 @@
 import { v4 } from "uuid";
 
+const API_URL = "http://172.16.3.70:5000";
+
 export type Answer = {
   id: string;
   characterId: string;
@@ -9,7 +11,7 @@ export type Answer = {
 }
 
 export const readQuestions = async (pQuantity: number): Promise<any> => {
-  const response = await fetch(`http://localhost:5000/questionnaire/?quantity=${pQuantity}`);
+  const response = await fetch(`${API_URL}/questionnaire/?quantity=${pQuantity}`);
   if (response.status !== 200) {
     console.log(await response.json());
   } else {
@@ -19,7 +21,7 @@ export const readQuestions = async (pQuantity: number): Promise<any> => {
 };
 
 export const createAnswer = async (pCharacterId: string, pQuestionId: string, pQuestionContent: string, pAnswer: Blob) => {
-  const response = await fetch(`http://localhost:5000/answer/${pCharacterId}/video/`, {
+  const response = await fetch(`${API_URL}/answer/${pCharacterId}/video/`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/octet-stream',
@@ -38,7 +40,7 @@ export const createAnswer = async (pCharacterId: string, pQuestionId: string, pQ
         questionContent: pQuestionContent,
         answerVideoURL: answerVideoURLData
       };
-      const responseAnswer = await fetch("http://localhost:5000/answer", {
+      const responseAnswer = await fetch(`${API_URL}/answer`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(answer)
@@ -60,7 +62,7 @@ export const createCharacter = async (pName: string, pUserName: string): Promise
     "username" : pUserName
   };
   
-  const response = await fetch("http://localhost:5000/character", {
+  const response = await fetch(`${API_URL}/character`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -77,7 +79,7 @@ export const createCharacter = async (pName: string, pUserName: string): Promise
 };
 
 export const readAllCharacters = async (): Promise<any> => {
-  const response = await fetch(`http://localhost:5000/character`);
+  const response = await fetch(`${API_URL}/character`);
   if (response.status !== 200) {
     console.log(await response.json());
   } else {
@@ -87,7 +89,7 @@ export const readAllCharacters = async (): Promise<any> => {
 };
 
 export const readCharactersByUserName = async (pUserName: string): Promise<any> => {
-  const response = await fetch(`http://localhost:5000/character/${pUserName}`);
+  const response = await fetch(`${API_URL}/character/${pUserName}`);
   if (response.status !== 200) {
     console.log(await response.json());
   } else {
@@ -98,7 +100,7 @@ export const readCharactersByUserName = async (pUserName: string): Promise<any> 
 };
 
 export const deleteCharacter = async (pId: string) => {
-  const response = await fetch(`http://localhost:5000/character/${pId}`, {
+  const response = await fetch(`${API_URL}/character/${pId}`, {
     method: "DELETE"
   });
   if (response.status !== 200) {
@@ -109,7 +111,7 @@ export const deleteCharacter = async (pId: string) => {
 };
 
 export const publishCharacter = async (pId: string) : Promise<boolean> => {
-  const response = await fetch(`http://localhost:5000/character/${pId}`, {
+  const response = await fetch(`${API_URL}/character/${pId}`, {
     method: "PUT"
   });
   if (response.status !== 200) {

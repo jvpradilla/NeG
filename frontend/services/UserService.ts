@@ -1,6 +1,8 @@
 import { Md5 } from 'ts-md5';
 import { saveSession, Session } from './SessionService';
 
+const API_URL = "http://172.16.3.70:5000";
+
 export type User = {
   username: string;
   password: string;
@@ -11,7 +13,7 @@ export type User = {
 export const uploadAvatar = async (pFile: File) => {
   const formData = new FormData();
   formData.append("file", pFile);
-  const response = await fetch("http://localhost:5000/user/avatar", {
+  const response = await fetch(`${API_URL}/user/avatar`, {
     method: "POST",
     body: formData
   });
@@ -23,7 +25,7 @@ export const uploadAvatar = async (pFile: File) => {
 };
 
 export const getUser = async (pUsername: string): Promise<User> => {
-  const response = await fetch(`http://localhost:5000/user/${pUsername}`);
+  const response = await fetch(`${API_URL}/user/${pUsername}`);
   if( response.status !== 200 ) {
     console.log("Error ", await response.json());
     return {} as User;
@@ -39,7 +41,7 @@ export const createUser = async (pUsername: string, pPassword: string, pAvatar?:
     avatar: pAvatar
   };
   
-  const response = await fetch("http://localhost:5000/user", {
+  const response = await fetch(`${API_URL}/user`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
@@ -69,7 +71,7 @@ export const updateUser = async (pUsername: string, pPassword: string, pPassword
     avatar: pAvatarNew
   };
   
-  const response = await fetch("http://localhost:5000/user", {
+  const response = await fetch(`${API_URL}/user`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
@@ -96,7 +98,7 @@ export const loginUser = async (pUsername: string, pPassword: string): Promise<b
     password: Md5.hashAsciiStr(pPassword)
   };
   
-  const response = await fetch("http://localhost:5000/user/signin", {
+  const response = await fetch(`${API_URL}/user/signin`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
