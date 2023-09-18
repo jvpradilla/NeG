@@ -2,6 +2,11 @@ import "dotenv/config";
 import express from "express";
 import fileUpload from "express-fileupload";
 import cors from "cors";
+/*
+import https from "https";
+import fs from "fs";
+*/
+
 import UserRoutes from "./user/infrastructure/route/UserRoutes";
 import { PostgreSQLUserRepository } from "./user/infrastructure/repository/PostgreSQLUserRepository";
 import CharacterRoutes from "./character/infrastructure/route/CharacterRoutes";
@@ -41,3 +46,11 @@ new AnswerRoutes(new PostgreSQLAnswerRepository()).registerRoutes("/answer", APP
 new QuestionnaireRoutes(questionnairesRepository).registerRoutes("/questionnaire", APP);
 
 APP.listen(PORT, () => console.log(`Server ready on port: ${PORT}`));
+
+/*
+const httpsOptions = {
+  key: fs.readFileSync("./certificates/localhost.key"),
+  cert: fs.readFileSync("./certificates/localhost.crt")
+};
+https.createServer(httpsOptions, APP).listen(PORT, () => console.log(`Server ready on port: ${PORT}`));
+*/
