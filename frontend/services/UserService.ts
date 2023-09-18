@@ -1,7 +1,9 @@
 import { Md5 } from 'ts-md5';
 import { saveSession, Session } from './SessionService';
 
-const API_URL = "http://172.16.3.70:5000";
+const API_URL = process.env.NEXT_PUBLIC_HOST;
+
+console.log("API_URL", API_URL);
 
 export type User = {
   username: string;

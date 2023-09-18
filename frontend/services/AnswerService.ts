@@ -1,4 +1,4 @@
-const API_URL = "http://172.16.3.70:5000";
+const API_URL = process.env.NEXT_PUBLIC_HOST;
 
 export const readAnswerdByCharacterId = async (pCharacterId: string): Promise<any> => {
   const response = await fetch(`${API_URL}/answer/${pCharacterId}`);

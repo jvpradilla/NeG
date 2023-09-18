@@ -1,6 +1,6 @@
 import { v4 } from "uuid";
 
-const API_URL = "http://172.16.3.70:5000";
+const API_URL = process.env.NEXT_PUBLIC_HOST;
 
 export type Answer = {
   id: string;
