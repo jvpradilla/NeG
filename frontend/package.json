@@ -6,8 +6,7 @@
     "dev": "next dev -p 5002",
     "build": "next build",
     "start": "next start -p 5002",
-    "lint": "next lint",
-    "secure": "NODE_ENV=development node server.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "@types/node": "18.16.3",
