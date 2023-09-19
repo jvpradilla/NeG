@@ -53,7 +53,7 @@ export default function AnswerRecorderBar(props: {onRecordStartAnswer: () => voi
     <div className={styles.container}>
       <div className={styles.navigation}>
         <div className={styles.navigation_item} hidden={recording || !processing} onClick={handleDeleteAnswer}><i className="bi bi-trash3"></i></div>
-        <div className={styles.record_item} onMouseDown={handleStartRecordAnswer} onMouseUp={handleStopRecordAnswer} onTouchStart={handleStartRecordAnswer} onTouchEnd={handleStopRecordAnswer}><i className="bi bi-record-circle"></i></div>
+        <div className={styles.record_item} onMouseDown={handleStartRecordAnswer} onMouseUp={handleStopRecordAnswer} onTouchStart={handleStartRecordAnswer} onTouchEnd={handleStopRecordAnswer}><i id="record" className="bi bi-record-circle"></i></div>
         <div className={styles.navigation_item} hidden={recording || !processing} onClick={handleUploadAnswer}><i className="bi bi-cloud-upload"></i></div>
       </div>
     </div>
