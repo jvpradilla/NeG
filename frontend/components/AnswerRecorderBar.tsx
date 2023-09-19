@@ -7,7 +7,7 @@ export default function AnswerRecorderBar(props: {onRecordStartAnswer: () => voi
   const [recording, setRecording] = useState(false);
   const [processing, setProcessing] = useState(false);
 
-  const handleStartRecordAnswer = (event:any) => {
+  const handleStartRecordAnswer = () => {
     setRecording(true);
     setProcessing(true);
     props.onRecordStartAnswer();
@@ -37,6 +37,14 @@ export default function AnswerRecorderBar(props: {onRecordStartAnswer: () => voi
     handleNextQuestion();
   };
 
+  const handleClic = () => {
+    if (recording) {
+      handleStopRecordAnswer();
+    } else {
+      handleStartRecordAnswer();
+    }
+  };
+
   /*
     <div className={styles.container}>
       <div className={styles.navigation}>
@@ -49,11 +57,21 @@ export default function AnswerRecorderBar(props: {onRecordStartAnswer: () => voi
     </div>
   */
 
+    /*
+<div className={styles.container}>
+      <div className={styles.navigation}>
+        <div className={styles.navigation_item} hidden={recording || !processing} onClick={handleDeleteAnswer}><i className="bi bi-trash3"></i></div>
+        <div className={styles.record_item} onMouseDown={handleStartRecordAnswer} onMouseUp={handleStopRecordAnswer} onTouchStart={handleStartRecordAnswer} onTouchEnd={handleStopRecordAnswer}><i id="record" className="bi bi-record-circle"></i></div>
+        <div className={styles.navigation_item} hidden={recording || !processing} onClick={handleUploadAnswer}><i className="bi bi-cloud-upload"></i></div>
+      </div>
+    </div>
+    */
+
   return (
     <div className={styles.container}>
       <div className={styles.navigation}>
         <div className={styles.navigation_item} hidden={recording || !processing} onClick={handleDeleteAnswer}><i className="bi bi-trash3"></i></div>
-        <div className={styles.record_item} onMouseDown={handleStartRecordAnswer} onMouseUp={handleStopRecordAnswer} onTouchStart={handleStartRecordAnswer} onTouchEnd={handleStopRecordAnswer}><i id="record" className="bi bi-record-circle"></i></div>
+        <div className={styles.record_item} onClick={handleClic}><i hidden={recording || processing} className="bi bi-record-circle"></i><i hidden={!recording} className="bi bi-stop-circle" style={{color:"#b30101b0"}}></i></div>
         <div className={styles.navigation_item} hidden={recording || !processing} onClick={handleUploadAnswer}><i className="bi bi-cloud-upload"></i></div>
       </div>
     </div>
