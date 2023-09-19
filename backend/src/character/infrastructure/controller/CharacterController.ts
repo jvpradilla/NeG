@@ -31,9 +31,9 @@ export class CharacterController {
     await this.createCharacter.execute(characterId, characterName, userName);
   }
 
-  public async publish(pCharacterId: string): Promise<void> {
+  public async publish(pCharacterId: string, pCharacterAvatarURL: string): Promise<void> {
     const characterId = new CharacterId(pCharacterId);
-    await this.publishCharacter.execute(characterId);
+    await this.publishCharacter.execute(characterId, pCharacterAvatarURL);
   }
 
   public async delete(pCharacterId: string): Promise<void> {

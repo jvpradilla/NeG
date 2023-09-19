@@ -25,7 +25,8 @@ export class PostgreSQLCharacterRepository implements CharacterRepository {
       data: {
         id: pCharacter.id.value,
         name: pCharacter.name.value,
-        username: pCharacter.userName.value
+        username: pCharacter.userName.value,
+        avatar: pCharacter.characterAvatarURL
       }
     });
   }
@@ -38,7 +39,8 @@ export class PostgreSQLCharacterRepository implements CharacterRepository {
       data: {
         name: pCharacter.name.value,
         username: pCharacter.userName.value,
-        published: pCharacter.published
+        published: pCharacter.published,
+        avatar: pCharacter.characterAvatarURL
       }
     });
   }
@@ -65,7 +67,7 @@ export class PostgreSQLCharacterRepository implements CharacterRepository {
       }
     });
     return characters.map((character) => {
-      return new Character(new CharacterId(character.id), new CharacterName(character.name), new UserName(character.username), character.published);
+      return new Character(new CharacterId(character.id), new CharacterName(character.name), new UserName(character.username), character.published, character.avatar);
     });
   }
 
@@ -76,7 +78,7 @@ export class PostgreSQLCharacterRepository implements CharacterRepository {
       }
     });
     return characters.map((character) => {
-      return new Character(new CharacterId(character.id), new CharacterName(character.name), new UserName(character.username), character.published);
+      return new Character(new CharacterId(character.id), new CharacterName(character.name), new UserName(character.username), character.published, character.avatar);
     });
   }
 }

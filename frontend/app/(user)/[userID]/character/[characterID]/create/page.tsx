@@ -41,11 +41,14 @@ export default function CharacterCreate ({ params } : { params: {userID: string,
   };
 
   const handlePublish = async () => {
-    const isPublish = await publishCharacter(characterID);
+
+    const imageSrc = webCamRef.current?.getScreenshot() as string;
+    const isPublish = await publishCharacter(characterID, imageSrc);
+
     if (isPublish) {
       const urlRedirect = "/" + userID;
       handleRedirect(urlRedirect);
-    }    
+    } 
   };
 
   const handleDelete = async () => {
@@ -54,6 +57,7 @@ export default function CharacterCreate ({ params } : { params: {userID: string,
 
   const handleCharacterSave = async () => {
     setShowMe(!showMe);
+    saveLocation("/character");
   };
 
   const handleRedirect = (pURLRedirect: string) => {
@@ -65,28 +69,6 @@ export default function CharacterCreate ({ params } : { params: {userID: string,
       push(pURLRedirect);
     }
   };
-
-  /*
-<div style={{display: showMe?"block":"none"}}>
-        <AnswerRecorder onCharacterSave={handleCharacterSave} onVideoSave={handleAnswerSave} questions={questions}/>
-      </div>
-  */
-
-      /*
-      <div>
-      <div className="formContainer" style={{display: showMe?"none":"grid"}}>
-        <h1>Crea un nuevo personaje</h1>
-        <div>
-          <Webcam ref={webCamRef} audio={true} muted={true} mirrored={true} videoConstraints={constraints}/>
-        </div>
-        <div className="twoColumns">
-          <button type="button" className="button" onClick={handlePublish}>Publicar</button>
-          <button type="button" className="negativeButton" onClick={handleDelete}><i className="bi bi-trash3"></i></button>
-        </div>
-      </div>
-    </div>
-      
-      */
   
   return (
     <div>
@@ -100,18 +82,7 @@ export default function CharacterCreate ({ params } : { params: {userID: string,
             <button type="button" className="button" onClick={handlePublish}>Publicar</button>
             <button type="button" className="negativeButton" onClick={handleDelete}><i className="bi bi-trash3"></i></button>
         </div>
-    </div>
+      </div>
     </div>
   );
 }
-
-/*
-<div className="formContainer">
-      <h1>Crea un nuevo personaje</h1>
-      <Webcam ref={webCamRef} audio={true} muted={true} mirrored={true} videoConstraints={constraints} className="video-circle"/> 
-      <div className="twoColumns">
-          <button type="button" className="button" onClick={handlePublish}>Publicar</button>
-          <button type="button" className="negativeButton" onClick={handleDelete}><i className="bi bi-trash3"></i></button>
-        </div>
-    </div>
-*/

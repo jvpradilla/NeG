@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation';
 import { createUser, uploadAvatar } from "../../../services/UserService";
@@ -14,6 +15,8 @@ export default function UserCreate () {
   const [password, setPassword] = useState("");
   const [avatar, setAvatar] = useState({} as File);
   const regex = /^[a-z0-9_]+$/;
+
+  const API_URL = process.env.NEXT_PUBLIC_HOST;
 
   useEffect(() => {
     saveLocation("/signup");
@@ -63,7 +66,7 @@ export default function UserCreate () {
       usernameElement.value = "";
       const passwordElement = document.getElementById("password") as HTMLInputElement;
       passwordElement.value = "";
-      document.getElementById("avatarImg")?.setAttribute("src", "http://localhost:5002/person-circle.svg");
+      document.getElementById("avatarImg")?.setAttribute("src", "https://cenzontle.uao.edu.co:5003/person-circle.svg");
       setUsername("");
       setPassword("");
       setAvatar(null as unknown as File);    
@@ -103,9 +106,9 @@ export default function UserCreate () {
           <label>
             <input id="avatar" type="file" onChange={avatarHandler}/>
             <figure className="personal-figure">
-              <img id="avatarImg" src="http://localhost:5002/person-circle.svg" className="personal-avatar" />
+              <img id="avatarImg" src="https://cenzontle.uao.edu.co:5003/person-circle.svg" className="personal-avatar" />
               <figcaption className="personal-figcaption">
-                <img src="http://localhost:5002/camera.svg"/>
+                <img src="https://cenzontle.uao.edu.co:5003/camera.svg"/>
               </figcaption>
             </figure>
           </label>
@@ -124,7 +127,17 @@ export default function UserCreate () {
       <input id="password" type="password" autoComplete="off" placeholder="Contraseña" className="inputText" minLength={8} required onChange={passwordHandler}/>
       <i id="togglePassword" className="bi bi-eye-slash" onClick={handleSeePassword}></i>
 
+      <p id="signinCreateProfile">
+        <span>Al crear un perfil aceptas nuestras </span>
+        <Link href="/info" className="link">Politicas de Uso</Link>
+      </p>
+
       <button type="button" className="button" onClick={handleSubmit}>Crear Perfil</button>
+
+      <p id="signinCreateProfile">
+        <span>¿Ya tienes un perfil? </span>
+        <Link href="/signin" className="link">Iniciar Sesión</Link>
+      </p>
 
       <div className="snackbar">
         No se ha podido crear un perfil con los datos suministrados

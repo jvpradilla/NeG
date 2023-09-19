@@ -22,7 +22,7 @@ export default function UserEdit () {
     saveLocation("/user");
    
     if (!hasValidSession()) {
-      push('/user/login');
+      push('/singin');
     }
 
     const session = getSession();

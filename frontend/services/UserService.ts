@@ -31,6 +31,7 @@ export const getUser = async (pUsername: string): Promise<User> => {
     return {} as User;
   } 
   const userJSON = await response.json();
+  console.log("user: ",userJSON);
   return userJSON as User;  
 }
 

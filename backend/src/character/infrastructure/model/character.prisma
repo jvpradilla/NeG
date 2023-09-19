@@ -3,4 +3,5 @@ model Character {
   name      String
   username  String
   published Boolean @default(false)
+  avatar    String
 }

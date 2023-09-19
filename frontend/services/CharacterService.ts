@@ -110,9 +110,16 @@ export const deleteCharacter = async (pId: string) => {
   }
 };
 
-export const publishCharacter = async (pId: string) : Promise<boolean> => {
+export const publishCharacter = async (pId: string, pImage: string) : Promise<boolean> => {
+
+  const characterAvatarURL = await uploadAvatar(pId, pImage);
+  
   const response = await fetch(`${API_URL}/character/${pId}`, {
-    method: "PUT"
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ avatar: characterAvatarURL })
   });
   if (response.status !== 200) {
     console.log(await response.json());
@@ -122,3 +129,18 @@ export const publishCharacter = async (pId: string) : Promise<boolean> => {
     return true;
   }
 };
+
+export const uploadAvatar = async (pId: string, pImage: string) => {
+  const formData = new FormData();
+  formData.append("file", pImage);
+  const response = await fetch(`${API_URL}/character/${pId}/avatar`, {
+    method: "POST",
+    body: formData
+  });
+  if( response.status !== 200 ) {
+    console.log(await response.json());
+  } else {
+    return (await response.json()).url as string;    
+  }
+};
+

@@ -1,4 +1,6 @@
 import { Router, Request, Response } from "express";
+import {v4 as uuidv4} from "uuid";
+import fs from "fs";
 import { CharacterRepository } from "../../domain/CharacterRepository";
 import { CharacterController } from "../controller/CharacterController";
 
@@ -41,7 +43,8 @@ export default class CharacterRoutes {
             id: character.id.value,
             name: character.name.value,
             username: character.userName.value,
-            published: character.published
+            published: character.published,
+            avatar: character.characterAvatarURL
           };
         }); 
         pResponse.status(200).json(resultJSON);
@@ -65,7 +68,9 @@ export default class CharacterRoutes {
     pRouter.put(pPath + "/:characterId/", async (pRequest: Request, pResponse: Response) => {
       try {
         const characterId = pRequest.params.characterId as string;
-        await this.controller.publish(characterId);
+        const avatar = pRequest.body.avatar as string;
+
+        await this.controller.publish(characterId, avatar);
         pResponse.status(200).send();
       } catch (err) {
         const typedError = err as Error;
@@ -82,6 +87,28 @@ export default class CharacterRoutes {
         const typedError = err as Error;
         pResponse.status(400).json({ error: typedError.message });
       }
+    });
+
+    pRouter.post(pPath + "/:characterid/avatar", async (pRequest: Request, pResponse: Response) => {
+  
+      if (!pRequest.body.file) {
+        return pResponse.status(400).json({ error: "No files were uploaded"});
+      }
+
+      const characterid = pRequest.params.characterid as string;  
+      const uploadDir = `public/uploads/character/${characterid}`;
+      const uploadPath = `${uploadDir}/${uuidv4()}.webp`;
+      const uploadURL = `/${uploadPath}` ;
+      
+      const base64Data = pRequest.body.file.replace(/^data:image\/webp;base64,/, "");
+      const buff = Buffer.from(base64Data, "base64");
+
+      if (!fs.existsSync(uploadDir)) {
+        fs.mkdirSync(uploadDir, { recursive: true });
+      }
+
+      fs.writeFileSync(uploadPath, buff);
+      pResponse.status(200).json({ url: uploadURL});
     });
   }
 }
