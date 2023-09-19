@@ -3,8 +3,6 @@ import { saveSession, Session } from './SessionService';
 
 const API_URL = process.env.NEXT_PUBLIC_HOST;
 
-console.log("API_URL", API_URL);
-
 export type User = {
   username: string;
   password: string;

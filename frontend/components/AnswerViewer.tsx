@@ -3,6 +3,8 @@ import { useState } from "react";
 import Stepper from "./Stepper";
 import styles from "./AnswerViewer.module.css";
 
+const API_URL = process.env.NEXT_PUBLIC_HOST;
+
 export default function AnswerViewer(props: { answers: any[], onEnded: () => void }) {
 
   const [answerIndex, setAnswerIndex] = useState<number>(0);
@@ -47,7 +49,7 @@ export default function AnswerViewer(props: { answers: any[], onEnded: () => voi
       <div className={styles.question}>{props.answers[answerIndex]?.questionContent}</div>
       <Stepper steps={props.answers.length} activeStep={answerIndex}/>
       <div className={styles.videocontainer}>        
-        <video className={styles.video} id="videoPlay" src={"http://localhost:5000" + props.answers[answerIndex]?.answerVideoURL} autoPlay onEnded={handleNext}></video>
+        <video className={styles.video} id="videoPlay" src={API_URL + props.answers[answerIndex]?.answerVideoURL} autoPlay onEnded={handleNext}></video>
       </div>  
     </div>
   );
