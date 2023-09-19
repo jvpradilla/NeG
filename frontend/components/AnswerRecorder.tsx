@@ -30,7 +30,8 @@ export default function RecordVideo(props: { onCharacterSave: () =>void, onVideo
     if(mediaRecorderRef.current === undefined) {        
       const video = webCamRef.current as Webcam
       const stream = video?.stream as MediaStream;
-      mediaRecorderRef.current = new MediaRecorder(stream, {mimeType: "video/webm;codecs=vp9,opus"});
+      //mediaRecorderRef.current = new MediaRecorder(stream, {mimeType: "video/webm;codecs=vp9,opus"});
+      mediaRecorderRef.current = new MediaRecorder(stream, {mimeType: 'video/mp4; codecs="avc1.424028, mp4a.40.2"'});
       mediaRecorderRef.current.ondataavailable = (event) => {
         props.onVideoSave(props.questions[questionIndex]?.id, props.questions[questionIndex]?.text, event.data);
         mediaRecorderRef.current = undefined;

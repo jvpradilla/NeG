@@ -39,7 +39,8 @@ export default class AnswerRoutes {
     pRouter.post(pPath + "/:characterid/video", async (pRequest: Request, pResponse: Response) => {
       const characterid = pRequest.params.characterid as string;  
       const uploadDir = `public/uploads/character/${characterid}`;
-      const uploadPath = `${uploadDir}/${uuidv4()}.webm`;
+      //const uploadPath = `${uploadDir}/${uuidv4()}.webm`;
+      const uploadPath = `${uploadDir}/${uuidv4()}.mp4`;
       const uploadURL = `/${uploadPath}` ;
       
       if (!fs.existsSync(uploadDir)) {
