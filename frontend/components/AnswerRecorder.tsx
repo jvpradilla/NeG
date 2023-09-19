@@ -17,6 +17,7 @@ export default function RecordVideo(props: { onCharacterSave: () =>void, onVideo
     //width:  { min: 320, ideal: 1920, max: 1920 },
     //height: { min: 400, ideal: 1080 },
     //aspectRatio: 0.5625,
+    aspectRatio: 1.7777,
     frameRate: { max: 30 },
     facingMode:  "user"
   };
