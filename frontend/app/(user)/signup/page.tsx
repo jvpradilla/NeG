@@ -129,7 +129,7 @@ export default function UserCreate () {
 
       <p id="signinCreateProfile">
         <span>Al crear un perfil aceptas nuestras </span>
-        <Link href="/info" className="link">Politicas de Uso</Link>
+        <span className="link">Politicas de Uso</span>
       </p>
 
       <button type="button" className="button" onClick={handleSubmit}>Crear Perfil</button>

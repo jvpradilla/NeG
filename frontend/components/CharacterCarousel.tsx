@@ -30,7 +30,7 @@ export default function CharacterCarousel(props: { characters: any[], onEnded: (
     setCharacterIndex(characterIndex + 1);
   };
 
-  if (answers.length == 0) {
+  if (answers === null || answers.length == 0) {
     return (
       <div className="loaderPage">
         <span className="loader"></span>
