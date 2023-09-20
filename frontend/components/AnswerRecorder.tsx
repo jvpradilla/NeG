@@ -23,8 +23,8 @@ export default function RecordVideo(props: { onCharacterSave: () =>void, onVideo
   let constraints = {
     //width:  { min: 320, ideal: 1920, max: 1920 },
     //height: { min: 400, ideal: 1080 },
-    aspectRatio: 0.5625,
-    //aspectRatio: 1.7777,
+    //aspectRatio: 0.5625,
+    aspectRatio: 1.7777,
     //aspectRatio: screenSize.height > screenSize.width ? 1.7777 : 0.5625,
     frameRate: { max: 30 },
     facingMode:  "user"
@@ -32,9 +32,10 @@ export default function RecordVideo(props: { onCharacterSave: () =>void, onVideo
 
   useEffect(() => {
     setActualQuestion(props.questions[questionIndex]?.text);
-    window.addEventListener('resize', updateDimension);
+    //window.addEventListener('resize', updateDimension);
   });
 
+  /*
   useEffect(() => {
   }, [screenSize]);
 
@@ -48,6 +49,7 @@ export default function RecordVideo(props: { onCharacterSave: () =>void, onVideo
       height: window.innerHeight
     };
   }
+  */
   
   const handleRecordStartAnswer = () => {
     if(mediaRecorderRef.current === undefined) {        
@@ -111,11 +113,13 @@ export default function RecordVideo(props: { onCharacterSave: () =>void, onVideo
   };
 
   //<video id="videoPlay" className={styles.webcam} autoPlay controls></video>
-
+  
   return (
     <div className={styles.container}>
-      <div className={styles.question}>{actualQuestion}</div>
-      <Stepper steps={props.questions.length} activeStep={questionIndex}/>
+      <div className={styles.headercontainer}>
+        <Stepper steps={props.questions.length} activeStep={questionIndex}/>
+        <div className={styles.question}>{actualQuestion}</div>    
+      </div>  
       <div className={styles.webcamcontainer}>
         <Webcam className={styles.webcam} ref={webCamRef} audio={true} muted={true} mirrored={true} videoConstraints={constraints}/>
       </div>    

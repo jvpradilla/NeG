@@ -19,7 +19,8 @@ body {
 }
 
 main {
-  background-color: #f5f7f7;
+  /*background-color: #f5f7f7;*/
+  background-color: #1b1c18;
   max-width: 768px;
   width: 100vw;
   height: calc(100vh - 69px);
@@ -51,6 +52,16 @@ a:link, a:visited, a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.characterPage {
+  width: 100%;
+  height: 100%;
+}
+
+.characterPage-container {
+  width: 100%;
+  height: 100%;
 }
 
 .formContainer {

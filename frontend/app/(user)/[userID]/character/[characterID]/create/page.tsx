@@ -73,10 +73,26 @@ export default function CharacterCreate ({ params } : { params: {userID: string,
       push(pURLRedirect);
     }
   };
+
+  /*
+<div>
+      <div style={{display: showMe?"block":"none"}}>
+        <AnswerRecorder onCharacterSave={handleCharacterSave} onVideoSave={handleAnswerSave} questions={questions}/>
+      </div>
+      <div className="formContainer" style={{display: showMe?"none":"grid"}}>
+        <h1>Crea un nuevo personaje</h1>
+        <Webcam ref={webCamRef} audio={true} muted={true} mirrored={true} videoConstraints={constraints} className="video-circle"/> 
+        <div className="twoColumns">
+            <button type="button" className="button" onClick={handlePublish}>Publicar</button>
+            <button type="button" className="negativeButton" onClick={handleDelete}><i className="bi bi-trash3"></i></button>
+        </div>
+      </div>
+    </div>
+  */
   
   return (
-    <div>
-      <div style={{display: showMe?"block":"none"}}>
+    <div className="characterPage">
+      <div className="characterPage-container" style={{display: showMe?"block":"none"}}>
         <AnswerRecorder onCharacterSave={handleCharacterSave} onVideoSave={handleAnswerSave} questions={questions}/>
       </div>
       <div className="formContainer" style={{display: showMe?"none":"grid"}}>

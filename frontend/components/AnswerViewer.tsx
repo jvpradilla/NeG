@@ -46,8 +46,10 @@ export default function AnswerViewer(props: { answers: any[], onEnded: () => voi
 
   return (
     <div className={styles.container} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
-      <div className={styles.question}>{props.answers[answerIndex]?.questionContent}</div>
-      <Stepper steps={props.answers.length} activeStep={answerIndex}/>
+      <div className={styles.headercontainer}>      
+        <Stepper steps={props.answers.length} activeStep={answerIndex}/>
+        <div className={styles.question}>{props.answers[answerIndex]?.questionContent}</div>
+      </div>
       <div className={styles.videocontainer}>        
         <video className={styles.video} id="videoPlay" src={API_URL + props.answers[answerIndex]?.answerVideoURL} autoPlay onEnded={handleNext} controls></video>
       </div>  

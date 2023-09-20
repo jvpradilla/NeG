@@ -1,13 +1,7 @@
 .stepper {
-  background: transparent;
-  margin-top: 20px;
-  padding-left: 5px;
-  width: calc(100vh * 0.5625);
-  position: absolute;
-  top: 0;
-  left: 50%;  
-  transform: translateX(-50%);
-  z-index: 100;
+  background: linear-gradient(to top, #000000 80%, #000000 100%);
+  padding: 15px 5px 0px 5px;
+  width: 100%;
   display: flex;
   gap: 5px;
 }
