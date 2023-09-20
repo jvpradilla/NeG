@@ -38,6 +38,7 @@ export default function AnswerRecorderBar(props: {onRecordStartAnswer: () => voi
   };
 
   const handleClic = () => {
+    console.log("handleClic");
     if (recording) {
       handleStopRecordAnswer();
     } else {

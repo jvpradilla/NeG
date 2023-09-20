@@ -23,8 +23,9 @@ export default function RecordVideo(props: { onCharacterSave: () =>void, onVideo
   let constraints = {
     //width:  { min: 320, ideal: 1920, max: 1920 },
     //height: { min: 400, ideal: 1080 },
-    //aspectRatio: 0.5625,
-    aspectRatio: screenSize.height > screenSize.width ? 1.7777 : 0.5625,
+    aspectRatio: 0.5625,
+    //aspectRatio: 1.7777,
+    //aspectRatio: screenSize.height > screenSize.width ? 1.7777 : 0.5625,
     frameRate: { max: 30 },
     facingMode:  "user"
   };
@@ -53,11 +54,11 @@ export default function RecordVideo(props: { onCharacterSave: () =>void, onVideo
       const video = webCamRef.current as Webcam
       const stream = video?.stream as MediaStream;
       
-      let mimeType = 'video/mp4; codecs="avc1.424028, mp4a.40.2"';
+      let mimeType = 'video/webm;codecs=vp9,opus"';
       if (MediaRecorder.isTypeSupported(mimeType)) {
-        mediaRecorderRef.current = new MediaRecorder(stream, {mimeType: 'video/mp4; codecs="avc1.424028, mp4a.40.2"'});
-      } else {
         mediaRecorderRef.current = new MediaRecorder(stream, {mimeType: "video/webm;codecs=vp9,opus"});
+      } else {        
+        mediaRecorderRef.current = new MediaRecorder(stream, {mimeType: 'video/mp4; codecs="avc1.424028, mp4a.40.2"'});
       }
       
       mediaRecorderRef.current.ondataavailable = (event) => {

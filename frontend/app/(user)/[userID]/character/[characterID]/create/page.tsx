@@ -23,6 +23,10 @@ export default function CharacterCreate ({ params } : { params: {userID: string,
     loadQuestions(type);
   }, []);
 
+  useEffect(() => {
+  
+  }, [showMe]);
+
   const constraints = {
     width:  { min: 200, ideal: 200, max: 200 },
     height: { min: 200, ideal: 200, max: 200 },
